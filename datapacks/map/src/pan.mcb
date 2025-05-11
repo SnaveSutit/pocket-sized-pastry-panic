@@ -3,25 +3,32 @@ function on_load minecraft:load {
 	scoreboard objectives add frosting_amount dummy
 }
 
+# Pan Types
+# - cake
+# - cupcake
+# - donut
+
 function summon {
-	execute positioned ~ ~1000 ~ summon minecraft:armor_stand run {
+	#ARGS: {pan: string}
+	$execute positioned ~ ~1000 ~ summon minecraft:armor_stand run { {pan:'$(pan)'}
 		tag @s add pan
 		tag @s add liftable_item
 		scoreboard players set @s frosting_amount 0
 
 		tag @s add new
 		data merge entity @s {Invisible:true,Silent:true}
-		execute summon minecraft:interaction run {
+		$execute summon minecraft:interaction run { {pan:'$(pan)'}
 			tag @s add pan_offset
 			tag @s add new
 			data merge entity @s {width:0, height:-1.95}
 			ride @s mount @n[type=minecraft:armor_stand,tag=new,distance=..0.01]
 
-			execute rotated 0 0 run function animated_java:pan/summon {args:{animation:"empty",start_animation:true,variant:"empty"}}
-			execute as @n[type=minecraft:item_display,tag=aj.pan.root,distance=..1] run {
+			$execute rotated 0 0 run function animated_java:$(pan)_pan/summon {args:{animation:"empty",start_animation:true,variant:"empty"}}
+			$execute as @n[type=minecraft:item_display,tag=pan,distance=..1] run { {pan:'$(pan)'}
 				tag @s add pan_model
 				execute on passengers unless entity @s[tag=aj.global.data] run data modify entity @s view_range set value 2
 				ride @s mount @n[type=minecraft:interaction,tag=new,distance=..0.01]
+				$data modify entity @s data.pan set value '$(pan)'
 			}
 			tag @s remove new
 		}
@@ -49,35 +56,37 @@ function summon {
 
 
 dir debug {
-	REPEAT(['vanilla','chocolate','strawberry','lemon','carrot']) as batter {
-		function summon_pan_batter_<%batter%> {
-			function pan:summon
-			execute as @n[tag=pan,distance=..1] run {
-				function pan:fill_batter {batter:<%batter%>}
-			}
-		}
-		function summon_pan_baked_<%batter%> {
-			function pan:summon
-			execute as @n[tag=pan,distance=..1] run {
-				function pan:fill_batter {batter:<%batter%>}
-				execute on passengers on passengers if entity @s[tag=aj.pan.root] run function animated_java:pan/animations/fill_batter/pause
-				function pan:finish_baking
-			}
-		}
-		REPEAT(['vanilla','chocolate','strawberry','lemon','carrot']) as frosting {
-			function summon_pan_baked_<%batter%>_frosted_<%frosting%> {
-				function pan:summon
+	REPEAT(['cake', 'cupcake', 'donut']) as pan {
+		REPEAT(['vanilla','chocolate','strawberry','lemon','carrot']) as batter {
+			function summon_<%pan%>_pan_batter_<%batter%> {
+				function pan:summon {pan:<%pan%>}
 				execute as @n[tag=pan,distance=..1] run {
 					function pan:fill_batter {batter:<%batter%>}
-					execute on passengers on passengers if entity @s[tag=aj.pan.root] run function animated_java:pan/animations/fill_batter/pause
+				}
+			}
+			function summon_<%pan%>_pan_baked_<%batter%> {
+				function pan:summon {pan:<%pan%>}
+				execute as @n[tag=pan,distance=..1] run {
+					function pan:fill_batter {batter:<%batter%>}
+					execute on passengers on passengers if entity @s[tag=pan] run function animated_java:pan/animations/fill_batter/pause
 					function pan:finish_baking
-					function pan:frost {frosting:<%frosting%>}
-					function pan:frost {frosting:<%frosting%>}
-					function pan:frost {frosting:<%frosting%>}
-					function pan:frost {frosting:<%frosting%>}
-					function pan:frost {frosting:<%frosting%>}
-					function pan:frost {frosting:<%frosting%>}
-					function pan:frost {frosting:<%frosting%>}
+				}
+			}
+			REPEAT(['vanilla','chocolate','strawberry','lemon','carrot']) as frosting {
+				function summon_<%pan%>_pan_baked_<%batter%>_frosted_<%frosting%> {
+					function pan:summon {pan:<%pan%>}
+					execute as @n[tag=pan,distance=..1] run {
+						function pan:fill_batter {batter:<%batter%>}
+						execute on passengers on passengers if entity @s[tag=pan] run function animated_java:pan/animations/fill_batter/pause
+						function pan:finish_baking
+						function pan:frost {frosting:<%frosting%>}
+						function pan:frost {frosting:<%frosting%>}
+						function pan:frost {frosting:<%frosting%>}
+						function pan:frost {frosting:<%frosting%>}
+						function pan:frost {frosting:<%frosting%>}
+						function pan:frost {frosting:<%frosting%>}
+						function pan:frost {frosting:<%frosting%>}
+					}
 				}
 			}
 		}
@@ -100,7 +109,9 @@ function on_tick minecraft:tick {
 		execute on passengers on passengers if entity @s[type=minecraft:pig,nbt={DeathTime:0s}] run scoreboard players set #check i 1
 		execute if score #check i matches 0 run {
 			execute on passengers run {
-				execute on passengers if entity @s[tag=aj.pan.root] run function animated_java:pan/remove/this
+				execute on passengers if entity @s[tag=pan] run { with entity @s data
+					$function animated_java:$(pan)_pan/remove/this
+				}
 				kill @s
 			}
 			kill @s
@@ -116,7 +127,7 @@ function on_tick minecraft:tick {
 			execute as @n[type=minecraft:item_display,tag=pan_lock_point,distance=..4] on passengers run scoreboard players set #has_passenger i 1
 			execute if score #has_passenger i matches 1 run return fail
 
-			execute on passengers on passengers if entity @s[tag=aj.pan.root] run function util:snap_rotation
+			execute on passengers on passengers if entity @s[tag=pan] run function util:snap_rotation
 			ride @s mount @n[type=minecraft:item_display,tag=pan_lock_point,distance=..4]
 		}
 
@@ -138,10 +149,12 @@ function kill_all {
 function fill_batter {
 	#ARGS: {batter: string}
 	tag @s add batter
-	$execute on passengers on passengers if entity @s[tag=aj.pan.root] run { {batter:$(batter)}
+	$execute on passengers on passengers if entity @s[tag=pan] run { {batter:$(batter)}
 		$data modify entity @s data.batter set value $(batter)
-		$function animated_java:pan/variants/batter_$(batter)/apply
-		function animated_java:pan/animations/fill_batter/play
+		block { with entity @s data
+			$function animated_java:pan/variants/batter_$(batter)/apply
+			$function animated_java:$(pan)_pan/animations/fill_batter/play
+		}
 	}
 }
 
@@ -149,17 +162,17 @@ function fill_batter {
 function finish_baking {
 	execute if entity @s[tag=!batter] run return fail
 	tag @s add baked
-	execute on passengers on passengers if entity @s[tag=aj.pan.root] run { with entity @s data
-		$function animated_java:pan/variants/baked_$(batter)/apply
-		function animated_java:pan/animations/finish_baking/play
+	execute on passengers on passengers if entity @s[tag=pan] run { with entity @s data
+		$function animated_java:$(pan)_pan/variants/baked_$(batter)/apply
+		$function animated_java:$(pan)_pan/animations/finish_baking/play
 	}
 }
 
 
 function burn {
 	tag @s add burnt
-	execute on passengers on passengers if entity @s[tag=aj.pan.root] run {
-		function animated_java:pan/variants/burnt/apply
+	execute on passengers on passengers if entity @s[tag=pan] run { with entity @s data
+		$function animated_java:$(pan)_pan/variants/burnt/apply
 	}
 }
 
@@ -171,14 +184,16 @@ function frost {
 
 
 	scoreboard players operation #this frosting_amount = @s frosting_amount
-	$execute on passengers on passengers if entity @s[tag=aj.pan.root] run { {frosting:$(frosting)}
+	$execute on passengers on passengers if entity @s[tag=pan] run { {frosting:$(frosting)}
 
 		$execute if score #this frosting_amount matches 1.. unless data entity @s {data:{frosting:$(frosting)}} run return run {
 			say Cannot mix different frosting flavors!
 		}
 
 		$data modify entity @s data.frosting set value $(frosting)
-		$function animated_java:pan/variants/frosted_$(frosting)/apply
+		block { with entity @s data
+			$function animated_java:$(pan)_pan/variants/frosted_$(frosting)/apply
+		}
 
 		execute if score #this frosting_amount matches 6 run {
 			function animated_java:pan/animations/frost3/play
@@ -187,11 +202,11 @@ function frost {
 			function static_pipette:remove
 			execute on vehicle on vehicle run tag @s add frosted
 		}
-		execute if score #this frosting_amount matches 3 run {
-			function animated_java:pan/animations/frost2/play
+		execute if score #this frosting_amount matches 3 run { with entity @s data
+			$function animated_java:$(pan)_pan/animations/frost2/play
 		}
-		execute if score #this frosting_amount matches 0 run {
-			function animated_java:pan/animations/frost1/play
+		execute if score #this frosting_amount matches 0 run { with entity @s data
+			$function animated_java:$(pan)_pan/animations/frost1/play
 		}
 		scoreboard players add #this frosting_amount 1
 	}
@@ -200,18 +215,17 @@ function frost {
 
 
 function empty_batter {
-	execute on passengers on passengers if entity @s[tag=aj.pan.root] run {
-		function animated_java:pan/variants/empty/apply
-		function animated_java:pan/animations/empty/set_frame {frame:0}
+	execute on passengers on passengers if entity @s[tag=pan] run { with entity @s data
+		$function animated_java:$(pan)_pan/variants/empty/apply
+		$function animated_java:$(pan)_pan/animations/empty/set_frame {frame:0}
 	}
 }
 
 
 function extract_to_layer {
 	execute if entity @s[tag=!baked] run return run tellraw @p {"text":"You need to bake the batter first!","color":"red"}
-	execute if entity @s[tag=!frosted] run return run tellraw @p {"text":"You need to frost the layer first!","color":"red"}
 	data remove storage temp:temp data.batter
-	execute on passengers on passengers if entity @s[tag=aj.pan.root] run {
+	execute on passengers on passengers if entity @s[tag=pan] run {
 		data remove storage temp:temp data
 		data modify storage temp:temp data set from entity @s data
 	}

@@ -1,0 +1,7 @@
+{
+	"parent": "animated_java:blueprint/donut_pan/layer_3",
+	"textures": {
+		"2": "cooking:blueprint/transparent",
+		"7": "cooking:blueprint/transparent"
+	}
+}

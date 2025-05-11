@@ -1,5 +1,8 @@
 {
 	"values": [
+		"animated_java:cake_pan/root/on_tick",
+		"animated_java:cupcake_pan/root/on_tick",
+		"animated_java:donut_pan/root/on_tick",
 		"animated_java:fan/root/on_tick",
 		"animated_java:forklift/root/on_tick",
 		"animated_java:frosting_mixer/root/on_tick",
@@ -22,7 +25,6 @@
 		"animated_java:mixer/root/on_tick",
 		"animated_java:orders/root/on_tick",
 		"animated_java:oven/root/on_tick",
-		"animated_java:pan/root/on_tick",
 		"animated_java:splat/root/on_tick",
 		"animated_java:static_pipette/root/on_tick",
 		"animated_java:troll/root/on_tick",

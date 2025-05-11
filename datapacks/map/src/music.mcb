@@ -1,8 +1,8 @@
 function on_load minecraft:load {
 	scoreboard objectives add music_timer dummy
-	scoreboard players set #boss_music_length i 1826
-	scoreboard players set #gameplay_music_length i 2620
-	scoreboard players set #tutorial_music_length i 4228
+	scoreboard players set #boss_music_length i <%config.musicLengths.get('boss')%>
+	scoreboard players set #gameplay_music_length i <%config.musicLengths.get('gameplay')%>
+	scoreboard players set #tutorial_music_length i <%config.musicLengths.get('tutorial')%>
 }
 
 

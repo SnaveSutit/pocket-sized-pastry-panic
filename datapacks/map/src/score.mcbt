@@ -1,0 +1,51 @@
+template set {
+	with name:word objective:word value:word {
+		scoreboard players set <%name%> <%objective%> <%value%>
+	}
+}
+
+template get {
+	with name:word objective:word {
+		scoreboard players get <%name%> <%objective%>
+	}
+}
+
+template reset {
+	with name:word objective:word {
+		scoreboard players reset <%name%> <%objective%>
+	}
+}
+
+template add {
+	with name:word objective:word value:word {
+		scoreboard players add <%name%> <%objective%> <%value%>
+	}
+}
+
+template sub {
+	with name:word objective:word value:word {
+		scoreboard players remove <%name%> <%objective%> <%value%>
+	}
+}
+
+# Operations
+template op {
+	# Implied secondary objective
+	# op <name1> <objective1> <operation> <name2>
+	with name1:word objective:word operation:word name2:word {
+		IF (!isNaN(Number(name2))) {
+			load {
+				scoreboard players set <%name2%> <%config.internalScoreboardName%> <%name2%>
+			}
+			scoreboard players operation <%name1%> <%objective%> <%operation%> <%name2%> <%config.internalScoreboardName%>
+		} ELSE {
+			scoreboard players operation <%name1%> <%objective%> <%operation%> <%name2%> <%objective%>
+		}
+	}
+
+	# Explicit secondary objective
+	# op <name1> <objective1> <operation> <name2> <objective2>
+	with name1:word objective1:word operation:word name2:word objective2:word {
+		scoreboard players operation <%name1%> <%objective1%> <%operation%> <%name2%> <%objective2%>
+	}
+}

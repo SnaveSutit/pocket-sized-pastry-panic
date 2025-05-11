@@ -1,5 +1,11 @@
+import ./score.mcbt
+
 function on_load minecraft:load {
 	scoreboard objectives add ingredient_link_id dummy
+}
+
+function test {
+	op @s ingredient_link_id += #last
 }
 
 function summon {
@@ -8,20 +14,21 @@ function summon {
 	REPEAT(0, 15) as i {
 		$execute if score #random i matches <%i%> align xyz positioned ~.5 ~ ~.5 rotated <%i*(360/16)%> 0 run function animated_java:ingredient_$(type)/summon {args:{animation:"spawn",start_animation:true}}
 	}
-	summon minecraft:item ~ ~ ~ {Tags:['ingredient','new'],Age:-32768,PickupDelay:32767,Invulnerable:1b,Item:{id:"minecraft:stone",count:1}}
-	$execute as @n[type=minecraft:item,tag=new,distance=..0.1] align xyz positioned ~.5 ~ ~.5 run { {type:$(type)}
+	$execute align xyz positioned ~.5 ~ ~.5 summon minecraft:silverfish run { {type:$(type)}
 		$tag @s add ingredient_$(type)
 		tag @s add ingredient
 		tag @s remove new
 		tp @s ~ ~ ~
-		# data merge entity @s {Silent:true,Invisible:false,Invulnerable:true}
-		attribute @s minecraft:gravity base set 0.09
-		# attribute @s minecraft:scale base set 1
+		data merge entity @s {Silent:true,Invisible:false,Invulnerable:true}
+		attribute @s minecraft:gravity base set 0.07
+		attribute @s minecraft:movement_speed base set 0
+		attribute @s minecraft:scale base set 7
+		effect give @s minecraft:invisibility infinite 1 true
 
 		tag @s add mount
 		execute summon minecraft:interaction run {
 			tag @s add ingredient_offset
-			data merge entity @s {width:0,height:-0.21}
+			data merge entity @s {width:0,height:-1.63}
 			ride @s mount @n[tag=mount,distance=..10]
 
 			tag @s add mount2
@@ -33,7 +40,7 @@ function summon {
 		}
 		execute summon minecraft:interaction run {
 			tag @s add ingredient_offset2
-			data merge entity @s {width:0,height:-0.25}
+			data merge entity @s {width:0,height:-1.7}
 			ride @s mount @n[tag=mount,distance=..10]
 
 			tag @s add mount2
@@ -77,7 +84,7 @@ function create_dispenser {
 }
 
 function on_tick minecraft:tick {
-	execute as @e[type=minecraft:marker,tag=ingredient_dispenser] at @s unless entity @e[type=minecraft:item,tag=ingredient,distance=..3] run {
+	execute as @e[type=minecraft:marker,tag=ingredient_dispenser] at @s unless entity @e[type=minecraft:silverfish,tag=ingredient,distance=..3] run {
 		scoreboard players remove @s spawn_timer 1
 		execute if score @s spawn_timer matches ..0 run {
 			function ingredient:summon with entity @s data
@@ -89,7 +96,7 @@ function on_tick minecraft:tick {
 		execute if score @s ingredient_link_id matches 0.. run {
 			scoreboard players operation #this ingredient_link_id = @s ingredient_link_id
 			execute store success score #sneaking i if predicate input:key_sneak
-			execute as @e[type=minecraft:item,tag=ingredient] if score @s ingredient_link_id = #this ingredient_link_id rotated ~ 0 run {
+			execute as @e[type=minecraft:silverfish,tag=ingredient] if score @s ingredient_link_id = #this ingredient_link_id rotated ~ 0 run {
 				execute rotated ~ 0 run tp @s ^ ^2 ^1 ~ ~
 				execute store result entity @s Air byte 1 if data entity @s {Air:0b}
 				execute if score #sneaking i matches 1 run {
@@ -102,7 +109,7 @@ function on_tick minecraft:tick {
 		}
 	}
 
-	execute as @e[type=minecraft:item,tag=ingredient_milk] at @s run {
+	execute as @e[type=minecraft:silverfish,tag=ingredient_milk] at @s run {
 		# Attempt to attach to nearby lock points
 		scoreboard players set #check i 0
 		execute on vehicle run scoreboard players set #check i 1
@@ -129,13 +136,11 @@ function on_interaction {
 			}
 			tag @s remove to_throw
 			scoreboard players reset @s ingredient_link_id
-			data modify entity @s NoGravity set value false
 		} else run {
 			execute store result score @s ingredient_link_id run scoreboard players add #last_ingredient_link_id i 1
 			execute as @n[tag=interaction,distance=..10] run {
 				scoreboard players operation @s ingredient_link_id = #last_ingredient_link_id i
 			}
-			data modify entity @s NoGravity set value true
 		}
 	}
 }
@@ -153,9 +158,9 @@ function throw {
 		}
 	}
 	# Motion Vector
-	execute store result score #x_motion i run data get entity @s Motion[0] 2000
+	execute store result score #x_motion i run data get entity @s Motion[0] 4000
 	execute store result score #y_motion i run data get entity @s Motion[1] 1500
-	execute store result score #z_motion i run data get entity @s Motion[2] 2000
+	execute store result score #z_motion i run data get entity @s Motion[2] 4000
 
 	scoreboard players operation #x i += #x_motion i
 	scoreboard players operation #y i += #y_motion i

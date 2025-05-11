@@ -1,0 +1,83 @@
+{
+	"textures": {
+		"7": "cooking:blueprint/pan/frosting_vanilla",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [-9.94138, 3.16193, -9.941],
+			"to": [8.39235, 8, 8.39272],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [8.39235, 3.16193, 8.39272]
+			},
+			"faces": {
+				"north": {
+					"uv": [8.225, 0, 15.875, 1.25],
+					"texture": "#7"
+				},
+				"east": {
+					"uv": [0, 0, 0, 0],
+					"texture": "#7"
+				},
+				"south": {
+					"uv": [0, 0, 0, 0],
+					"texture": "#7"
+				},
+				"west": {
+					"uv": [0, 0, 8.0625, 1.25],
+					"texture": "#7"
+				},
+				"up": {
+					"uv": [14.75, 16, 7.5, 8.75],
+					"texture": "#7"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": "#7"
+				}
+			}
+		},
+		{
+			"from": [0.49252, 3.17467, -15.60728],
+			"to": [8.56446, 7.99363, -13.69816],
+			"rotation": {
+				"angle": 45,
+				"axis": "y",
+				"origin": [8.9846, 3.16193, 2.67552]
+			},
+			"faces": {
+				"north": {
+					"uv": [7, 0, 5, 1.25],
+					"texture": "#7"
+				},
+				"east": {
+					"uv": [15.16695, 0, 16, 1.25],
+					"texture": "#7"
+				},
+				"south": {
+					"uv": [0, 0, 7.77778, 1.25],
+					"texture": "#7"
+				},
+				"west": {
+					"uv": [0, 0, 0.83305, 1.25],
+					"texture": "#7"
+				},
+				"up": {
+					"uv": [10.5, 16, 7.57986, 15.23203],
+					"texture": "#7"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": "#7"
+				}
+			}
+		}
+	]
+}
