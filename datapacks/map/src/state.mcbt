@@ -1,0 +1,101 @@
+import ./score.mcbt
+
+template state {
+	load {
+		<%%
+			class StateMachine {
+				static all = []
+
+				states = []
+				defaultState = null
+				currentState = null
+
+				constructor(id) {
+					this.id = id
+
+					const existing = StateMachine.all.find(m => m.id === id)
+					if (existing) throw new Error(`Machine with id '${id}' already exists.`)
+					StateMachine.all.push(this)
+				}
+
+				getObjective() {
+					return `state.${this.id}`
+				}
+
+				addState(stateId) {
+					if (this.states.includes(stateId)) {
+						throw new Error(`State '${stateId}' already exists in machine '${this.id}'.`)
+					}
+					this.states.push(stateId)
+					if (this.defaultState === null) {
+						this.defaultState = stateId
+						this.currentState = stateId
+					}
+				}
+
+				setState(stateId) {
+					if (!this.states.includes(stateId)) {
+						throw new Error(`State '${stateId}' does not exist in machine '${this.id}'.`)
+					}
+					this.currentState = stateId
+				}
+
+				getStateScore(stateId) {
+					const index = this.states.indexOf(stateId)
+					if (index === -1) {
+						throw new Error(`State '${stateId}' does not exist in machine '${this.id}'.`)
+					}
+					return index
+				}
+
+				static get(id, throwIfNotExist = true) {
+					const machine = StateMachine.all.find(m => m.id === id)
+					if (!machine && throwIfNotExist) {
+						throw new Error(`Machine with id '${id}' does not exist.`)
+					}
+					return machine
+				}
+			};
+
+			global.StateMachine = StateMachine;
+		%%>
+	}
+
+	with create id:word {
+		<%%
+			new global.StateMachine(id)
+		%%>
+		load {
+			scoreboard objectives add state.<%id%> dummy
+		}
+	}
+
+	with modify id:word addstate state:word {
+		<%%
+			global.StateMachine.get(id).addState(state)
+		%%>
+	}
+
+	with modify id:word setdefault state:word {
+		<%%
+			const machine = global.StateMachine.get(id)
+			machine.defaultState = state
+		%%>
+	}
+
+	with init entity id:word {
+		<%%
+			const machine = global.StateMachine.get(id)
+			const defaultStateScore = machine.getStateScore(machine.defaultState)
+			emit(`scoreboard players set @s state.${id} ${defaultStateScore}`)
+		%%>
+	}
+
+	with init fakeplayer fakeplayerName:word id:word {
+		<%%
+			const machine = global.StateMachine.get(id)
+			const defaultStateScore = machine.getStateScore(machine.defaultState)
+			emit(`scoreboard players set ${fakeplayerName} state.${id} ${defaultStateScore}`)
+		%%>
+	}
+}

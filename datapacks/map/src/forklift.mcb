@@ -1,4 +1,6 @@
 import ./math.mcbt
+import ./score.mcbt
+import ./state.mcbt
 
 function on_load minecraft:load {
 	scoreboard objectives add motion.x dummy
@@ -15,6 +17,11 @@ function on_load minecraft:load {
 	scoreboard players set 85 i 85
 	scoreboard players set 90 i 90
 	scoreboard players set 100 i 100
+
+	state create forklift.steering
+	state modify forklift.steering addstate straight
+	state modify forklift.steering addstate left
+	state modify forklift.steering addstate right
 }
 
 function debug {

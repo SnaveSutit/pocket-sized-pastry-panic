@@ -1,40 +1,21 @@
 {
 	"meta": {
-		"format": "animated_java_blueprint",
-		"format_version": "1.7.1",
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.8.1",
 		"uuid": "5f6d3173-75d9-2e18-beba-7a2a8161878a",
 		"save_location": "D:\\github-repos\\snavesutit\\yeggs-mapjam-spring-2025\\blueprints\\forklift.ajblueprint",
 		"last_used_export_namespace": "forklift"
 	},
-	"blueprint_settings": {
-		"export_namespace": "forklift",
-		"show_bounding_box": false,
-		"auto_bounding_box": true,
-		"bounding_box": [48, 48],
-		"enable_plugin_mode": false,
-		"resource_pack_export_mode": "raw",
-		"data_pack_export_mode": "raw",
-		"target_minecraft_versions": ["1.21.5"],
-		"display_item": "minecraft:white_dye",
-		"custom_model_data_offset": 0,
-		"enable_advanced_resource_pack_settings": false,
-		"resource_pack": "../resources",
-		"enable_advanced_data_pack_settings": false,
-		"data_pack": "../datapacks/animated_java",
-		"summon_commands": "tag @s add forklift\nscoreboard players set @s forklift_lift_state 0",
-		"remove_commands": "",
-		"ticking_commands": "",
-		"interpolation_duration": 1,
-		"teleportation_duration": 1,
-		"use_storage_for_animation": false,
-		"show_function_errors": true,
-		"show_outdated_warning": false,
-		"baked_animations": true,
-		"json_file": ""
-	},
 	"resolution": {
 		"width": 256,
 		"height": 256
+	},
+	"blueprint_settings": {
+		"export_namespace": "forklift",
+		"render_box": [48, 48],
+		"resource_pack": "../resources",
+		"data_pack": "../datapacks/animated_java",
+		"on_summon_function": "tag @s add forklift\nscoreboard players set @s forklift_lift_state 0"
 	},
 	"elements": [
 		{
@@ -434,8 +415,9 @@
 				"use_entity": true,
 				"entity_type": "minecraft:item_display",
 				"sync_passenger_rotation": false,
-				"summon_commands": "tag @s add forklift_seat",
-				"ticking_commands": ""
+				"on_summon_function": "tag @s add forklift_seat",
+				"on_remove_function": "",
+				"on_tick_function": ""
 			},
 			"uuid": "ee16bf73-dadb-b87b-2799-4d801971c672",
 			"type": "locator"
@@ -451,8 +433,9 @@
 				"use_entity": true,
 				"entity_type": "minecraft:interaction",
 				"sync_passenger_rotation": false,
-				"summon_commands": "tag @s add forklift_seat_interaction\ndata merge entity @s {response:1b,width:2.5,height:3}",
-				"ticking_commands": ""
+				"on_summon_function": "tag @s add forklift_seat_interaction\ndata merge entity @s {response:1b,width:2.5,height:3}",
+				"on_remove_function": "",
+				"on_tick_function": ""
 			},
 			"uuid": "05ef00e3-7c0d-7cc7-51cb-132f37ef8538",
 			"type": "locator"
@@ -468,8 +451,9 @@
 				"use_entity": true,
 				"entity_type": "minecraft:item_display",
 				"sync_passenger_rotation": false,
-				"summon_commands": "tag @s add cake_mount",
-				"ticking_commands": ""
+				"on_summon_function": "tag @s add cake_mount",
+				"on_remove_function": "",
+				"on_tick_function": ""
 			},
 			"uuid": "1c64fc5a-f4c4-27e6-e99d-f0af5446656a",
 			"type": "locator"
@@ -1905,6 +1889,7 @@
 			"name": "body",
 			"origin": [0, 10, 20],
 			"color": 0,
+			"onSummonFunction": "",
 			"configs": {
 				"variants": {}
 			},
@@ -1931,6 +1916,7 @@
 					"name": "front_right_wheel",
 					"origin": [-17.5, 3.5, 0.5],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
 						"variants": {}
 					},
@@ -1960,6 +1946,7 @@
 					"name": "front_left_wheel",
 					"origin": [-17.5, 3.5, 0.5],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
 						"variants": {}
 					},
@@ -1983,6 +1970,7 @@
 					"name": "back_right_wheel",
 					"origin": [-17.5, 3.5, 36.5],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
 						"variants": {}
 					},
@@ -1993,7 +1981,7 @@
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
-					"selected": true,
+					"selected": false,
 					"children": [
 						"3ef2b0cf-0f6f-5bf3-236e-f0976c5545fa",
 						"01ebc6ba-c406-e9e9-a3c3-d8cf127cdd91",
@@ -2006,6 +1994,7 @@
 					"name": "back_left_wheel",
 					"origin": [17.5, 3.5, 36.5],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
 						"variants": {}
 					},
@@ -2029,6 +2018,7 @@
 					"name": "crane",
 					"origin": [0, 10, -4],
 					"color": 0,
+					"onSummonFunction": "",
 					"configs": {
 						"variants": {}
 					},
@@ -2047,6 +2037,7 @@
 							"name": "forks",
 							"origin": [0.5, 16, -5],
 							"color": 0,
+							"onSummonFunction": "",
 							"configs": {
 								"variants": {}
 							},
@@ -2123,7 +2114,7 @@
 			"length": 0.05,
 			"snapping": 20,
 			"selected": false,
-			"saved": false,
+			"saved": true,
 			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
@@ -2170,8 +2161,7 @@
 					"name": "seat_interaction",
 					"value": "05ef00e3-7c0d-7cc7-51cb-132f37ef8538"
 				}
-			],
-			"animators": {}
+			]
 		},
 		{
 			"uuid": "da598e98-6a2a-3f9a-b1d0-81dbf2c06f22",
@@ -2181,7 +2171,7 @@
 			"length": 0.05,
 			"snapping": 20,
 			"selected": false,
-			"saved": false,
+			"saved": true,
 			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
@@ -2262,7 +2252,7 @@
 			"length": 0.05,
 			"snapping": 20,
 			"selected": false,
-			"saved": false,
+			"saved": true,
 			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
@@ -2343,7 +2333,7 @@
 			"length": 0.05,
 			"snapping": 20,
 			"selected": false,
-			"saved": false,
+			"saved": true,
 			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
@@ -2423,8 +2413,8 @@
 			"override": false,
 			"length": 0.05,
 			"snapping": 20,
-			"selected": true,
-			"saved": false,
+			"selected": false,
+			"saved": true,
 			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
@@ -2527,7 +2517,7 @@
 			"length": 0.05,
 			"snapping": 20,
 			"selected": false,
-			"saved": false,
+			"saved": true,
 			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
@@ -2630,7 +2620,7 @@
 			"length": 0.05,
 			"snapping": 20,
 			"selected": false,
-			"saved": false,
+			"saved": true,
 			"path": "",
 			"anim_time_update": "",
 			"blend_weight": "",
@@ -2725,6 +2715,5 @@
 				}
 			}
 		}
-	],
-	"animation_controllers": []
+	]
 }

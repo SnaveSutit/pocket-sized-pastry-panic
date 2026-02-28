@@ -1,25 +1,25 @@
+import ./score.mcbt
+
 function on_load minecraft:load {
 	gamerule maxCommandChainLength 1000000
 
-	scoreboard objectives add mcb.i dummy
+	create i
+	create mcb.i
+	create spawn_timer
 
-	scoreboard objectives add i dummy
+	set 2 i
+	set 4 i
+	set 7 i
+	set 8 i
+	set 10 i
+	set 20 i
+	set 60 i
+	set 100 i
+	set 360 i
 
-	scoreboard players set 2 i 2
-	scoreboard players set 4 i 4
-	scoreboard players set 7 i 7
-	scoreboard players set 8 i 8
-	scoreboard players set 10 i 10
-	scoreboard players set 20 i 20
-	scoreboard players set 60 i 60
-	scoreboard players set 100 i 100
-	scoreboard players set 360 i 360
+	setworldspawn 0 27 -75 41 90
 
-	scoreboard objectives add spawn_timer dummy
-
-	setworldspawn 0 35 41 90
-
-	scoreboard players set #current_tick i 0
+	set #current_tick i 0
 
 	tellraw @a {"text":"Map reloaded!","color":"green"}
 
@@ -27,9 +27,9 @@ function on_load minecraft:load {
 }
 
 function start {
-	scoreboard players set #game_in_progress i 1
+	set #game_in_progress i 1
 	tellraw @a {text:'Starting Game...',color:green}
-	scoreboard players set #playtime i 0
+	set #playtime i 0
 	execute as @a run {
 		function player:join_players
 		function map:teleport_to_game
@@ -39,14 +39,14 @@ function start {
 
 
 function stop {
-	scoreboard players set #game_in_progress i 0
+	set #game_in_progress i 0
 	function map:reset
 }
 
 
 function on_tick minecraft:tick {
-	scoreboard players add #current_tick i 1
-	scoreboard players add #playtime i 1
+	add #current_tick i 1
+	add #playtime i 1
 	# Tutorial Button
 	execute if block -5 35 43 minecraft:birch_button[powered=true] run {
 		function map:hide_buttons
@@ -104,7 +104,7 @@ function set_scale {
 function reset {
 	tellraw @a {text:'Resetting Map...',color:yellow}
 	function map:hide_buttons
-	scoreboard players set #game_in_progress i 0
+	set #game_in_progress i 0
 	kill @e[type=!player]
 	function static_pipette:remove
 	schedule 1s {
@@ -199,7 +199,7 @@ function game_over {
 	title @a times 10 80 10
 	title @a title ["",{text:"\ua000",font:"cooking:custom"},{translate:"space.-1"},{text:"\ua000",font:"cooking:custom"},{translate:offset.-256,with:[{text:"Game Over!",color:red}]}]
 
-	scoreboard players set #game_in_progress i 0
+	set #game_in_progress i 0
 
 	execute as @a at @s run {
 		playsound minecraft:entity.generic.eat block @s ~ ~ ~ 10 0.1
@@ -226,17 +226,17 @@ function win {
 }
 
 function display_score {
-	scoreboard players operation #seconds i = #playtime i
-	scoreboard players operation #seconds i /= 20 i
-	scoreboard players operation #minutes i = #seconds i
-	scoreboard players operation #seconds i %= 60 i
-	scoreboard players operation #seconds i %= 60 i
-	scoreboard players operation #minutes i /= 60 i
+	op #seconds i = #playtime
+	op #seconds i /= 20
+	op #minutes i = #seconds
+	op #seconds i %= 60
+	op #seconds i %= 60
+	op #minutes i /= 60
 
-	execute store result score #leftovers i if entity @e[tag=layer]
+	set #leftovers i run execute if entity @e[tag=layer]
 
-	scoreboard players operation #total_cakes i = #required_satisfaction i
-	scoreboard players operation #total_cakes i += #leftovers i
+	op #total_cakes i = #required_satisfaction
+	op #total_cakes i += #leftovers
 
 	title @a subtitle [{text:"You launched ",color:green}, {score:{name:'#total_cakes',objective:'i'},color:aqua}, {text:" cakes in "}, {score:{name:'#minutes',objective:'i'},color:aqua}, {text:" minutes and "}, {score:{name:'#seconds',objective:'i'},color:aqua}, {text:" seconds!"}]
 
