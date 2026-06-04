@@ -9,7 +9,7 @@ function on_load minecraft:load {
 # and the player rejoins, they are put in specator instead of joined into the game again.
 
 function on_join {
-	attribute @s minecraft:movement_speed base set 0.18
+	attribute @s minecraft:movement_speed modifier add map:player_speed 0.18
 	execute if entity @s[tag=!has_joined_before] run {
 		function map:teleport_to_spawn
 		gamemode adventure @s
