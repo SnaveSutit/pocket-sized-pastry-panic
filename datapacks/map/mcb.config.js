@@ -41,15 +41,18 @@ module.exports = {
 		mcb.events.onPreBuild.subscribe(async () => {
 			musicLengths.set(
 				'boss',
-				await getOggTickDuration('../../resources/assets/cooking/sounds/music_boss.ogg')
+				500
+				// await getOggTickDuration('../../resources/assets/cooking/sounds/music_boss.ogg')
 			)
 			musicLengths.set(
 				'gameplay',
-				await getOggTickDuration('../../resources/assets/cooking/sounds/music_gameplay.ogg')
+				500
+				// await getOggTickDuration('../../resources/assets/cooking/sounds/music_gameplay.ogg')
 			)
 			musicLengths.set(
 				'tutorial',
-				await getOggTickDuration('../../resources/assets/cooking/sounds/music_tutorial.ogg')
+				500
+				// await getOggTickDuration('../../resources/assets/cooking/sounds/music_tutorial.ogg')
 			)
 		})
 	},
