@@ -52,14 +52,6 @@ function summon {
 			tag @s remove mount2
 		}
 		tag @s remove mount
-
-		# execute store result score #random.x i run random value -1..1
-		# execute store result score #random.z i run random value -1..1
-		# REPEAT(-1, 1) as x {
-		# 	REPEAT(-1, 1) as z {
-		# 		execute if score #random.x i matches <%x%> if score #random.z i matches <%z%> run tp @s ~<%x%> ~ ~<%z%>
-		# 	}
-		# }
 	}
 }
 

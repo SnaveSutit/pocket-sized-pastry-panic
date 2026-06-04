@@ -1,4 +1,4 @@
-const ffmpeg = require('../../node_modules/fluent-ffmpeg')
+const ffmpeg = require('fluent-ffmpeg')
 
 function getOggTickDuration(filePath) {
 	return new Promise((resolve, reject) => {
