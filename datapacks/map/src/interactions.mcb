@@ -1,0 +1,75 @@
+function load minecraft:load {
+	scoreboard objectives add <%config.internalScoreboardName%> dummy
+}
+
+REPEAT (['right', 'left']) as direction {
+	dir <%direction%>_click {
+		advancement trigger {
+			"criteria": {
+				"player_<%direction%>_clicked_interaction_entity": {
+					"trigger": "<%direction === 'right' ? 'minecraft:player_interacted_with_entity' : 'minecraft:player_hurt_entity'%>",
+					"conditions": {
+						"entity": {
+							"type": "minecraft:interaction"
+						}
+					}
+				}
+			},
+			"rewards": {
+				"function": "<%context.namespace + ':' + context.path.join('/')%>/on"
+			}
+		}
+
+		function on {
+			advancement revoke @s only <%context.namespace + ':' + context.path.join('/')%>/trigger
+			tag @s add interactions.interacting_player
+			execute \
+				as @e[type=interaction, tag=interactions.interactable, distance=..8] \
+				if data entity @s <%direction === 'right' ? 'interaction' : 'attack'%> \
+				run function ./check
+			tag @s remove interactions.interacting_player
+		}
+
+		function check {
+			execute store result score #gametime <%config.internalScoreboardName%> run time query gametime
+			execute \
+				store result score #timestamp <%config.internalScoreboardName%> \
+				run data get entity @s <%direction === 'right' ? 'interaction' : 'attack'%>.timestamp
+
+			# Check that the interaction has a command to run, and
+			# if this interaction is from the player being processed.
+			scoreboard players set #check <%config.internalScoreboardName%> 0
+			execute \
+				if score #timestamp <%config.internalScoreboardName%> = #gametime <%config.internalScoreboardName%> \
+				if data entity @s data.on_<%direction%>_click \
+				store success score #check <%config.internalScoreboardName%> \
+				on <%direction === 'right' ? 'target' : 'attacker'%> \
+				if entity @s[tag=interactions.interacting_player]
+
+			execute \
+				if score #check <%config.internalScoreboardName%> matches 1 \
+				run function ./do
+		}
+
+		function do {
+			scoreboard players set #check <%config.internalScoreboardName%> 0
+			block execute { with entity @s data
+				$$(on_<%direction%>_click)
+				scoreboard players set #check <%config.internalScoreboardName%> 1
+			}
+			execute if score #check <%config.internalScoreboardName%> matches 0 run tellraw @a [ \
+				{text: '', color: red}, \
+				{text:'ɪɴᴛᴇʀᴀᴄᴛɪᴏɴꜱ', color:'light_purple'}, \
+				{text:'\n(<%global.root%>.mcb)', color:'dark_gray'}, \
+				'\n→ ᴇʀʀᴏʀ:\n\sFailed to handle <%direction%> click interaction from ', \
+				{selector: '@p[tag=interactions.interacting_player]', color: gold}, \
+				':\n\s\sInvalid command: ', \
+				{nbt: 'data.on_<%direction%>_click', entity: '@s', color: aqua}, \
+				'\n\s\sfrom ', \
+				{text: 'data.on_<%direction%>_click ', color: yellow}, \
+			]
+			# Only remove the interaction if it's consumed.
+			data remove entity @s <%direction === 'right' ? 'interaction' : 'attack'%>
+		}
+	}
+}

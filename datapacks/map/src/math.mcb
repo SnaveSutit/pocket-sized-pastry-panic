@@ -34,19 +34,6 @@ function get_look_vector3d {
 	}
 }
 
-# function rotate_unit_vector2d {
-# 	# Inputs: #input.vector.x, #input.vector.z, #input.rotation
-# 	# Outputs: #output.vector.x, #output.vector.z
-# 	execute positioned 0.0 0.0 0.0 summon minecraft:marker run {
-# 		execute store result entity @s Rotation[0] float 0.001 run scoreboard players get #input.rotation i
-# 		execute at @s run {
-# 			execute store result entity @s Pos[0] double 0.001 run scoreboard players get #input.vector.x i
-# 			execute store result entity @s Pos[1] double 0.001 run scoreboard players get #input.vector.y i
-			
-# 		}
-# 	}
-# }
-
 function sqrt {
 	# Inputs: #input
 	# Outputs: #output
@@ -128,34 +115,6 @@ function cosine {
 
 	# title @a actionbar [{"text":"Cosine of ","color":"gray"},{"score":{"name":"#input","objective":"i"},"color":"white"},{"text":" is ","color":"gray"},{"score":{"name":"#output","objective":"i"},"color":"white"}]
 }
-
-# function test minecraft:tick {
-# 	scoreboard players set #vector.x i 0
-# 	scoreboard players set #vector.z i 1000
-
-# 	scoreboard players add #angle i 20
-# 	execute if score #angle i matches 3600.. run scoreboard players set #angle i 0
-# 	# scoreboard players remove #angle i 20
-# 	# execute if score #angle i matches ..-3600 run scoreboard players set #angle i 0
-
-# 	vector2 #vector i rotate #angle i
-
-# 	data remove storage temp:temp vector
-# 	execute store result storage temp:temp vector.x float 0.001 run scoreboard players get #vector.x i
-# 	execute store result storage temp:temp vector.z float 0.001 run scoreboard players get #vector.z i
-
-# 	execute at @a run { with storage temp:temp vector
-# 		$particle minecraft:bubble ~$(x) ~.1 ~$(z)
-# 	}
-
-# 	# title @a actionbar [{"text":"X: "},{"score":{"name":"#vector.x","objective":"i"}},{"text":" Z: "},{"score":{"name":"#vector.z","objective":"i"}}]
-
-# 	function math:atan2
-
-# 	title @a actionbar [{text:'Angle: '}, {score:{name:"#output", objective:"i"}}]
-
-# }
-
 
 function atan2 {
 	# Inputs: #vector.x, #vector.z

@@ -1,62 +1,17 @@
 function on_load minecraft:load {
 	scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game
-	team add players "Players"
-	team add spectators "Spectators"
 }
 
 # TODO: Make a system that sets a unique game-ID on each player,
 # so if a player leaves and then the game ends, then another game starts,
 # and the player rejoins, they are put in specator instead of joined into the game again.
 
-function on_join {
-	attribute @s minecraft:movement_speed modifier add map:player_speed 0.18
-	execute if entity @s[tag=!has_joined_before] run {
-		function map:teleport_to_spawn
-		gamemode adventure @s
-	}
-	tag @s add has_joined_before
-
-	# TODO: Add messages indicating when a player re-joins that they now are spectating / playing again
-	execute if score #game_in_progress i matches 1 run {
-		execute if entity @s[team=players] run return run {
-			function player:join_players
-			function map:teleport_to_game
-		}
-		execute if entity @s[team=spectator] run return run {
-			function player:join_spectators
-			function map:teleport_to_game
-		}
-		execute if entity @s[team=] run {
-			function player:join_spectators
-			function map:teleport_to_game
-		}
-	}
-	execute if score #game_in_progress i matches 0 run {
-		function map:teleport_to_spawn
-		gamemode adventure @s
-	}
-
-	scoreboard players set @s leave_game 0
+function apply_movement_attributes {
+	attribute @s minecraft:movement_speed modifier add pspp:elf_speed 0.15 add_multiplied_base
+	attribute @s minecraft:jump_strength modifier add pspp:elf_jump 0.8 add_multiplied_base
 }
 
-
-function join_players {
-	gamemode adventure @s
-	team leave @s
-	team join players @s
-}
-
-function join_spectators {
-	gamemode spectator @s
-	team leave @s
-	team join players @s
-}
-
-function on_tick minecraft:tick {
-	effect give @a minecraft:saturation infinite 0 true
-	execute as @a run {
-		execute unless score @s leave_game matches 0.. run function player:on_join
-		execute if score @s leave_game matches 1.. run function player:on_join
-		execute if entity @s[tag=!has_joined_before] run function player:on_join
-	}
+function remove_movement_attributes {
+	attribute @s minecraft:movement_speed modifier remove pspp:elf_speed
+	attribute @s minecraft:jump_strength modifier remove pspp:elf_jump
 }
