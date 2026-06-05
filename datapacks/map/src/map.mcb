@@ -1,6 +1,6 @@
 import ./score.mcbt
 
-function on_load minecraft:load {
+function load minecraft:load {
 	gamerule maxCommandChainLength 1000000
 
 	create i
