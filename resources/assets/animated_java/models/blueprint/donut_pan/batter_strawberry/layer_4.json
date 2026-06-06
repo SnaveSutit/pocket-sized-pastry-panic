@@ -1,6 +1,0 @@
-{
-	"parent": "animated_java:blueprint/donut_pan/layer_4",
-	"textures": {
-		"2": "cooking:blueprint/pan/batter_strawberry"
-	}
-}

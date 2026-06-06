@@ -1,9 +1,0 @@
-{
-	"model": {
-		"type": "minecraft:model",
-		"model": "animated_java:blueprint/item_milk/malk",
-		"tints": [
-			{"type": "minecraft:dye", "default": [1, 1, 1]}
-		]
-	}
-}

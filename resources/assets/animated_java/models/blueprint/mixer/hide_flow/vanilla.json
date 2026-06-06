@@ -1,6 +1,0 @@
-{
-	"parent": "animated_java:blueprint/mixer/vanilla",
-	"textures": {
-		"0": "cooking:blueprint/transparent"
-	}
-}

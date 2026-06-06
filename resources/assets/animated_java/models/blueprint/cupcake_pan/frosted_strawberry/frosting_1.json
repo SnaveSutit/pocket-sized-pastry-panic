@@ -1,6 +1,0 @@
-{
-	"parent": "animated_java:blueprint/cupcake_pan/frosting_1",
-	"textures": {
-		"7": "cooking:blueprint/pan/frosting_strawberry"
-	}
-}

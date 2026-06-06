@@ -1,9 +1,0 @@
-{
-	"model": {
-		"type": "minecraft:model",
-		"model": "animated_java:blueprint/troll/arm_left_elbow",
-		"tints": [
-			{"type": "minecraft:dye", "default": [1, 1, 1]}
-		]
-	}
-}

@@ -1,9 +1,0 @@
-{
-	"model": {
-		"type": "minecraft:model",
-		"model": "animated_java:blueprint/tutorial_indicator/tutorial_indicator",
-		"tints": [
-			{"type": "minecraft:dye", "default": [1, 1, 1]}
-		]
-	}
-}

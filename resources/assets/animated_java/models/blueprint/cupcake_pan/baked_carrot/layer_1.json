@@ -1,6 +1,0 @@
-{
-	"parent": "animated_java:blueprint/cupcake_pan/layer_1",
-	"textures": {
-		"2": "cooking:blueprint/pan/baked_carrot"
-	}
-}

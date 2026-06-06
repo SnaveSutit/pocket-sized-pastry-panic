@@ -1,6 +1,0 @@
-{
-	"parent": "animated_java:blueprint/frosting_mixer/flavor",
-	"textures": {
-		"1": "cooking:blueprint/pan/frosting_chocolate"
-	}
-}

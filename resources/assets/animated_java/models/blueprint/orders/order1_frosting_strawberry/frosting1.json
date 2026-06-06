@@ -1,6 +1,0 @@
-{
-	"parent": "animated_java:blueprint/orders/frosting1",
-	"textures": {
-		"4": "cooking:blueprint/pan/frosting_strawberry"
-	}
-}

@@ -1,6 +1,0 @@
-{
-	"parent": "animated_java:blueprint/static_pipette/3",
-	"textures": {
-		"0": "cooking:blueprint/ingredient/chocolate_frosting"
-	}
-}

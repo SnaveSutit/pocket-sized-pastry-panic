@@ -1,6 +1,0 @@
-{
-	"parent": "animated_java:blueprint/layer/layer_2",
-	"textures": {
-		"5": "animated_java:blueprint/layer/frosting_vanilla"
-	}
-}

@@ -1,6 +1,0 @@
-{
-	"parent": "animated_java:blueprint/mixer/flow",
-	"textures": {
-		"0": "cooking:blueprint/pan/batter_generic"
-	}
-}

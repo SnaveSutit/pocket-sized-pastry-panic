@@ -1,6 +1,0 @@
-{
-	"parent": "animated_java:blueprint/mixer/malk",
-	"textures": {
-		"0": "cooking:blueprint/pan/batter_chocolate"
-	}
-}
