@@ -1,0 +1,14 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "texture": "pspp:2"
+            }
+        ],
+        "humanoid_leggings": [
+            {
+                "texture": "pspp:2"
+            }
+        ]
+    }
+}

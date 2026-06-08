@@ -1,0 +1,64 @@
+{
+	"format_version": "1.21.11",
+	"textures": {
+		"0": "pspp:item/hats/3",
+		"particle": "pspp:item/hats/3"
+	},
+	"elements": [
+		{
+			"from": [4, 9, 4],
+			"to": [12, 14, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 11.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 11, 8, 16], "texture": "#0"},
+				"east": {"uv": [0, 11, 8, 16], "texture": "#0"},
+				"south": {"uv": [0, 11, 8, 16], "texture": "#0"},
+				"west": {"uv": [0, 11, 8, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#0"}
+			}
+		},
+		{
+			"from": [12, 9, 4],
+			"to": [4, 14, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 11.5, 8]},
+			"faces": {
+				"north": {"uv": [8, 11, 0, 16], "texture": "#0"},
+				"east": {"uv": [8, 11, 0, 16], "texture": "#0"},
+				"south": {"uv": [8, 11, 0, 16], "texture": "#0"},
+				"west": {"uv": [8, 11, 0, 16], "texture": "#0"},
+				"up": {"uv": [8, 0, 0, 8], "texture": "#0"}
+			}
+		},
+		{
+			"from": [1.5, 6.5, 7.5],
+			"to": [5, 9, 8.5],
+			"rotation": {"x": 0, "y": 22.5, "z": -7.5, "origin": [5, 7.75, 8]},
+			"faces": {
+				"north": {"uv": [12, 10, 16, 13], "texture": "#0"},
+				"east": {"uv": [12, 10, 13, 13], "texture": "#0"},
+				"south": {"uv": [12, 13, 16, 16], "texture": "#0"},
+				"west": {"uv": [8, 14, 11, 15], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [11, 10, 12, 14], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [8, 15, 12, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [11, 6.5, 7.5],
+			"to": [14.5, 9, 8.5],
+			"rotation": {"x": 0, "y": -22.5, "z": 7.5, "origin": [11, 7.75, 8]},
+			"faces": {
+				"north": {"uv": [16, 10, 12, 13], "texture": "#0"},
+				"east": {"uv": [8, 15, 11, 14], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [16, 13, 12, 16], "texture": "#0"},
+				"west": {"uv": [13, 10, 12, 13], "texture": "#0"},
+				"up": {"uv": [11, 14, 12, 10], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [12, 15, 8, 16], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"scale": [2, 2, 2]
+		}
+	}
+}
