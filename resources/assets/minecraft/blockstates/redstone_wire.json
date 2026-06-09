@@ -1,0 +1,70 @@
+{
+    "variants": {
+        "power=0,north=side,south=side,east=side,west=side": [
+            {
+                "model": "pspp:block/decal/flour/a",
+                "y": 0
+            },
+            {
+                "model": "pspp:block/decal/flour/a",
+                "y": 90
+            },
+            {
+                "model": "pspp:block/decal/flour/a",
+                "y": 180
+            },
+            {
+                "model": "pspp:block/decal/flour/a",
+                "y": 270
+            },
+            {
+                "model": "pspp:block/decal/flour/b",
+                "y": 0
+            },
+            {
+                "model": "pspp:block/decal/flour/b",
+                "y": 90
+            },
+            {
+                "model": "pspp:block/decal/flour/b",
+                "y": 180
+            },
+            {
+                "model": "pspp:block/decal/flour/b",
+                "y": 270
+            },
+            {
+                "model": "pspp:block/decal/flour/c",
+                "y": 0
+            },
+            {
+                "model": "pspp:block/decal/flour/c",
+                "y": 90
+            },
+            {
+                "model": "pspp:block/decal/flour/c",
+                "y": 180
+            },
+            {
+                "model": "pspp:block/decal/flour/c",
+                "y": 270
+            },
+            {
+                "model": "pspp:block/decal/flour/d",
+                "y": 0
+            },
+            {
+                "model": "pspp:block/decal/flour/d",
+                "y": 90
+            },
+            {
+                "model": "pspp:block/decal/flour/d",
+                "y": 180
+            },
+            {
+                "model": "pspp:block/decal/flour/d",
+                "y": 270
+            }
+        ]
+    }
+}
