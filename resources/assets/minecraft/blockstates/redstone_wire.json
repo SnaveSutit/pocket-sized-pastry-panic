@@ -65,6 +65,72 @@
                 "model": "pspp:block/decal/flour/d",
                 "y": 270
             }
+        ],
+        "power=0,north=none,south=none,east=none,west=none": [
+            {
+                "model": "pspp:block/decal/stain/a",
+                "y": 0
+            },
+            {
+                "model": "pspp:block/decal/stain/a",
+                "y": 90
+            },
+            {
+                "model": "pspp:block/decal/stain/a",
+                "y": 180
+            },
+            {
+                "model": "pspp:block/decal/stain/a",
+                "y": 270
+            },
+            {
+                "model": "pspp:block/decal/stain/b",
+                "y": 0
+            },
+            {
+                "model": "pspp:block/decal/stain/b",
+                "y": 90
+            },
+            {
+                "model": "pspp:block/decal/stain/b",
+                "y": 180
+            },
+            {
+                "model": "pspp:block/decal/stain/b",
+                "y": 270
+            },
+            {
+                "model": "pspp:block/decal/stain/c",
+                "y": 0
+            },
+            {
+                "model": "pspp:block/decal/stain/c",
+                "y": 90
+            },
+            {
+                "model": "pspp:block/decal/stain/c",
+                "y": 180
+            },
+            {
+                "model": "pspp:block/decal/stain/c",
+                "y": 270
+            },
+            {
+                "model": "pspp:block/decal/stain/d",
+                "y": 0
+            },
+            {
+                "model": "pspp:block/decal/stain/d",
+                "y": 90
+            },
+            {
+                "model": "pspp:block/decal/stain/d",
+                "y": 180
+            },
+            {
+                "model": "pspp:block/decal/stain/d",
+                "y": 270
+            }
         ]
     }
 }

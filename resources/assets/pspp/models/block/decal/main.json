@@ -1,0 +1,19 @@
+{
+	"format_version": "1.21.11",
+	"texture_size": [48, 48],
+	"textures": {
+		"0": "pspp:block/dummy",
+		"particle": "pspp:block/dummy"
+	},
+	"elements": [
+		{
+			"from": [-16, 0.4, -16],
+			"to": [32, 0.4, 32],
+			"rotation": {"x": 0.5, "y": 0.5, "z": 0.5, "origin": [8, 0.4, 8]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
+			}
+		}
+	]
+}
