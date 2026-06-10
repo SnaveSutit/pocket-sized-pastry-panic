@@ -1,0 +1,8 @@
+{
+	"format_version": "1.21.11",
+	"parent": "pspp:block/floor/main",
+	"textures": {
+		"0": "pspp:block/floor/0/main_a",
+		"particle": "pspp:block/floor/0/main_a"
+	}
+}

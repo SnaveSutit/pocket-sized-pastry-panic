@@ -1,0 +1,11 @@
+{
+    "multipart": [
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/beam/vertical"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,385 @@
+{
+    "multipart" : [
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/main_a"
+                },
+                {
+                    "model": "pspp:block/floor/1/main_b"
+                },
+                {
+                    "model": "pspp:block/floor/1/main_c"
+                }
+            ]
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": 0,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "north",
+                "shape": "outer_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": -90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": -90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": -90,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "north",
+                "shape": "outer_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": 0,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "north",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": -90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": -90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": -90,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "north",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": 180,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "south",
+                "shape": "outer_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": 90,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "south",
+                "shape": "outer_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": 180,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "south",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": 90,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "south",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": 90,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "east",
+                "shape": "outer_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": 0,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "east",
+                "shape": "outer_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": 90,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "east",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": 0,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "east",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": 270,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": 270,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": 270,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "west",
+                "shape": "outer_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": 180,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "west",
+                "shape": "outer_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": 270,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": 270,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": 270,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "west",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/floor/1/edge_a",
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_b",
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/floor/1/edge_c",
+                    "y": 180,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "west",
+                "shape": "inner_left"
+            }
+        }
+    ]
+}
