@@ -1,0 +1,11 @@
+{
+	"format_version": "1.21.11",
+	"parent": "pspp:block/wood/rot",
+	"textures": {
+		"0": "pspp:block/wood/0/half_a",
+		"1": "pspp:block/wood/0/main_a",
+		"2": "pspp:block/dummy",
+		"3": "pspp:block/wood/0/edge_c",
+		"particle": "pspp:block/wood/0/main_a"
+	}
+}
