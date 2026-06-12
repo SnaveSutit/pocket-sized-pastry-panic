@@ -1,0 +1,29 @@
+{
+	"format_version": "1.21.11",
+	"textures": {
+		"0": "pspp:block/side",
+		"1": "pspp:block/corner",
+		"particle": "pspp:block/side"
+	},
+	"elements": [
+		{
+			"from": [-6.45997, 0.3, 30.14666],
+			"to": [7.55083, 16, 17.52499],
+			"rotation": {"angle": 26.56505, "axis": "y", "origin": [0.54543, 8.15, 16.75541]},
+			"faces": {
+				"west": {"uv": [8, 0, 0, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 8, 16], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"from": [-6.45997, 0.3, 17.52499],
+			"to": [7.55083, 16, 1.82499],
+			"rotation": {"angle": 26.56505, "axis": "y", "origin": [0.54543, 8.15, 16.75541]},
+			"faces": {
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#1"},
+				"down": {"uv": [16, 0, 0, 16], "rotation": 180, "texture": "#1"}
+			}
+		}
+	]
+}

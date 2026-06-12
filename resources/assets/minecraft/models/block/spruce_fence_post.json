@@ -1,0 +1,8 @@
+{
+	"format_version": "1.21.11",
+	"parent": "pspp:block/beam/vertical",
+	"textures": {
+		"0": "pspp:block/wood/2/beam",
+		"particle": "pspp:block/wood/2/beam"
+	}
+}

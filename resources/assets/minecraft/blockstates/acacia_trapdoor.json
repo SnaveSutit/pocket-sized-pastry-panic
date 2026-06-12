@@ -1,0 +1,36 @@
+{
+    "variants": {
+        "open=false,facing=north": {
+            "model": "pspp:block/wood/rot/22_5/full",
+            "y": 0
+        },
+        "open=false,facing=east": {
+            "model": "pspp:block/wood/rot/22_5/full",
+            "y": 90
+        },
+        "open=false,facing=south": {
+            "model": "pspp:block/wood/rot/22_5/full",
+            "y": 180
+        },
+        "open=false,facing=west": {
+            "model": "pspp:block/wood/rot/22_5/full",
+            "y": 270
+        },
+        "open=true,facing=north": {
+            "model": "pspp:block/wood/rot/67_5/full",
+            "y": 0
+        },
+        "open=true,facing=east": {
+            "model": "pspp:block/wood/rot/67_5/full",
+            "y": 90
+        },
+        "open=true,facing=south": {
+            "model": "pspp:block/wood/rot/67_5/full",
+            "y": 180
+        },
+        "open=true,facing=west": {
+            "model": "pspp:block/wood/rot/67_5/full",
+            "y": 270
+        }
+    }
+}

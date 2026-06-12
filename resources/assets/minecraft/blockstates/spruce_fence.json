@@ -3,7 +3,7 @@
         {
             "apply": [
                 {
-                    "model": "block/jungle_fence_post"
+                    "model": "block/spruce_fence_post"
                 }
             ]
         }

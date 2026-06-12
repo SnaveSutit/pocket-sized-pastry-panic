@@ -1,0 +1,18 @@
+{
+	"format_version": "1.21.11",
+	"textures": {
+		"0": "pspp:block/side",
+		"particle": "pspp:block/side"
+	},
+	"elements": [
+		{
+			"from": [-6.45997, 0, 17.52499],
+			"to": [7.55083, 16, 1.82499],
+			"rotation": {"angle": 26.56505, "axis": "y", "origin": [0.54543, 7.85, 16.75541]},
+			"faces": {
+				"south": {"uv": [16, 0, 0, 16], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [16, 16, 0, 0], "rotation": 90, "texture": "#0"}
+			}
+		}
+	]
+}

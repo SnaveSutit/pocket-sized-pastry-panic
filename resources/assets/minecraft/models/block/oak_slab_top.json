@@ -2,7 +2,7 @@
 	"format_version": "1.21.11",
 	"parent": "pspp:block/beam/horizontal",
 	"textures": {
-		"0": "pspp:block/wood/1/beam",
-		"particle": "pspp:block/wood/1/beam"
+		"0": "pspp:block/wood/0/beam",
+		"particle": "pspp:block/wood/0/beam"
 	}
 }

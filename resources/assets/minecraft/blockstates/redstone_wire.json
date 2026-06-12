@@ -1,5 +1,245 @@
 {
     "variants": {
+        "power=1,north=side,south=none,east=none,west=none": {
+            "model": "pspp:block/ao/45_0/side_bottom",
+            "y": 0
+        },
+        "power=1,north=none,south=none,east=side,west=none": {
+            "model": "pspp:block/ao/45_0/side_bottom",
+            "y": 90
+        },
+        "power=1,north=none,south=side,east=none,west=none": {
+            "model": "pspp:block/ao/45_0/side_bottom",
+            "y": 180
+        },
+        "power=1,north=none,south=none,east=none,west=side": {
+            "model": "pspp:block/ao/45_0/side_bottom",
+            "y": 270
+        },
+        "power=1,north=up,south=none,east=none,west=none": {
+            "model": "pspp:block/ao/45_0/side_top",
+            "y": 0
+        },
+        "power=1,north=none,south=none,east=up,west=none": {
+            "model": "pspp:block/ao/45_0/side_top",
+            "y": 90
+        },
+        "power=1,north=none,south=up,east=none,west=none": {
+            "model": "pspp:block/ao/45_0/side_top",
+            "y": 180
+        },
+        "power=1,north=none,south=none,east=none,west=up": {
+            "model": "pspp:block/ao/45_0/side_top",
+            "y": 270
+        },
+        "power=1,north=side,south=side,east=side,west=none": {
+            "model": "pspp:block/ao/45_0/corner_bottom",
+            "y": 0
+        },
+        "power=1,north=none,south=side,east=side,west=side": {
+            "model": "pspp:block/ao/45_0/corner_bottom",
+            "y": 90
+        },
+        "power=1,north=side,south=side,east=none,west=side": {
+            "model": "pspp:block/ao/45_0/corner_bottom",
+            "y": 180
+        },
+        "power=1,north=side,south=none,east=side,west=side": {
+            "model": "pspp:block/ao/45_0/corner_bottom",
+            "y": 270
+        },
+        "power=1,north=side,south=side,east=up,west=none": {
+            "model": "pspp:block/ao/45_0/corner_top",
+            "y": 0
+        },
+        "power=1,north=none,south=up,east=side,west=side": {
+            "model": "pspp:block/ao/45_0/corner_top",
+            "y": 90
+        },
+        "power=1,north=side,south=side,east=none,west=up": {
+            "model": "pspp:block/ao/45_0/corner_top",
+            "y": 180
+        },
+        "power=1,north=up,south=none,east=side,west=side": {
+            "model": "pspp:block/ao/45_0/corner_top",
+            "y": 270
+        },
+        "power=1,north=side,south=none,east=side,west=none": {
+            "model": "pspp:block/ao/45_0/up",
+            "y": 0
+        },
+        "power=1,north=none,south=side,east=side,west=none": {
+            "model": "pspp:block/ao/45_0/up",
+            "y": 90
+        },
+        "power=1,north=none,south=side,east=none,west=side": {
+            "model": "pspp:block/ao/45_0/up",
+            "y": 180
+        },
+        "power=1,north=side,south=none,east=none,west=side": {
+            "model": "pspp:block/ao/45_0/up",
+            "y": 270
+        },
+        "power=2,north=side,south=none,east=none,west=none": {
+            "model": "pspp:block/ao/22_5/side_bottom",
+            "y": 0
+        },
+        "power=2,north=none,south=none,east=side,west=none": {
+            "model": "pspp:block/ao/22_5/side_bottom",
+            "y": 90
+        },
+        "power=2,north=none,south=side,east=none,west=none": {
+            "model": "pspp:block/ao/22_5/side_bottom",
+            "y": 180
+        },
+        "power=2,north=none,south=none,east=none,west=side": {
+            "model": "pspp:block/ao/22_5/side_bottom",
+            "y": 270
+        },
+        "power=2,north=up,south=none,east=none,west=none": {
+            "model": "pspp:block/ao/22_5/side_top",
+            "y": 0
+        },
+        "power=2,north=none,south=none,east=up,west=none": {
+            "model": "pspp:block/ao/22_5/side_top",
+            "y": 90
+        },
+        "power=2,north=none,south=up,east=none,west=none": {
+            "model": "pspp:block/ao/22_5/side_top",
+            "y": 180
+        },
+        "power=2,north=none,south=none,east=none,west=up": {
+            "model": "pspp:block/ao/22_5/side_top",
+            "y": 270
+        },
+        "power=2,north=side,south=side,east=side,west=none": {
+            "model": "pspp:block/ao/22_5/corner_bottom",
+            "y": 0
+        },
+        "power=2,north=none,south=side,east=side,west=side": {
+            "model": "pspp:block/ao/22_5/corner_bottom",
+            "y": 90
+        },
+        "power=2,north=side,south=side,east=none,west=side": {
+            "model": "pspp:block/ao/22_5/corner_bottom",
+            "y": 180
+        },
+        "power=2,north=side,south=none,east=side,west=side": {
+            "model": "pspp:block/ao/22_5/corner_bottom",
+            "y": 270
+        },
+        "power=2,north=side,south=side,east=up,west=none": {
+            "model": "pspp:block/ao/22_5/corner_top",
+            "y": 0
+        },
+        "power=2,north=none,south=up,east=side,west=side": {
+            "model": "pspp:block/ao/22_5/corner_top",
+            "y": 90
+        },
+        "power=2,north=side,south=side,east=none,west=up": {
+            "model": "pspp:block/ao/22_5/corner_top",
+            "y": 180
+        },
+        "power=2,north=up,south=none,east=side,west=side": {
+            "model": "pspp:block/ao/22_5/corner_top",
+            "y": 270
+        },
+        "power=2,north=side,south=none,east=side,west=none": {
+            "model": "pspp:block/ao/22_5/up",
+            "y": 0
+        },
+        "power=2,north=none,south=side,east=side,west=none": {
+            "model": "pspp:block/ao/22_5/up",
+            "y": 90
+        },
+        "power=2,north=none,south=side,east=none,west=side": {
+            "model": "pspp:block/ao/22_5/up",
+            "y": 180
+        },
+        "power=2,north=side,south=none,east=none,west=side": {
+            "model": "pspp:block/ao/22_5/up",
+            "y": 270
+        },
+        "power=3,north=side,south=none,east=none,west=none": {
+            "model": "pspp:block/ao/67_5/side_bottom",
+            "y": 0
+        },
+        "power=3,north=none,south=none,east=side,west=none": {
+            "model": "pspp:block/ao/67_5/side_bottom",
+            "y": 90
+        },
+        "power=3,north=none,south=side,east=none,west=none": {
+            "model": "pspp:block/ao/67_5/side_bottom",
+            "y": 180
+        },
+        "power=3,north=none,south=none,east=none,west=side": {
+            "model": "pspp:block/ao/67_5/side_bottom",
+            "y": 270
+        },
+        "power=3,north=up,south=none,east=none,west=none": {
+            "model": "pspp:block/ao/67_5/side_top",
+            "y": 0
+        },
+        "power=3,north=none,south=none,east=up,west=none": {
+            "model": "pspp:block/ao/67_5/side_top",
+            "y": 90
+        },
+        "power=3,north=none,south=up,east=none,west=none": {
+            "model": "pspp:block/ao/67_5/side_top",
+            "y": 180
+        },
+        "power=3,north=none,south=none,east=none,west=up": {
+            "model": "pspp:block/ao/67_5/side_top",
+            "y": 270
+        },
+        "power=3,north=side,south=side,east=side,west=none": {
+            "model": "pspp:block/ao/67_5/corner_bottom",
+            "y": 0
+        },
+        "power=3,north=none,south=side,east=side,west=side": {
+            "model": "pspp:block/ao/67_5/corner_bottom",
+            "y": 90
+        },
+        "power=3,north=side,south=side,east=none,west=side": {
+            "model": "pspp:block/ao/67_5/corner_bottom",
+            "y": 180
+        },
+        "power=3,north=side,south=none,east=side,west=side": {
+            "model": "pspp:block/ao/67_5/corner_bottom",
+            "y": 270
+        },
+        "power=3,north=side,south=side,east=up,west=none": {
+            "model": "pspp:block/ao/67_5/corner_top",
+            "y": 0
+        },
+        "power=3,north=none,south=up,east=side,west=side": {
+            "model": "pspp:block/ao/67_5/corner_top",
+            "y": 90
+        },
+        "power=3,north=side,south=side,east=none,west=up": {
+            "model": "pspp:block/ao/67_5/corner_top",
+            "y": 180
+        },
+        "power=3,north=up,south=none,east=side,west=side": {
+            "model": "pspp:block/ao/67_5/corner_top",
+            "y": 270
+        },
+        "power=3,north=side,south=none,east=side,west=none": {
+            "model": "pspp:block/ao/67_5/up",
+            "y": 0
+        },
+        "power=3,north=none,south=side,east=side,west=none": {
+            "model": "pspp:block/ao/67_5/up",
+            "y": 90
+        },
+        "power=3,north=none,south=side,east=none,west=side": {
+            "model": "pspp:block/ao/67_5/up",
+            "y": 180
+        },
+        "power=3,north=side,south=none,east=none,west=side": {
+            "model": "pspp:block/ao/67_5/up",
+            "y": 270
+        },
         "power=0,north=side,south=side,east=side,west=side": [
             {
                 "model": "pspp:block/decal/flour/a",
