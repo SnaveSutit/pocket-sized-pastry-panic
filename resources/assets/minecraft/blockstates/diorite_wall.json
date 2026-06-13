@@ -1,0 +1,28 @@
+{
+    "variants": {
+        "north=none,south=tall,east=tall,west=none": {
+            "model": "pspp:block/fixture_corner",
+            "y": 0
+        },
+        "north=none,south=tall,east=none,west=tall": {
+            "model": "pspp:block/fixture_corner",
+            "y": 90
+        },
+        "north=tall,south=none,east=none,west=tall": {
+            "model": "pspp:block/fixture_corner",
+            "y": 180
+        },
+        "north=tall,south=none,east=tall,west=none": {
+            "model": "pspp:block/fixture_corner",
+            "y": 270
+        },
+        "north=none,south=none,east=tall,west=tall": {
+            "model": "pspp:block/fixture_side",
+            "y": 0
+        },
+        "north=tall,south=tall,east=none,west=none": {
+            "model": "pspp:block/fixture_side",
+            "y": 90
+        }
+    }
+}

@@ -3,30 +3,30 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/wood/2/main_a"
+                    "model": "pspp:block/tiles/plank/2/main_a"
                 },
                 {
-                    "model": "pspp:block/wood/2/main_b"
+                    "model": "pspp:block/tiles/plank/2/main_b"
                 },
                 {
-                    "model": "pspp:block/wood/2/main_c"
+                    "model": "pspp:block/tiles/plank/2/main_c"
                 }
             ]
         },
         {
             "apply": [
                 {
-                    "model": "pspp:block/wood/2/edge_a",
+                    "model": "pspp:block/tiles/plank/2/edge_a",
                     "x": 0,
                     "uvlock": true
                 },
                 {
-                    "model": "pspp:block/wood/2/edge_b",
+                    "model": "pspp:block/tiles/plank/2/edge_b",
                     "x": 0,
                     "uvlock": true
                 },
                 {
-                    "model": "pspp:block/wood/2/edge_c",
+                    "model": "pspp:block/tiles/plank/2/edge_c",
                     "x": 0,
                     "uvlock": true
                 }
@@ -38,29 +38,17 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/wood/2/edge_none",
-                    "x": 0,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "up": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/edge_a",
+                    "model": "pspp:block/tiles/plank/2/edge_a",
                     "x": 180,
                     "uvlock": true
                 },
                 {
-                    "model": "pspp:block/wood/2/edge_b",
+                    "model": "pspp:block/tiles/plank/2/edge_b",
                     "x": 180,
                     "uvlock": true
                 },
                 {
-                    "model": "pspp:block/wood/2/edge_c",
+                    "model": "pspp:block/tiles/plank/2/edge_c",
                     "x": 180,
                     "uvlock": true
                 }
@@ -72,29 +60,17 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/wood/2/edge_none",
-                    "x": 180,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "down": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/edge_a",
+                    "model": "pspp:block/tiles/plank/2/edge_a",
                     "x": 90,
                     "uvlock": true
                 },
                 {
-                    "model": "pspp:block/wood/2/edge_b",
+                    "model": "pspp:block/tiles/plank/2/edge_b",
                     "x": 90,
                     "uvlock": true
                 },
                 {
-                    "model": "pspp:block/wood/2/edge_c",
+                    "model": "pspp:block/tiles/plank/2/edge_c",
                     "x": 90,
                     "uvlock": true
                 }
@@ -106,29 +82,17 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/wood/2/edge_none",
-                    "x": 90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "north": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/edge_a",
+                    "model": "pspp:block/tiles/plank/2/edge_a",
                     "x": -90,
                     "uvlock": true
                 },
                 {
-                    "model": "pspp:block/wood/2/edge_b",
+                    "model": "pspp:block/tiles/plank/2/edge_b",
                     "x": -90,
                     "uvlock": true
                 },
                 {
-                    "model": "pspp:block/wood/2/edge_c",
+                    "model": "pspp:block/tiles/plank/2/edge_c",
                     "x": -90,
                     "uvlock": true
                 }
@@ -140,29 +104,17 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/wood/2/edge_none",
-                    "x": -90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "south": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/edge_a",
+                    "model": "pspp:block/tiles/plank/2/edge_a",
                     "z": 90,
                     "uvlock": true
                 },
                 {
-                    "model": "pspp:block/wood/2/edge_b",
+                    "model": "pspp:block/tiles/plank/2/edge_b",
                     "z": 90,
                     "uvlock": true
                 },
                 {
-                    "model": "pspp:block/wood/2/edge_c",
+                    "model": "pspp:block/tiles/plank/2/edge_c",
                     "z": 90,
                     "uvlock": true
                 }
@@ -174,548 +126,23 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/wood/2/edge_none",
-                    "z": 90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "east": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/edge_a",
+                    "model": "pspp:block/tiles/plank/2/edge_a",
                     "z": -90,
                     "uvlock": true
                 },
                 {
-                    "model": "pspp:block/wood/2/edge_b",
+                    "model": "pspp:block/tiles/plank/2/edge_b",
                     "z": -90,
                     "uvlock": true
                 },
                 {
-                    "model": "pspp:block/wood/2/edge_c",
+                    "model": "pspp:block/tiles/plank/2/edge_c",
                     "z": -90,
                     "uvlock": true
                 }
             ],
             "when": {
                 "west": "true"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/edge_none",
-                    "z": -90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "west": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_a",
-                    "z": 0,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "up": "true",
-                "east": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_b",
-                    "z": 0,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "up": "false",
-                "east": "true"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_none",
-                    "z": 0,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "up": "false",
-                "east": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_a",
-                    "z": 90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "down": "false",
-                "east": "true"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_b",
-                    "z": 90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "down": "true",
-                "east": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_none",
-                    "z": 90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "down": "false",
-                "east": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_a",
-                    "z": 180,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "down": "true",
-                "west": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_b",
-                    "z": 180,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "down": "false",
-                "west": "true"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_none",
-                    "z": 180,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "down": "false",
-                "west": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_a",
-                    "z": 270,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "up": "false",
-                "west": "true"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_b",
-                    "z": 270,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "up": "true",
-                "west": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_none",
-                    "z": 270,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "up": "false",
-                "west": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_a",
-                    "y": 90,
-                    "x": 0,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "up": "true",
-                "south": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_b",
-                    "y": 90,
-                    "x": 0,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "up": "false",
-                "south": "true"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_none",
-                    "y": 90,
-                    "x": 0,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "up": "false",
-                "south": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_a",
-                    "x": 90,
-                    "y": 90,
-                    "z": 90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "down": "true",
-                "south": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_b",
-                    "x": 90,
-                    "y": 90,
-                    "z": 90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "down": "false",
-                "south": "true"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_none",
-                    "x": 90,
-                    "y": 90,
-                    "z": 90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "down": "false",
-                "south": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_a",
-                    "x": -90,
-                    "y": -90,
-                    "z": 90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "down": "true",
-                "north": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_b",
-                    "x": -90,
-                    "y": -90,
-                    "z": 90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "down": "false",
-                "north": "true"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_none",
-                    "x": -90,
-                    "y": -90,
-                    "z": 90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "down": "false",
-                "north": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_a",
-                    "x": -90,
-                    "y": -90,
-                    "z": -90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "up": "true",
-                "north": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_b",
-                    "x": -90,
-                    "y": -90,
-                    "z": -90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "up": "false",
-                "north": "true"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_none",
-                    "x": -90,
-                    "y": -90,
-                    "z": -90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "up": "false",
-                "north": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_a",
-                    "x": -90,
-                    "y": 0,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "south": "true",
-                "east": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_b",
-                    "x": -90,
-                    "y": 0,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "south": "false",
-                "east": "true"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_none",
-                    "x": -90,
-                    "y": 0,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "south": "false",
-                "east": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_a",
-                    "x": -90,
-                    "y": -90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "north": "false",
-                "east": "true"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_b",
-                    "x": -90,
-                    "y": -90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "north": "true",
-                "east": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_none",
-                    "x": -90,
-                    "y": -90,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "north": "false",
-                "east": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_a",
-                    "x": -90,
-                    "y": -180,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "north": "true",
-                "west": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_b",
-                    "x": -90,
-                    "y": -180,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "north": "false",
-                "west": "true"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_none",
-                    "x": -90,
-                    "y": -180,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "north": "false",
-                "west": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_a",
-                    "x": -90,
-                    "y": -270,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "south": "false",
-                "west": "true"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_b",
-                    "x": -90,
-                    "y": -270,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "south": "true",
-                "west": "false"
-            }
-        },
-        {
-            "apply": [
-                {
-                    "model": "pspp:block/wood/2/bend_none",
-                    "x": -90,
-                    "y": -270,
-                    "uvlock": true
-                }
-            ],
-            "when": {
-                "south": "false",
-                "west": "false"
             }
         }
     ]

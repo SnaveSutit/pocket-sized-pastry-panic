@@ -1,0 +1,9 @@
+{
+	"format_version": "1.21.11",
+	"parent": "pspp:block/beams/tilt",
+	"textures": {
+		"0": "pspp:block/plank/2/main_a",
+		"1": "pspp:block/plank/2/edge_a",
+		"particle": "pspp:block/plank/2/main_a"
+	}
+}

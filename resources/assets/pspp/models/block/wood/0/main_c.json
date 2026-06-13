@@ -1,8 +1,0 @@
-{
-	"format_version": "1.21.11",
-	"parent": "pspp:block/wood/main",
-	"textures": {
-		"0": "pspp:block/wood/0/main_c",
-		"particle": "pspp:block/wood/0/main_c"
-	}
-}

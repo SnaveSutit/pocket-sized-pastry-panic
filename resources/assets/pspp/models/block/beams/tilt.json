@@ -1,0 +1,39 @@
+{
+	"format_version": "1.21.11",
+	"textures": {
+		"0": "pspp:block/---",
+		"1": "pspp:block/---",
+		"particle": "pspp:block/---"
+	},
+	"elements": [
+		{
+			"from": [1, -1.94113, -3.31371],
+			"to": [15, 20.68629, 4.68629],
+			"rotation": {"angle": 45, "axis": "x", "origin": [0, 4.68629, 4.68629]},
+			"faces": {
+				"north": {"uv": [15, 0, 1, 16], "texture": "#0"},
+				"east": {"uv": [12, 0, 4, 16], "texture": "#0"},
+				"south": {"uv": [15, 0, 1, 16], "texture": "#0"},
+				"west": {"uv": [12, 0, 4, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [0.9, -4.68629, 3.21371],
+			"to": [3, 17.94113, 5.31371],
+			"rotation": {"angle": 45, "axis": "x", "origin": [0, 11.31371, 11.31371]},
+			"faces": {
+				"north": {"uv": [3, 11, 1, 5], "texture": "#1"},
+				"west": {"uv": [15, 11, 13, 5], "texture": "#1"}
+			}
+		},
+		{
+			"from": [13, -4.68629, 3.21371],
+			"to": [15.1, 17.94113, 5.31371],
+			"rotation": {"angle": 45, "axis": "x", "origin": [16, 11.31371, 11.31371]},
+			"faces": {
+				"north": {"uv": [1, 11, 3, 5], "texture": "#1"},
+				"east": {"uv": [13, 11, 15, 5], "texture": "#1"}
+			}
+		}
+	]
+}

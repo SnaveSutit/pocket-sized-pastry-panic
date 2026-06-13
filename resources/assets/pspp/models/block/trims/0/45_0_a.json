@@ -1,0 +1,12 @@
+{
+	"format_version": "1.21.11",
+	"parent": "pspp:block/trims/45_0",
+	"textures": {
+		"0": "pspp:block/plank/0/main_a",
+		"1": "pspp:block/plank/0/half",
+		"2": "pspp:block/plank/0/edge_c",
+		"3": "pspp:block/plank/0/edge_c",
+		"4": "pspp:block/---",
+		"particle": "pspp:block/plank/0/main_a"
+	}
+}

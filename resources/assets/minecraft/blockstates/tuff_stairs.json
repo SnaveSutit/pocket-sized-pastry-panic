@@ -1,0 +1,433 @@
+{
+    "multipart": [
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/main_a"
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/main_b"
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/main_c"
+                }
+            ]
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": 0,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "north",
+                "shape": "outer_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": -90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": -90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": -90,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "north",
+                "shape": "outer_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": 0,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "north",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": -90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": -90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": -90,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "north",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": 180,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "south",
+                "shape": "outer_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": 90,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "south",
+                "shape": "outer_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": 180,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "south",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": 90,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "south",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": 90,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "east",
+                "shape": "outer_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": 0,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "east",
+                "shape": "outer_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": 90,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": 90,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "east",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": 0,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": 0,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "east",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": 270,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": 270,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": 270,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "west",
+                "shape": "outer_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": 180,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "west",
+                "shape": "outer_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": 270,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": 270,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": 270,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "west",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_a",
+                    "x": 90,
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_b",
+                    "x": 90,
+                    "y": 180,
+                    "uvlock": true
+                },
+                {
+                    "model": "pspp:block/tiles/floor/0/edge_c",
+                    "x": 90,
+                    "y": 180,
+                    "uvlock": true
+                }
+            ],
+            "when": {
+                "facing": "west",
+                "shape": "inner_left"
+            }
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "variants": {
+        "north=tall,south=none,east=none,west=none,up=true": {
+            "model": "pspp:block/trims/1/45_0_a",
+            "y": 0
+        },
+        "north=none,south=none,east=tall,west=none,up=true": {
+            "model": "pspp:block/trims/1/45_0_a",
+            "y": 90
+        },
+        "north=none,south=tall,east=none,west=none,up=true": {
+            "model": "pspp:block/trims/1/45_0_a",
+            "y": 180
+        },
+        "north=none,south=none,east=none,west=tall,up=true": {
+            "model": "pspp:block/trims/1/45_0_a",
+            "y": 270
+        },
+        "north=tall,south=none,east=none,west=none,up=false": {
+            "model": "pspp:block/trims/1/45_0_b",
+            "y": 0
+        },
+        "north=none,south=none,east=tall,west=none,up=false": {
+            "model": "pspp:block/trims/1/45_0_b",
+            "y": 90
+        },
+        "north=none,south=tall,east=none,west=none,up=false": {
+            "model": "pspp:block/trims/1/45_0_b",
+            "y": 180
+        },
+        "north=none,south=none,east=none,west=tall,up=false": {
+            "model": "pspp:block/trims/1/45_0_b",
+            "y": 270
+        },
+        "north=tall,south=none,east=low,west=none,up=true": {
+            "model": "pspp:block/trims/1/22_5_a",
+            "y": 0
+        },
+        "north=none,south=low,east=tall,west=none,up=true": {
+            "model": "pspp:block/trims/1/22_5_a",
+            "y": 90
+        },
+        "north=none,south=tall,east=none,west=low,up=true": {
+            "model": "pspp:block/trims/1/22_5_a",
+            "y": 180
+        },
+        "north=low,south=none,east=none,west=tall,up=true": {
+            "model": "pspp:block/trims/1/22_5_a",
+            "y": 270
+        },
+        "north=tall,south=none,east=low,west=none,up=false": {
+            "model": "pspp:block/trims/1/22_5_b",
+            "y": 0
+        },
+        "north=none,south=low,east=tall,west=none,up=false": {
+            "model": "pspp:block/trims/1/22_5_b",
+            "y": 90
+        },
+        "north=none,south=tall,east=none,west=low,up=false": {
+            "model": "pspp:block/trims/1/22_5_b",
+            "y": 180
+        },
+        "north=low,south=none,east=none,west=tall,up=false": {
+            "model": "pspp:block/trims/1/22_5_b",
+            "y": 270
+        },
+        "north=tall,south=none,east=none,west=low,up=true": {
+            "model": "pspp:block/trims/1/22_5_a",
+            "y": 0,
+            "z": 180
+        },
+        "north=low,south=none,east=tall,west=none,up=true": {
+            "model": "pspp:block/trims/1/22_5_a",
+            "y": 90,
+            "z": 180
+        },
+        "north=none,south=tall,east=low,west=none,up=true": {
+            "model": "pspp:block/trims/1/22_5_a",
+            "y": 180,
+            "z": 180
+        },
+        "north=none,south=low,east=none,west=tall,up=true": {
+            "model": "pspp:block/trims/1/22_5_a",
+            "y": 270,
+            "z": 180
+        },
+	"north=tall,south=none,east=none,west=low,up=false": {
+            "model": "pspp:block/trims/1/22_5_b",
+            "y": 0,
+            "z": 180
+        },
+        "north=low,south=none,east=tall,west=none,up=false": {
+            "model": "pspp:block/trims/1/22_5_b",
+            "y": 90,
+            "z": 180
+        },
+        "north=none,south=tall,east=low,west=none,up=false": {
+            "model": "pspp:block/trims/1/22_5_b",
+            "y": 180,
+            "z": 180
+        },
+        "north=none,south=low,east=none,west=tall,up=false": {
+            "model": "pspp:block/trims/1/22_5_b",
+            "y": 270,
+            "z": 180
+        }
+    }
+}
