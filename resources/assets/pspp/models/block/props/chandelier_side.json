@@ -2,14 +2,15 @@
 	"format_version": "1.21.11",
 	"texture_size": [32, 16],
 	"textures": {
-		"0": "pspp:block/fixture",
-		"particle": "pspp:block/fixture"
+		"0": "pspp:block/chandelier",
+		"particle": "pspp:block/chandelier"
 	},
 	"elements": [
 		{
 			"from": [0, 0, 5],
 			"to": [16, 16, 11],
 			"rotation": {"angle": 0, "axis": "y", "origin": [6, 0, 6]},
+			"light_emission": 1,
 			"faces": {
 				"north": {"uv": [0, 0, 8, 16], "texture": "#0"},
 				"south": {"uv": [0, 0, 8, 16], "texture": "#0"},

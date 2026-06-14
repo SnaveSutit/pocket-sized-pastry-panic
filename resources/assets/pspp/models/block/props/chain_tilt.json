@@ -2,14 +2,15 @@
 	"format_version": "1.21.11",
 	"texture_size": [32, 16],
 	"textures": {
-		"0": "pspp:block/chain",
-		"particle": "pspp:block/chain"
+		"0": "pspp:block/chain_a",
+		"particle": "pspp:block/chain_a"
 	},
 	"elements": [
 		{
-			"from": [-3.49073, -7.98146, -3.49073],
-			"to": [0.50927, 31.21037, 0.50927],
+			"from": [-3.24073, -7.98146, -3.24073],
+			"to": [0.25927, 31.21037, 0.25927],
 			"rotation": {"x": 24.20343, "y": 5.26439, "z": -24.20343, "origin": [4.63299, -0.63299, 4.63299]},
+			"light_emission": 1,
 			"faces": {
 				"north": {"uv": [0, 0, 16, 4], "rotation": 90, "texture": "#0"},
 				"east": {"uv": [0, 0, 16, 4], "rotation": 90, "texture": "#0"},
@@ -23,6 +24,7 @@
 			"from": [-3.69073, -7.98146, -3.79073],
 			"to": [0.70927, 31.21037, 0.70927],
 			"rotation": {"x": 24.20343, "y": 5.26439, "z": -24.20343, "origin": [4.63299, -0.63299, 4.63299]},
+			"light_emission": 1,
 			"faces": {
 				"north": {"uv": [16, 10, 0, 4], "rotation": 90, "texture": "#0"},
 				"east": {"uv": [16, 10, 0, 4], "rotation": 90, "texture": "#0"},

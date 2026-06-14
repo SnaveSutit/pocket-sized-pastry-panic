@@ -1,0 +1,369 @@
+{
+    "multipart": [
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/main_a"
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/main_b"
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/main_c"
+                }
+            ]
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "x": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "x": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "x": 0
+                }
+                
+            ],
+            "when": {
+                "facing": "south",
+                "half": "top",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "z": -90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "z": -90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "z": -90
+                }
+                
+            ],
+            "when": {
+                "facing": "south",
+                "half": "bottom",
+                "shape": "inner_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "x": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "x": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "x": 0
+                }
+                
+            ],
+            "when": {
+                "facing": "south",
+                "half": "top",
+                "shape": "inner_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "z": -90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "z": -90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "z": -90
+                }
+                
+            ],
+            "when": {
+                "facing": "south",
+                "half": "top",
+                "shape": "inner_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "x": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "x": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "x": 0
+                }
+                
+            ],
+            "when": {
+                "facing": "west",
+                "half": "top",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "x": 90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "x": 90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "x": 90
+                }
+                
+            ],
+            "when": {
+                "facing": "west",
+                "half": "bottom",
+                "shape": "inner_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "x": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "x": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "x": 0
+                }
+                
+            ],
+            "when": {
+                "facing": "west",
+                "half": "top",
+                "shape": "inner_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "x": 90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "x": 90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "x": 90
+                }
+                
+            ],
+            "when": {
+                "facing": "west",
+                "half": "top",
+                "shape": "inner_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "z": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "z": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "z": 0
+                }
+                
+            ],
+            "when": {
+                "facing": "north",
+                "half": "top",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "z": 90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "z": 90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "z": 90
+                }
+                
+            ],
+            "when": {
+                "facing": "north",
+                "half": "bottom",
+                "shape": "inner_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "z": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "z": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "z": 0
+                }
+                
+            ],
+            "when": {
+                "facing": "north",
+                "half": "top",
+                "shape": "inner_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "z": 90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "z": 90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "z": 90
+                }
+                
+            ],
+            "when": {
+                "facing": "north",
+                "half": "top",
+                "shape": "inner_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "x": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "x": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "x": 0
+                }
+                
+            ],
+            "when": {
+                "facing": "east",
+                "half": "top",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "x": -90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "x": -90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "x": -90
+                }
+                
+            ],
+            "when": {
+                "facing": "east",
+                "half": "bottom",
+                "shape": "inner_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "x": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "x": 0
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "x": 0
+                }
+                
+            ],
+            "when": {
+                "facing": "east",
+                "half": "top",
+                "shape": "inner_right"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "x": -90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "x": -90
+                },
+                {
+                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "x": -90
+                }
+                
+            ],
+            "when": {
+                "facing": "east",
+                "half": "top",
+                "shape": "inner_right"
+            }
+        }
+    ]
+}

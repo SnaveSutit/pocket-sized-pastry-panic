@@ -1,28 +1,78 @@
 {
     "variants": {
         "north=none,south=tall,east=tall,west=none": {
-            "model": "pspp:block/fixture_corner",
+            "model": "pspp:block/props/chandelier_bend",
             "y": 0
         },
         "north=none,south=tall,east=none,west=tall": {
-            "model": "pspp:block/fixture_corner",
+            "model": "pspp:block/props/chandelier_bend",
             "y": 90
         },
         "north=tall,south=none,east=none,west=tall": {
-            "model": "pspp:block/fixture_corner",
+            "model": "pspp:block/props/chandelier_bend",
             "y": 180
         },
         "north=tall,south=none,east=tall,west=none": {
-            "model": "pspp:block/fixture_corner",
+            "model": "pspp:block/props/chandelier_bend",
             "y": 270
         },
         "north=none,south=none,east=tall,west=tall": {
-            "model": "pspp:block/fixture_side",
+            "model": "pspp:block/props/chandelier_side",
             "y": 0
         },
         "north=tall,south=tall,east=none,west=none": {
-            "model": "pspp:block/fixture_side",
+            "model": "pspp:block/props/chandelier_side",
             "y": 90
-        }
+        },
+        "north=tall,south=tall,east=tall,west=tall,up=true": {
+            "model": "pspp:block/props/chain_up",
+            "y": 0
+        },
+        "north=low,south=none,east=none,west=none,up=false": {
+            "model": "pspp:block/props/chain_tilt",
+            "y": 0
+        },
+        "north=none,south=none,east=low,west=none,up=false": {
+            "model": "pspp:block/props/chain_tilt",
+            "y": 90
+        },
+        "north=none,south=low,east=none,west=none,up=false": {
+            "model": "pspp:block/props/chain_tilt",
+            "y": 180
+        },
+        "north=none,south=none,east=none,west=low,up=false": {
+            "model": "pspp:block/props/chain_tilt",
+            "y": 270
+        },
+        "north=low,south=none,east=none,west=none": {
+            "model": "pspp:block/props/candle_holder",
+            "y": 0
+        },
+        "north=none,south=none,east=low,west=none": {
+            "model": "pspp:block/props/candle_holder",
+            "y": 90
+        },
+        "north=none,south=low,east=none,west=none": {
+            "model": "pspp:block/props/candle_holder",
+            "y": 180
+        },
+        "north=none,south=none,east=none,west=low": {
+            "model": "pspp:block/props/candle_holder",
+            "y": 270
+        },
+        "north=none,south=none,east=none,west=none,up=true": [
+            {
+            "model": "pspp:block/props/candle/a",
+            "y": 0
+            },
+            {
+            "model": "pspp:block/props/candle/b",
+            "y": 0
+            },
+            {
+            "model": "pspp:block/props/candle/c",
+            "y": 0
+            }
+        ]
     }
 }

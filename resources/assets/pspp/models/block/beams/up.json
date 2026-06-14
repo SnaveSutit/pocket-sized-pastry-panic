@@ -9,6 +9,7 @@
 		{
 			"from": [2, 0, 2],
 			"to": [14, 16, 14],
+			"light_emission": 1,
 			"faces": {
 				"north": {"uv": [2, 0, 14, 16], "texture": "#0"},
 				"east": {"uv": [2, 0, 14, 16], "texture": "#0"},
@@ -21,6 +22,7 @@
 		{
 			"from": [12.1, 0, 1.9],
 			"to": [14.1, 16, 3.9],
+			"light_emission": 1,
 			"faces": {
 				"north": {"uv": [1, 2, 3, 14], "texture": "#1"},
 				"east": {"uv": [3, 2, 1, 14], "texture": "#1"}
@@ -30,6 +32,7 @@
 			"from": [1.9, 0, 1.9],
 			"to": [3.9, 16, 3.9],
 			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
+			"light_emission": 1,
 			"faces": {
 				"north": {"uv": [3, 2, 1, 14], "texture": "#1"},
 				"west": {"uv": [1, 2, 3, 14], "texture": "#1"}
@@ -39,6 +42,7 @@
 			"from": [12.1, 0, 12.1],
 			"to": [14.1, 16, 14.1],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 16]},
+			"light_emission": 1,
 			"faces": {
 				"east": {"uv": [1, 2, 3, 14], "texture": "#1"},
 				"south": {"uv": [3, 2, 1, 14], "texture": "#1"}
@@ -48,6 +52,7 @@
 			"from": [1.9, 0, 12.1],
 			"to": [3.9, 16, 14.1],
 			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 16]},
+			"light_emission": 1,
 			"faces": {
 				"south": {"uv": [1, 2, 3, 14], "texture": "#1"},
 				"west": {"uv": [3, 2, 1, 14], "texture": "#1"}

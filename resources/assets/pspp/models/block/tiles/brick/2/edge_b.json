@@ -1,0 +1,8 @@
+{
+	"format_version": "1.21.11",
+	"parent": "pspp:block/tiles/edge",
+	"textures": {
+		"0": "pspp:block/brick/2/edge_b",
+		"particle": "pspp:block/brick/2/edge_b"
+	}
+}
