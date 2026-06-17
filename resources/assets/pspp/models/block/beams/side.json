@@ -1,8 +1,8 @@
 {
 	"format_version": "1.21.11",
 	"textures": {
-		"0": "pspp:block/dummy",
-		"1": "pspp:block/dummy"
+		"0": "pspp:block/---",
+		"1": "pspp:block/---"
 	},
 	"elements": [
 		{

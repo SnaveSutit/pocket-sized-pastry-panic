@@ -1,0 +1,26 @@
+{
+    "variants": {
+        "north=low,south=none,east=none,west=none,up=true": [
+            {
+                "model": "pspp:block/props/jar/0/a"
+            },
+            {
+                "model": "pspp:block/props/jar/0/b"
+            },
+            {
+                "model": "pspp:block/props/jar/0/c"
+            }
+        ],
+        "north=low,south=none,east=none,west=none,up=false": [
+            {
+                "model": "pspp:block/props/jar/1/a"
+            },
+            {
+                "model": "pspp:block/props/jar/1/b"
+            },
+            {
+                "model": "pspp:block/props/jar/1/c"
+            }
+        ]
+    }
+}

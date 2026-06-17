@@ -1,0 +1,7 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "pspp:item/fade",
+    "tints": [{ "type": "minecraft:constant", "value": 66046 }]
+  }
+}

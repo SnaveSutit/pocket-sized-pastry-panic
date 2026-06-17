@@ -1,0 +1,8 @@
+{
+	"format_version": "1.21.11",
+	"parent": "pspp:item/props/plate/0",
+	"textures": {
+		"0": "pspp:item/plate/c",
+		"particle": "pspp:item/plate/c"
+	}
+}

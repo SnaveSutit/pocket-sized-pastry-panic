@@ -1,0 +1,7 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "pspp:item/props/plate/0/a",
+    "tints": [{ "type": "minecraft:constant", "value": 66046 }]
+  }
+}

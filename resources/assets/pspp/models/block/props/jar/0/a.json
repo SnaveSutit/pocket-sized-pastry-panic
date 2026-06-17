@@ -1,0 +1,8 @@
+{
+	"format_version": "1.21.11",
+	"parent": "pspp:block/props/jar/0",
+	"textures": {
+		"1": "pspp:block/jar/a",
+		"particle": "pspp:block/jar/a"
+	}
+}

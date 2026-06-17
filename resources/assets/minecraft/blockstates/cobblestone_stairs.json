@@ -1,0 +1,72 @@
+{
+    "multipart": [
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/trims/brick/0/22_5_a",
+                    "x": -90
+                }
+            ],
+            "when": {
+                "facing": "east",
+                "half": "bottom",
+                "shape": "straight"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/trims/brick/0/22_5_a",
+                    "y": 180,
+                    "x": -90
+                }
+            ],
+            "when": {
+                "facing": "west",
+                "half": "bottom",
+                "shape": "straight"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/trims/brick/0/22_5_b",
+                    "x": -90
+                }
+            ],
+            "when": {
+                "facing": "east",
+                "half": "bottom",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/trims/brick/0/22_5_b",
+                    "y": 180,
+                    "x": -90
+                }
+            ],
+            "when": {
+                "facing": "west",
+                "half": "bottom",
+                "shape": "inner_left"
+            }
+        },
+        {
+            "apply": [
+                {
+                    "model": "pspp:block/trims/brick/0/22_5_b",
+                    "y": 90,
+                    "x": 90
+                }
+            ],
+            "when": {
+                "facing": "south",
+                "half": "top",
+                "shape": "straight"
+            }
+        }
+    ]
+}
