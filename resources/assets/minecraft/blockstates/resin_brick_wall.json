@@ -13,13 +13,52 @@
         ],
         "north=low,south=none,east=none,west=none,up=false": [
             {
-                "model": "pspp:block/props/jar/1/a"
+                "model": "pspp:block/props/jar/1/a",
+                "y": 0
             },
             {
-                "model": "pspp:block/props/jar/1/b"
+                "model": "pspp:block/props/jar/1/a",
+                "y": 90
             },
             {
-                "model": "pspp:block/props/jar/1/c"
+                "model": "pspp:block/props/jar/1/a",
+                "y": 180
+            },
+            {
+                "model": "pspp:block/props/jar/1/a",
+                "y": 270
+            },
+            {
+                "model": "pspp:block/props/jar/1/b",
+                "y": 0
+            },
+            {
+                "model": "pspp:block/props/jar/1/b",
+                "y": 90
+            },
+            {
+                "model": "pspp:block/props/jar/1/b",
+                "y": 180
+            },
+            {
+                "model": "pspp:block/props/jar/1/b",
+                "y": 270
+            },
+            {
+                "model": "pspp:block/props/jar/1/c",
+                "y": 0
+            },
+            {
+                "model": "pspp:block/props/jar/1/c",
+                "y": 90
+            },
+            {
+                "model": "pspp:block/props/jar/1/c",
+                "y": 180
+            },
+            {
+                "model": "pspp:block/props/jar/1/c",
+                "y": 270
             }
         ]
     }
