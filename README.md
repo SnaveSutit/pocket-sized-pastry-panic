@@ -1,29 +1,30 @@
-# world-template
-An advanced Minecraft world template for map makers
+# Pocket-sized Pastry Panic
 
-# OS Compatability
-This template is **only** compatible with Windows 10 and Windows 11 due to the use of Powershell. This may change in the future.
+A Minecraft datapack + resource pack map built with [MC-Build](https://github.com/mc-build/mc-build).
 
 # Requirements
-You must have these installed for this template's scripts to function properly.
-- [7zip](https://www.7-zip.org/)
-- [Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- [yarn](https://classic.yarnpkg.com/lang/en/docs/install) or [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- [Bun](https://bun.sh)
+- [PackSquash](https://github.com/ComunidadAylas/PackSquash) available on your `PATH`
+- `zip` available on your `PATH`
 
-# Setting up your world
-How to initialize the template.
-- Create a new repo using this template.
-- Run `yarn install` to install dependancies.
-- Then setup the repo with `yarn setup`.
-
-## Creating a Data Pack
-You can create a brand-new Data Pack from a template via `yarn create_datapack`.
-
-## Adding other Data Packs
-If you have some pre-made Data Packs you'd like to include, Simply add them to the `datapacks` folder, and register them by running `yarn scan_datapacks`.
+# Setting up
+- Run `bun install` to install dependencies.
 
 # Developing
-You can run `yarn dev:datapack-id` to start MC-Build for a specific Data Pack.
+- `bun run dev` starts MC-Build in watch mode for the `map` data pack.
+
+Data packs live under `datapacks/`; each one is its own MC-Build project (`src/`, `mcb.config.cjs`, etc.) built independently. The resource pack lives under `resources/`.
 
 # Packaging
-If you run `yarn package` the packaging script will automatically clean, compile, combine and zip the world, Resource Pack, and Data Packs into the `dist/` folder.
+Running `bun run package` (`.scripts/squash_and_pack.ts`) will:
+1. Build every data pack under `datapacks/` with MC-Build.
+2. Optimize each built data pack and the resource pack with PackSquash.
+3. Assemble the `world/` save (data, region, etc., excluding player-specific and generated files) together with the squashed data packs and resource pack into a distributable world zip.
+
+Output is written to `dist/`:
+- `dist/datapacks/<name>.zip` — each squashed data pack
+- `dist/<project name> Resource Pack.zip` — the squashed resource pack
+- `dist/<project name>.zip` — the packaged world, ready to distribute
+
+# Releasing
+The `Package and Release` GitHub Actions workflow (`.github/workflows/release.yml`) can be triggered manually (Actions tab → Run workflow) with a tag name to build the map and resource pack zips and publish them as a GitHub release.

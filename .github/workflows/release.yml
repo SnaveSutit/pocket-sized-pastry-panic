@@ -1,0 +1,55 @@
+name: Package and Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag (e.g. v1.0.0)'
+        required: true
+        type: string
+      prerelease:
+        description: 'Mark as a pre-release'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+env:
+  # PackSquash version to install for the "Install PackSquash" step below.
+  # Pinned rather than tracking "latest" since options file format changes
+  # between PackSquash releases can break the build without warning.
+  PACKSQUASH_VERSION: v0.4.1
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0 # A non-shallow repository clone is required by PackSquash
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Install PackSquash
+        run: |
+          curl -sL -o packsquash.zip "https://github.com/ComunidadAylas/PackSquash/releases/download/${PACKSQUASH_VERSION}/packsquash-x86_64-unknown-linux-musl.zip"
+          sudo unzip -o packsquash.zip packsquash -d /usr/local/bin
+          sudo chmod +x /usr/local/bin/packsquash
+
+      - name: Build and package
+        run: bun run package
+
+      - name: Create release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ inputs.tag }}
+          name: ${{ inputs.tag }}
+          prerelease: ${{ inputs.prerelease }}
+          files: dist/*.zip
