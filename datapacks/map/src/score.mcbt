@@ -155,3 +155,4 @@ template op {
 		scoreboard players operation <%name1%> <%objective1%> <%operation%> <%name2%> <%objective2%>
 	}
 }
+

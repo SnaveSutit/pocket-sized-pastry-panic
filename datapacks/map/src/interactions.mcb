@@ -2,6 +2,11 @@ function load minecraft:load {
 	scoreboard objectives add <%config.internalScoreboardName%> dummy
 }
 
+<%%
+	global.root = context.namespace + (context.path.length > 0 ? ':' + context.path.join('/') : '')
+	config.interactionsNamespace ??= 'snavesutit'
+%%>
+
 REPEAT (['right', 'left']) as direction {
 	dir <%direction%>_click {
 		advancement trigger {
@@ -22,12 +27,12 @@ REPEAT (['right', 'left']) as direction {
 
 		function on {
 			advancement revoke @s only <%context.namespace + ':' + context.path.join('/')%>/trigger
-			tag @s add interactions.interacting_player
+			tag @s add <%config.interactionsNamespace%>.interactions.interacting_player
 			execute \
-				as @e[type=interaction, tag=interactions.interactable, distance=..8] \
+				as @e[type=interaction, tag=<%config.interactionsNamespace%>.interactions.interactable, distance=..8] \
 				if data entity @s <%direction === 'right' ? 'interaction' : 'attack'%> \
 				run function ./check
-			tag @s remove interactions.interacting_player
+			tag @s remove <%config.interactionsNamespace%>.interactions.interacting_player
 		}
 
 		function check {
@@ -41,10 +46,10 @@ REPEAT (['right', 'left']) as direction {
 			scoreboard players set #check <%config.internalScoreboardName%> 0
 			execute \
 				if score #timestamp <%config.internalScoreboardName%> = #gametime <%config.internalScoreboardName%> \
-				if data entity @s data.on_<%direction%>_click \
+				if data entity @s data.<%config.interactionsNamespace%>.on_<%direction%>_click \
 				store success score #check <%config.internalScoreboardName%> \
 				on <%direction === 'right' ? 'target' : 'attacker'%> \
-				if entity @s[tag=interactions.interacting_player]
+				if entity @s[tag=<%config.interactionsNamespace%>.interactions.interacting_player]
 
 			execute \
 				if score #check <%config.internalScoreboardName%> matches 1 \
@@ -53,7 +58,7 @@ REPEAT (['right', 'left']) as direction {
 
 		function do {
 			scoreboard players set #check <%config.internalScoreboardName%> 0
-			block execute { with entity @s data
+			block execute { with entity @s data.<%config.interactionsNamespace%>
 				$$(on_<%direction%>_click)
 				scoreboard players set #check <%config.internalScoreboardName%> 1
 			}
@@ -62,11 +67,11 @@ REPEAT (['right', 'left']) as direction {
 				{text:'ɪɴᴛᴇʀᴀᴄᴛɪᴏɴꜱ', color:'light_purple'}, \
 				{text:'\n(<%global.root%>.mcb)', color:'dark_gray'}, \
 				'\n→ ᴇʀʀᴏʀ:\n\sFailed to handle <%direction%> click interaction from ', \
-				{selector: '@p[tag=interactions.interacting_player]', color: gold}, \
+				{selector: '@p[tag=<%config.interactionsNamespace%>.interactions.interacting_player]', color: gold}, \
 				':\n\s\sInvalid command: ', \
-				{nbt: 'data.on_<%direction%>_click', entity: '@s', color: aqua}, \
+				{nbt: 'data.<%config.interactionsNamespace%>.on_<%direction%>_click', entity: '@s', color: aqua}, \
 				'\n\s\sfrom ', \
-				{text: 'data.on_<%direction%>_click ', color: yellow}, \
+				{text: 'data.<%config.interactionsNamespace%>.on_<%direction%>_click ', color: yellow}, \
 			]
 			# Only remove the interaction if it's consumed.
 			data remove entity @s <%direction === 'right' ? 'interaction' : 'attack'%>

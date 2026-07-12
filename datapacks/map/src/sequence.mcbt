@@ -1,0 +1,60 @@
+template sequence {
+	with content:block {
+		<%%
+			let body = [];
+			for (const child of [...content.node.body].reverse()) {
+				if (child.type === 'Raw') {
+					const [command, delay, mode, ...condition] = child.value.trim().split(' ');
+					if (command === 'sleep') {
+						if (mode === 'while' || mode === 'until') {
+							body = [
+								{
+									type: 'Block',
+									body: [
+										{
+											type: 'Raw',
+											value: `scoreboard players set #check ${config.internalScoreboardName} 0`
+										},
+										{
+											type: 'Raw',
+											value: `${condition.join(' ')} run scoreboard players set #check ${config.internalScoreboardName} 1`
+										},
+										{
+											type: 'Execute',
+											command: `execute ${mode === 'until' ? 'if' : 'unless'} score #check ${config.internalScoreboardName} matches 0 run return run`,
+											value: {
+												type: 'ScheduleCall',
+												mode: 'replace',
+												target: '^0',
+												delay,
+											}
+										},
+										{
+											type: 'ScheduleBlock',
+											delay,
+											blockType: 'replace',
+											body,
+										}
+									]
+								}
+							];
+						} else {
+							body = [{
+								type: 'ScheduleBlock',
+								delay,
+								blockType: 'replace',
+								body,
+							}];
+						}
+						continue;
+					};
+				};
+				body.unshift(child);
+			};
+
+			for (const node of body) {
+				emit.mcb(node);
+			};
+		%%>
+	}
+}

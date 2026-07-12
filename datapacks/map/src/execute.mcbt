@@ -1,0 +1,207 @@
+template align {
+	with all:raw block:block {
+		<%%
+			all = all.trim()
+			if (!all.endsWith(' run')) all += ' run'
+			emit(`execute align ${all} ${embed(block)}`)
+		%%>
+	}
+
+	with all:raw {
+		<%%
+			emit(`execute align ${all}`)
+		%%>
+	}
+}
+
+template anchored {
+	with all:raw block:block {
+		<%%
+			all = all.trim()
+			if (!all.endsWith(' run')) all += ' run'
+			emit(`execute anchored ${all} ${embed(block)}`)
+		%%>
+	}
+
+	with all:raw {
+		<%%
+			emit(`execute anchored ${all}`)
+		%%>
+	}
+}
+
+template as {
+	with all:raw block:block {
+		<%%
+			all = all.trim()
+			if (!all.endsWith(' run')) all += ' run'
+			emit(`execute as ${all} ${embed(block)}`)
+		%%>
+	}
+
+	with all:raw {
+		<%%
+			emit(`execute as ${all}`)
+		%%>
+	}
+}
+
+template at {
+	with all:raw block:block {
+		<%%
+			all = all.trim()
+			if (!all.endsWith(' run')) all += ' run'
+			emit(`execute at ${all} ${embed(block)}`)
+		%%>
+	}
+
+	with all:raw {
+		<%%
+			emit(`execute at ${all}`)
+		%%>
+	}
+}
+
+template facing {
+	with all:raw block:block {
+		<%%
+			all = all.trim()
+			if (!all.endsWith(' run')) all += ' run'
+			emit(`execute facing ${all} ${embed(block)}`)
+		%%>
+	}
+
+	with all:raw {
+		<%%
+			emit(`execute facing ${all}`)
+		%%>
+	}
+}
+
+template in {
+	with all:raw block:block {
+		<%%
+			all = all.trim()
+			if (!all.endsWith(' run')) all += ' run'
+			emit(`execute in ${all} ${embed(block)}`)
+		%%>
+	}
+
+	with all:raw {
+		<%%
+			emit(`execute in ${all}`)
+		%%>
+	}
+}
+
+template on {
+	with all:raw block:block {
+		<%%
+			all = all.trim()
+			if (!all.endsWith(' run')) all += ' run'
+			emit(`execute on ${all} ${embed(block)}`)
+		%%>
+	}
+
+	with all:raw {
+		<%%
+			emit(`execute on ${all}`)
+		%%>
+	}
+}
+
+template positioned {
+	with all:raw block:block {
+		<%%
+			all = all.trim()
+			if (!all.endsWith(' run')) all += ' run'
+			emit(`execute positioned ${all} ${embed(block)}`)
+		%%>
+	}
+
+	with all:raw {
+		<%%
+			emit(`execute positioned ${all}`)
+		%%>
+	}
+}
+
+template rotated {
+	with all:raw block:block {
+		<%%
+			all = all.trim()
+			if (!all.endsWith(' run')) all += ' run'
+			emit(`execute rotated ${all} ${embed(block)}`)
+		%%>
+	}
+
+	with all:raw {
+		<%%
+			emit(`execute rotated ${all}`)
+		%%>
+	}
+}
+
+template summon {
+	with all:raw block:block {
+		<%%
+			all = all.trim()
+			if (!all.endsWith(' run')) all += ' run'
+			emit(`execute summon ${all} ${embed(block)}`)
+		%%>
+	}
+
+	with all:raw {
+		<%%
+			emit(`execute summon ${all}`)
+		%%>
+	}
+}
+
+template if {
+	with all:raw block:block {
+		<%%
+			all = all.trim()
+			if (!all.endsWith(' run')) all += ' run'
+			emit(`execute if ${all} ${embed(block)}`)
+		%%>
+	}
+
+	with all:raw {
+		<%%
+			emit(`execute if ${all}`)
+		%%>
+	}
+}
+
+template unless {
+	with all:raw block:block {
+		<%%
+			all = all.trim()
+			if (!all.endsWith(' run')) all += ' run'
+			emit(`execute unless ${all} ${embed(block)}`)
+		%%>
+	}
+
+	with all:raw {
+		<%%
+			emit(`execute unless ${all}`)
+		%%>
+	}
+}
+
+template store {
+	with all:raw block:block {
+		<%%
+			all = all.trim()
+			if (!all.endsWith(' run')) all += ' run'
+			emit(`execute store ${all} ${embed(block)}`)
+		%%>
+	}
+
+	with all:raw {
+		<%%
+			emit(`execute store ${all}`)
+		%%>
+	}
+}
