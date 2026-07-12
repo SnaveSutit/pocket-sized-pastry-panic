@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(zip --version)",
+      "WebFetch(domain:minecraft.wiki)",
+      "Bash(bun run *)",
+      "Bash(unzip -l \"dist/Pocket-sized Pastry Panic.zip\")",
+      "Bash(grep -i \"datapacks/$\")",
+      "Bash(npm view *)",
+      "Bash(bunx tsc *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(bun build *)"
+    ]
+  }
+}

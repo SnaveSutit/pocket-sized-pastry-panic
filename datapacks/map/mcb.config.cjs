@@ -1,17 +1,3 @@
-const ffmpeg = require('./libs/fluent-ffmpeg')
-
-function getOggTickDuration(filePath) {
-	return new Promise((resolve, reject) => {
-		ffmpeg.ffprobe(filePath, (err, metadata) => {
-			if (err) {
-				reject(err)
-				return
-			}
-			resolve(Math.ceil(metadata.format.duration * 20))
-		})
-	})
-}
-
 function getVectorScoreNames(name, objective) {
 	let xName = name
 	let zName = name
@@ -39,21 +25,9 @@ module.exports = {
 	musicLengths,
 	setup(mcb) {
 		mcb.events.onPreBuild.subscribe(async () => {
-			musicLengths.set(
-				'boss',
-				500
-				// await getOggTickDuration('../../resources/assets/cooking/sounds/music_boss.ogg')
-			)
-			musicLengths.set(
-				'gameplay',
-				500
-				// await getOggTickDuration('../../resources/assets/cooking/sounds/music_gameplay.ogg')
-			)
-			musicLengths.set(
-				'tutorial',
-				500
-				// await getOggTickDuration('../../resources/assets/cooking/sounds/music_tutorial.ogg')
-			)
+			musicLengths.set('boss', 500)
+			musicLengths.set('gameplay', 500)
+			musicLengths.set('tutorial', 500)
 		})
 	},
 }
