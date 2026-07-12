@@ -4,14 +4,7 @@
 	"version": "1.0.0",
 	"scripts": {
 		"package": "bun .scripts/squash_and_pack.ts",
-		"setup": "ts-node ./.tools/setup.ts",
-		"create_datapack": "ts-node ./.tools/create_datapack.ts",
-		"scan_datapacks": "ts-node ./.tools/scan_datapacks.ts",
-		"dev": "cd \"datapacks\\Map\" && mcb watch"
-	},
-	"datapacks": {
-		"test": "TEST",
-		"map": "Map"
+		"clear_world_changes": "bun ./.scripts/reset_world.ts"
 	},
 	"devDependencies": {
 		"@types/bun": "^1.3.14",
