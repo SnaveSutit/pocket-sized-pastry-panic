@@ -3,8 +3,10 @@
 	"projectName": "Pocket-sized Pastry Panic",
 	"version": "1.0.0",
 	"scripts": {
+		"setup_links": "bun .scripts/setup_links.ts",
 		"package": "bun .scripts/squash_and_pack.ts",
-		"clear_world_changes": "bun ./.scripts/reset_world.ts"
+		"clear_world_changes": "bun ./.scripts/reset_world.ts",
+		"dev": "cd datapacks/map && mcb watch"
 	},
 	"devDependencies": {
 		"@types/bun": "^1.3.14",

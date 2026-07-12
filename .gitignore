@@ -1,5 +1,6 @@
 .temp/
 dist/
+.scripts/.setup-links.json
 
 world/datapacks/*
 world/advancements
