@@ -1,14 +1,17 @@
 import ./score.mcbt
 import ./sequence.mcbt
+import ./execute.mcbt
 
 function load minecraft:load {
-	gamerule maxCommandChainLength 1000000
+	gamerule max_command_sequence_length 1000000
 
 	create i
 	create v
 	create mcb.i
 
 	setworldspawn 0 27 -75 41 90
+
+	if score #map.is_setup v matches 0 run function ./setup
 
 	tellraw @a {"text":"Map reloaded!","color":"green"}
 }
@@ -24,10 +27,10 @@ function teardown {
 }
 
 function reset {
-	sequence {
-		tellraw @a {text:'Resetting Map...',color:yellow}
-		function ./setup
-		sleep 1s
+	tellraw @a {text:'Resetting Map...',color:yellow}
+	function ./setup
+
+	schedule 1s replace {
 		function ./teardown
 		tellraw @a {text:'Map reset successfully!',color:green}
 	}

@@ -201,7 +201,14 @@ template store {
 
 	with all:raw {
 		<%%
-			emit(`execute store ${all}`)
+			const [beforeRun, afterRun] = all.split(/\brun\b(?!.*\brun\b)/)
+			if (afterRun) {
+				const result = `execute store ${beforeRun.trim()} run ${afterRun.trim()}`
+				console.log(result)
+				emit.mcb(result)
+			} else {
+				emit(`execute store ${beforeRun.trim()}`)
+			}
 		%%>
 	}
 }

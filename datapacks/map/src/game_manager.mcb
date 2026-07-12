@@ -1,0 +1,75 @@
+import ./score.mcbt
+import ./execute.mcbt
+
+function load minecraft:load {
+	create game_manager.leave_game minecraft.custom:minecraft.leave_game
+	create game_manager.game_id
+
+	set #game_manager.active_game_id v -1
+	set #game_manager.last_game_id v -1
+}
+
+function tick minecraft:tick {
+	as @a[scores={game_manager.leave_game=1..}] run function ./on_join_game
+}
+
+function add_player_to_queue {
+	tag @s add game_manager.queued
+	say @s joined the queue.
+}
+
+function remove_player_from_queue {
+	tag @s remove game_manager.queued
+	say @s left the queue.
+}
+
+function spectate_game {
+	gamemode spectator @s
+	say @s is now spectating.
+}
+
+function start_game {
+	store result score @a[tag=game_manager.queued] game_manager.game_id \
+		run scoreboard players add #game_manager.active_game_id v 1
+
+	tag @a remove game_manager.queued
+
+	say The game has started!
+}
+
+function end_game {
+	set #game_manager.active_game_id v -1
+	say The game has ended!
+}
+
+function reset_player {
+	gamemode adventure @s
+	tag @s remove game_manager.queued
+	# TODO: teleport to spawn point
+	say @s has been reset.
+}
+
+function on_join_game {
+	set @s game_manager.leave_game 0
+
+	say @s joined the game!
+
+	# If no game is active,
+	if score #game_manager.active_game_id v matches -1 run return run {
+		# and the player is queued, remove them from the queue.
+		if entity @s[tag=game_manager.queued] \
+			run return run function ./remove_player_from_queue
+		# Otherwise, reset the player to default state.
+		function ./reset_player
+	}
+
+	if score #game_manager.active_game_id v = @s game_manager.game_id \
+		run return run function ./rejoin_game
+
+	# Force the player to spectate the game if they are not part of the current game
+	function ./spectate_game
+}
+
+function rejoin_game {
+	say @s rejoined the game!
+}

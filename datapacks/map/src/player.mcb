@@ -1,10 +1,5 @@
-function on_load minecraft:load {
-	scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game
-}
-
-# TODO: Make a system that sets a unique game-ID on each player,
-# so if a player leaves and then the game ends, then another game starts,
-# and the player rejoins, they are put in specator instead of joined into the game again.
+import ./score.mcbt
+import ./execute.mcbt
 
 function apply_movement_attributes {
 	attribute @s minecraft:movement_speed modifier add pspp:elf_speed 0.15 add_multiplied_base
