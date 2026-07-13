@@ -2,8 +2,8 @@ import ./score.mcbt
 import ./execute.mcbt
 
 function apply_movement_attributes {
-	attribute @s minecraft:movement_speed modifier add pspp:elf_speed 0.15 add_multiplied_base
-	attribute @s minecraft:jump_strength modifier add pspp:elf_jump 0.8 add_multiplied_base
+	attribute @s minecraft:movement_speed modifier add pspp:elf_speed 0.5 add_multiplied_base
+	attribute @s minecraft:jump_strength modifier add pspp:elf_jump 0.5 add_multiplied_base
 }
 
 function remove_movement_attributes {
