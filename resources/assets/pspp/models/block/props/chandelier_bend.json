@@ -7,9 +7,9 @@
 	},
 	"elements": [
 		{
-			"from": [5, 0, 5],
-			"to": [16, 16, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [10, 0, 10]},
+			"from": [5, 8, 5],
+			"to": [16, 24, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [10, 8, 10]},
 			"light_emission": 1,
 			"faces": {
 				"north": {"uv": [8, 0, 2.5, 16], "texture": "#0"},
@@ -20,9 +20,9 @@
 			}
 		},
 		{
-			"from": [1, 0, 5],
-			"to": [12, 16.1, 11],
-			"rotation": {"x": 0, "y": -90, "z": 0, "origin": [6, 0, 10]},
+			"from": [1, 8, 5],
+			"to": [12, 24.1, 11],
+			"rotation": {"x": 0, "y": -90, "z": 0, "origin": [6, 8, 10]},
 			"light_emission": 1,
 			"faces": {
 				"north": {"uv": [2.5, 0, 8, 16], "texture": "#0"},
