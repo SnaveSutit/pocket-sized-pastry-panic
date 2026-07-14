@@ -1,0 +1,12 @@
+{
+	"variants": {
+		"north=none,south=none,east=tall,west=tall,up=false": {
+			"model": "pspp:block/props/fireplace_beam_top",
+			"y": 0
+		},
+		"north=none,south=none,east=low,west=low,up=false": {
+			"model": "pspp:block/props/fireplace_beam_bottom",
+			"y": 0
+		}
+	}
+}
