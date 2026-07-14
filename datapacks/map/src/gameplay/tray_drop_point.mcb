@@ -18,7 +18,10 @@ function summon {
 			left_rotation: [0f, 0f, 0f, 1f], \
 			right_rotation: [0f, 0f, 0f, 1f], \
 			scale: [2f, 2f, 2f] \
-		} \
+		}, \
+		width: 6f, \
+		height: 1f, \
+		view_range: 4f, \
 	}
 	$as $(uuid) \
 		run rotate @s ~ ~
