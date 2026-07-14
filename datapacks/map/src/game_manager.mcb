@@ -5,6 +5,11 @@ function load minecraft:load {
 	create game_manager.leave_game minecraft.custom:minecraft.leave_game
 	create game_manager.game_id
 
+	add #game_manager.active_game_id v 0
+	add #game_manager.last_game_id v 0
+}
+
+function reset {
 	set #game_manager.active_game_id v -1
 	set #game_manager.last_game_id v -1
 }
@@ -30,7 +35,7 @@ function spectate_game {
 
 function start_game {
 	store result score @a[tag=game_manager.queued] game_manager.game_id \
-		run scoreboard players add #game_manager.active_game_id v 1
+		run add #game_manager.active_game_id v 1
 
 	tag @a remove game_manager.queued
 
@@ -45,6 +50,7 @@ function end_game {
 function reset_player {
 	gamemode adventure @s
 	tag @s remove game_manager.queued
+	reset @s game_manager.game_id
 	# TODO: teleport to spawn point
 	say @s has been reset.
 }
@@ -56,11 +62,8 @@ function on_join_game {
 
 	# If no game is active,
 	if score #game_manager.active_game_id v matches -1 run return run {
-		# and the player is queued, remove them from the queue.
-		if entity @s[tag=game_manager.queued] \
-			run return run function ./remove_player_from_queue
-		# Otherwise, reset the player to default state.
-		function ./reset_player
+		if score @s game_manager.game_id matches 0.. \
+			run function ./reset_player
 	}
 
 	if score #game_manager.active_game_id v = @s game_manager.game_id \

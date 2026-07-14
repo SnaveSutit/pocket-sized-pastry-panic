@@ -1,0 +1,74 @@
+[
+	{
+		"id": "fireplace_0",
+		"group": "fireplace",
+		"position": "-9.50 2.0 -25.5",
+		"rotation": "0",
+		"uuid": "d7fbd207-001a-4f20-b9ad-d48924406df5"
+	},
+	{
+		"id": "fireplace_0",
+		"group": "fireplace",
+		"position": "-2.50 2.0 -25.5",
+		"rotation": "0",
+		"uuid": "0a418544-3c14-4a61-9f9a-1fcdf8ac734a"
+	},
+	{
+		"id": "fireplace_0",
+		"group": "fireplace",
+		"position": "4.50 2.0 -25.5",
+		"rotation": "0",
+		"uuid": "8d5f6e1a-b389-48b8-9af8-cc77a27614c0"
+	},
+	{
+		"id": "fireplace_0",
+		"group": "fireplace",
+		"position": "11.50 2.0 -25.5",
+		"rotation": "0",
+		"uuid": "191d1b6e-8f69-41c9-bda9-7a4654b0220a"
+	},
+
+	{
+		"id": "cutting_board_0",
+		"group": "cutting_board",
+		"position": "-6.00 2.0 23.0",
+		"rotation": "180",
+		"uuid": "0bff5386-1fb1-48d7-806b-ead6af36581a"
+	},
+	{
+		"id": "cutting_board_1",
+		"group": "cutting_board",
+		"position": "1.00 2.0 23.0",
+		"rotation": "180",
+		"uuid": "e263fd08-76b2-48b2-8120-c175d4e03852"
+	},
+	{
+		"id": "cutting_board_2",
+		"group": "cutting_board",
+		"position": "8.00 2.0 23.0",
+		"rotation": "180",
+		"uuid": "8bc85f73-25f3-43e9-978c-21a0b56cd80a"
+	},
+
+	{
+		"id": "dough_station_0",
+		"group": "dough_station",
+		"position": "-14.0 1.0 -6.00",
+		"rotation": "-90",
+		"uuid": "cf607ae1-02d1-4649-b1ea-536850004e84"
+	},
+	{
+		"id": "dough_station_1",
+		"group": "dough_station",
+		"position": "-14.0 1.0 1.00",
+		"rotation": "-90",
+		"uuid": "85e269dd-8ac5-4b46-96a9-524013224cd1"
+	},
+	{
+		"id": "dough_station_2",
+		"group": "dough_station",
+		"position": "-14.0 1.0 8.00",
+		"rotation": "-90",
+		"uuid": "116053b3-eda9-4186-833d-aefe2239fbbe"
+	}
+]

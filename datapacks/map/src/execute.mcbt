@@ -3,13 +3,13 @@ template align {
 		<%%
 			all = all.trim()
 			if (!all.endsWith(' run')) all += ' run'
-			emit(`execute align ${all} ${embed(block)}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute align ${all} ${embed(block)}`)
 		%%>
 	}
 
 	with all:raw {
 		<%%
-			emit(`execute align ${all}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute align ${all}`)
 		%%>
 	}
 }
@@ -19,13 +19,13 @@ template anchored {
 		<%%
 			all = all.trim()
 			if (!all.endsWith(' run')) all += ' run'
-			emit(`execute anchored ${all} ${embed(block)}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute anchored ${all} ${embed(block)}`)
 		%%>
 	}
 
 	with all:raw {
 		<%%
-			emit(`execute anchored ${all}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute anchored ${all}`)
 		%%>
 	}
 }
@@ -35,13 +35,13 @@ template as {
 		<%%
 			all = all.trim()
 			if (!all.endsWith(' run')) all += ' run'
-			emit(`execute as ${all} ${embed(block)}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute as ${all} ${embed(block)}`)
 		%%>
 	}
 
 	with all:raw {
 		<%%
-			emit(`execute as ${all}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute as ${all}`)
 		%%>
 	}
 }
@@ -51,13 +51,13 @@ template at {
 		<%%
 			all = all.trim()
 			if (!all.endsWith(' run')) all += ' run'
-			emit(`execute at ${all} ${embed(block)}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute at ${all} ${embed(block)}`)
 		%%>
 	}
 
 	with all:raw {
 		<%%
-			emit(`execute at ${all}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute at ${all}`)
 		%%>
 	}
 }
@@ -67,13 +67,13 @@ template facing {
 		<%%
 			all = all.trim()
 			if (!all.endsWith(' run')) all += ' run'
-			emit(`execute facing ${all} ${embed(block)}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute facing ${all} ${embed(block)}`)
 		%%>
 	}
 
 	with all:raw {
 		<%%
-			emit(`execute facing ${all}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute facing ${all}`)
 		%%>
 	}
 }
@@ -83,13 +83,13 @@ template in {
 		<%%
 			all = all.trim()
 			if (!all.endsWith(' run')) all += ' run'
-			emit(`execute in ${all} ${embed(block)}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute in ${all} ${embed(block)}`)
 		%%>
 	}
 
 	with all:raw {
 		<%%
-			emit(`execute in ${all}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute in ${all}`)
 		%%>
 	}
 }
@@ -99,13 +99,13 @@ template on {
 		<%%
 			all = all.trim()
 			if (!all.endsWith(' run')) all += ' run'
-			emit(`execute on ${all} ${embed(block)}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute on ${all} ${embed(block)}`)
 		%%>
 	}
 
 	with all:raw {
 		<%%
-			emit(`execute on ${all}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute on ${all}`)
 		%%>
 	}
 }
@@ -115,13 +115,13 @@ template positioned {
 		<%%
 			all = all.trim()
 			if (!all.endsWith(' run')) all += ' run'
-			emit(`execute positioned ${all} ${embed(block)}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute positioned ${all} ${embed(block)}`)
 		%%>
 	}
 
 	with all:raw {
 		<%%
-			emit(`execute positioned ${all}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute positioned ${all}`)
 		%%>
 	}
 }
@@ -131,29 +131,13 @@ template rotated {
 		<%%
 			all = all.trim()
 			if (!all.endsWith(' run')) all += ' run'
-			emit(`execute rotated ${all} ${embed(block)}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute rotated ${all} ${embed(block)}`)
 		%%>
 	}
 
 	with all:raw {
 		<%%
-			emit(`execute rotated ${all}`)
-		%%>
-	}
-}
-
-template summon {
-	with all:raw block:block {
-		<%%
-			all = all.trim()
-			if (!all.endsWith(' run')) all += ' run'
-			emit(`execute summon ${all} ${embed(block)}`)
-		%%>
-	}
-
-	with all:raw {
-		<%%
-			emit(`execute summon ${all}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute rotated ${all}`)
 		%%>
 	}
 }
@@ -163,13 +147,13 @@ template if {
 		<%%
 			all = all.trim()
 			if (!all.endsWith(' run')) all += ' run'
-			emit(`execute if ${all} ${embed(block)}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute if ${all} ${embed(block)}`)
 		%%>
 	}
 
 	with all:raw {
 		<%%
-			emit(`execute if ${all}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute if ${all}`)
 		%%>
 	}
 }
@@ -179,13 +163,13 @@ template unless {
 		<%%
 			all = all.trim()
 			if (!all.endsWith(' run')) all += ' run'
-			emit(`execute unless ${all} ${embed(block)}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute unless ${all} ${embed(block)}`)
 		%%>
 	}
 
 	with all:raw {
 		<%%
-			emit(`execute unless ${all}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute unless ${all}`)
 		%%>
 	}
 }
@@ -195,20 +179,13 @@ template store {
 		<%%
 			all = all.trim()
 			if (!all.endsWith(' run')) all += ' run'
-			emit(`execute store ${all} ${embed(block)}`)
+			emit.mcb(`${isMacro ? '$' : ''}execute store ${all} ${embed(block)}`)
 		%%>
 	}
 
 	with all:raw {
 		<%%
-			const [beforeRun, afterRun] = all.split(/\brun\b(?!.*\brun\b)/)
-			if (afterRun) {
-				const result = `execute store ${beforeRun.trim()} run ${afterRun.trim()}`
-				console.log(result)
-				emit.mcb(result)
-			} else {
-				emit(`execute store ${beforeRun.trim()}`)
-			}
+			emit.mcb(`${isMacro ? '$' : ''}execute store ${all.trim()}`)
 		%%>
 	}
 }

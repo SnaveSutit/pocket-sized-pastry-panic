@@ -1,3 +1,6 @@
+const { readdirSync, readFileSync } = require('fs')
+const { join, basename } = require('path')
+
 function getVectorScoreNames(name, objective) {
 	let xName = name
 	let zName = name
@@ -15,6 +18,17 @@ function getVectorScoreNames(name, objective) {
 
 const musicLengths = new Map()
 
+function readJsonData() {
+	const data = {}
+	for (const path of readdirSync('./driven')) {
+		if (path.endsWith('.json')) {
+			const name = basename(path, '.json')
+			data[name] = JSON.parse(readFileSync(join('./driven', path), 'utf-8'))
+		}
+	}
+	return data
+}
+
 module.exports = {
 	libDir: null, // default: "null", determine where mcb looks for libraries, default is the bundled install location
 	generatedDirName: 'zzz', // default: "zzz", the name of the directory where mcb will put generated files
@@ -28,6 +42,8 @@ module.exports = {
 			musicLengths.set('boss', 500)
 			musicLengths.set('gameplay', 500)
 			musicLengths.set('tutorial', 500)
+
+			this.driven = readJsonData()
 		})
 	},
 }

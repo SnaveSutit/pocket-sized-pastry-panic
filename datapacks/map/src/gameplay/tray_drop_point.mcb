@@ -1,0 +1,38 @@
+import ../execute.mcbt
+import ../score.mcbt
+
+function summon {
+	#ARGS: {uuid: String}
+
+	$summon item_display ~ ~ ~ { \
+		UUID: uuid('$(uuid)'), \
+		Tags:['pspp.tray_drop_point'], \
+		item: { \
+			id: 'minecraft:pufferfish', \
+			components: { \
+				'minecraft:item_model': 'pspp:gameplay/tray_drop_point', \
+			} \
+		}, \
+		transformation: { \
+			translation: [0f, 1f, 0f], \
+			left_rotation: [0f, 0f, 0f, 1f], \
+			right_rotation: [0f, 0f, 0f, 1f], \
+			scale: [2f, 2f, 2f] \
+		} \
+	}
+	$as $(uuid) \
+		run rotate @s ~ ~
+}
+
+function setup {
+	REPEAT(config.driven.tray_drop_points) as drop_point {
+		execute \
+			positioned <%drop_point.position%> \
+			rotated <%drop_point.rotation%> 0 \
+			run function ./summon {uuid: '<%drop_point.uuid%>'}
+	}
+}
+
+function teardown {
+	kill @e[type=item_display,tag=pspp.tray_drop_point]
+}
