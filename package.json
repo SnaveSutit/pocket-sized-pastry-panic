@@ -4,6 +4,7 @@
 	"version": "1.0.0",
 	"scripts": {
 		"setup_links": "bun .scripts/setup_links.ts",
+		"setup_hooks": "bun .scripts/setup_hooks.ts",
 		"package": "bun .scripts/squash_and_pack.ts",
 		"clear_world_changes": "bun ./.scripts/reset_world.ts",
 		"dev": "cd datapacks/map && mcb watch"

@@ -9,7 +9,10 @@
       "Bash(npm view *)",
       "Bash(bunx tsc *)",
       "Bash(echo \"EXIT: $?\")",
-      "Bash(bun build *)"
+      "Bash(bun build *)",
+      "Bash(mkdir -p /var/mnt/ssd2/repos/snavesutit/pocket-sized-pastry-panic/.githooks)",
+      "Bash(git -C /var/mnt/ssd2/repos/snavesutit/pocket-sized-pastry-panic config core.hooksPath)",
+      "Bash(git --version)"
     ]
   }
 }

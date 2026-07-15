@@ -14,9 +14,6 @@ world/level.dat_old
 world/session.lock
 world/playerdata/
 
-datapacks/map/data/
-datapacks/*/.mcb
-
 # Logs
 logs
 *.log
