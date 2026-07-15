@@ -70,7 +70,7 @@ interface LauncherDef {
 	pickPrompt: string
 	// Turns whatever the user picked into the actual instance root (the
 	// folder that should directly contain saves/ and resourcepacks/).
-	resolveTarget(picked: string): string
+	resolveTarget(picked: string): string | Promise<string>
 }
 
 const LAUNCHERS: LauncherDef[] = [
@@ -95,9 +95,15 @@ const LAUNCHERS: LauncherDef[] = [
 		label: 'Prism Launcher',
 		guessRoot: () => path.join(dataDir('PrismLauncher', 'PrismLauncher', 'PrismLauncher'), 'instances'),
 		pickPrompt: 'Select your Prism Launcher instance folder (inside instances/)',
-		// Prism instances contain a nested .minecraft/ dir; allow picking either.
-		resolveTarget: picked =>
-			path.basename(picked) === '.minecraft' ? picked : path.join(picked, '.minecraft'),
+		// Prism instances contain a nested .minecraft/ dir (named "minecraft"
+		// without the dot on some setups); allow picking either it or its parent.
+		resolveTarget: async picked => {
+			const base = path.basename(picked)
+			if (base === '.minecraft' || base === 'minecraft') return picked
+			if (await exists(path.join(picked, '.minecraft'))) return path.join(picked, '.minecraft')
+			if (await exists(path.join(picked, 'minecraft'))) return path.join(picked, 'minecraft')
+			return path.join(picked, '.minecraft')
+		},
 	},
 	{
 		kind: 'modrinth',
@@ -273,7 +279,7 @@ async function setupLauncherLinks() {
 		config.launchers[launcher.kind] = picked
 		await saveConfig(config)
 
-		const instanceDir = launcher.resolveTarget(picked)
+		const instanceDir = await launcher.resolveTarget(picked)
 		console.log(`  Linking into ${instanceDir} ...`)
 		await ensureLink(WORLD_DIR, path.join(instanceDir, 'saves', PROJECT_NAME))
 		await ensureLink(RESOURCES_DIR, path.join(instanceDir, 'resourcepacks', PROJECT_NAME))
