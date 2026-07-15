@@ -39,3 +39,14 @@ function setup {
 function teardown {
 	kill @e[type=item_display,tag=pspp.tray_drop_point]
 }
+
+function mount_on_nearest {
+	on vehicle run return 0
+
+	positioned ~-3 ~-0.01 ~-3 run \
+		ride @s mount @n[type=item_display,tag=pspp.tray_drop_point,dx=5,dy=0,dz=5]
+
+	on vehicle on passengers run \
+		playsound minecraft:block.note_block.hat block @a[distance=..20] ~ ~ ~ 1 2
+
+}
