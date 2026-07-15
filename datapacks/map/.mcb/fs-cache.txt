@@ -45,7 +45,7 @@ data/interactions/function/left_click/check.mcfunction:43acb2351ee7ec044d56ae268
 data/interactions/function/left_click/execute.mcfunction:8acf587a87f3c759bb37d0c5e488b0cdcd57954a
 data/interactions/function/left_click/do.mcfunction:57313c7cde2ba33056133b5a818324a314d57970
 data/map/function/load.mcfunction:d41c304890520396eb3bdad2deb40c1729555b58
-data/map/function/setup.mcfunction:8452608b9e966f6d0cdbd340ec240e2467d555ab
+data/map/function/setup.mcfunction:b441a8a54a295794f702ffa8590c23e5d119cadf
 data/map/function/teardown.mcfunction:e8cb7de5c536f2f40846abcc95b1d8d755077ea2
 data/map/function/zzz/1.mcfunction:a64ba1bcb257ae1736304afe4007ebed197bd9ca
 data/map/function/reset.mcfunction:363a8481d11adce8427acf78f7a8e58b9aaa89c0
