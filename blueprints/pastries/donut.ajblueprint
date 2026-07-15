@@ -1,0 +1,72 @@
+{
+	"meta": {
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.10.2",
+		"uuid": "070bd797-7c94-6bd6-781f-f77faf46434d",
+		"save_location": "C:\\Users\\User\\Desktop\\projects\\github\\pocket-sized-pastry-panic\\blueprints\\pastries\\donut.ajblueprint",
+		"last_used_blueprint_id": ""
+	},
+	"resolution": {
+		"width": 128,
+		"height": 128
+	},
+	"blueprint_settings": {
+		"blueprint_id": "aj:donut",
+		"target_minecraft_version": "26.2",
+		"resource_pack": "C:\\Users\\User\\Desktop\\projects\\github\\pocket-sized-pastry-panic\\resources",
+		"data_pack": "C:\\Users\\User\\Desktop\\projects\\github\\pocket-sized-pastry-panic\\datapacks\\animated_java"
+	},
+	"elements": [],
+	"groups": [
+		{
+			"name": "root",
+			"uuid": "0ffed41b-c2c0-ede5-058b-59b52bd56b59",
+			"export": true,
+			"locked": false,
+			"scope": 0,
+			"selected": false,
+			"_static": {
+				"properties": {},
+				"temp_data": {}
+			},
+			"origin": [0, 0, 0],
+			"rotation": [0, 0, 0],
+			"color": 0,
+			"onSummonFunction": "",
+			"configs": {
+				"default": {},
+				"variants": {}
+			},
+			"itemModelProperties": {
+				"tints": []
+			},
+			"children": [],
+			"reset": false,
+			"shade": true,
+			"mirror_uv": false,
+			"visibility": true,
+			"autouv": 0,
+			"isOpen": true,
+			"primary_selected": true
+		}
+	],
+	"outliner": [
+		{
+			"uuid": "0ffed41b-c2c0-ede5-058b-59b52bd56b59",
+			"isOpen": true,
+			"children": []
+		}
+	],
+	"textures": [],
+	"variants": {
+		"default": {
+			"name": "default",
+			"display_name": "Default",
+			"uuid": "98a41e86-a530-1374-1013-949d3a5e4c96",
+			"texture_map": {},
+			"excluded_nodes": [],
+			"is_default": true
+		},
+		"list": []
+	}
+}
