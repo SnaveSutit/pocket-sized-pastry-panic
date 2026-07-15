@@ -1,15 +1,1 @@
-{
-	"formatVersion": "1.0.0",
-	"rigs": {
-		"aj:loaf": {
-			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
-			"versionedFiles": [
-				"assets/aj/items/blueprint/loaf/root.json",
-				"assets/aj/items/blueprint/loaf/top.json",
-				"assets/aj/models/blueprint/loaf/root.json",
-				"assets/aj/models/blueprint/loaf/top.json",
-				"assets/aj/textures/blueprint/loaf/cooked_temp.png"
-			]
-		}
-	}
-}
+{"formatVersion":"1.0.0","rigs":{"aj:loaf":{"coreFiles":["assets/minecraft/atlases/blocks.json","pack.mcmeta"],"versionedFiles":["assets/aj/items/blueprint/loaf/root.json","assets/aj/items/blueprint/loaf/top.json","assets/aj/models/blueprint/loaf/root.json","assets/aj/models/blueprint/loaf/top.json","assets/aj/textures/blueprint/loaf/cooked_temp.png"]}}}

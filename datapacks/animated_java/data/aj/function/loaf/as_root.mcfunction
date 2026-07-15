@@ -6,4 +6,6 @@ execute store result storage animated_java:temp args.id int 1 run scoreboard pla
 function animated_java:global/data_manager/read with storage animated_java:temp args
 $data modify storage animated_java:temp args.command set value '$(command)'
 data modify storage animated_java:temp args.root_uuid set from storage animated_java:temp entry.data.root_uuid
+scoreboard players set #aj.check aj.i 0
 function aj:loaf/as_root_entity with storage animated_java:temp args
+execute if score #aj.check aj.i matches 0 run tellraw @a [{text:'',color:red},[{color:gray,text:'\n '},{color:'#00aced',text:'ᴀɴɪᴍᴀᴛᴇᴅ ᴊᴀᴠᴀ'},{color:dark_gray,italic:true,text:'\n (aj:loaf)'},'\n → '],'ᴇʀʀᴏʀ: ',{text:'Failed to Execute Command as Root Entity',underlined:true},'\n\n ','Failed to execute command ',{nbt:args.command,storage:'animated_java:temp',color:yellow}," as the rig instance's root entity.",'\n Please ensure the command is valid.','\n']

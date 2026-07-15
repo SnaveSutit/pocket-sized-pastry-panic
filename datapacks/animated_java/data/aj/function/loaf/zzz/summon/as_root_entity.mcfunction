@@ -12,7 +12,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "aj:loaf"
-data modify storage animated_java:temp entry.data.rig_hash set value "46b3120d61425691b0625bcc2a4519496541fd4bd04af67b5fe6d082b1ee8662"
+data modify storage animated_java:temp entry.data.rig_hash set value "29c92bea042282a2967fee4741958f5355914ab14d10a543e25fed5cdac39d2f"
 tp @s ~ ~ ~ ~ ~
 execute on passengers if entity @s[tag=aj.loaf.node.top] run function aj:loaf/zzz/summon/as_node/top
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out

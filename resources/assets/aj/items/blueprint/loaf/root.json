@@ -1,12 +1,1 @@
-{
-	"model": {
-		"type": "minecraft:model",
-		"model": "aj:blueprint/loaf/root",
-		"tints": [
-			{
-				"type": "minecraft:constant",
-				"value": 66046
-			}
-		]
-	}
-}
+{"model":{"type":"minecraft:model","model":"aj:blueprint/loaf/root","tints":[{"type":"minecraft:constant","value":66046}]}}

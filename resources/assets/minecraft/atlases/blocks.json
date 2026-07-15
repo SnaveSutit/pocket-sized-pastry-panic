@@ -1,9 +1,1 @@
-{
-	"sources": [
-		{
-			"type": "directory",
-			"source": "blueprint",
-			"prefix": "blueprint/"
-		}
-	]
-}
+{"sources":[{"type":"directory","source":"blueprint","prefix":"blueprint/"}]}
