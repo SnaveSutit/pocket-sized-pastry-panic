@@ -1,0 +1,76 @@
+import ../score.mcbt
+import ../execute.mcbt
+
+function summon {
+	summon nautilus ~ ~ ~ { \
+		Tags: ['pspp.mouselift', 'pspp.mouselift.main', 'pspp.new'], \
+		CustomName: {text: 'A real mouse, I swear!'}, \
+		Invulnerable: true, \
+		PersistenceRequired: true, \
+		Silent: true, \
+		DeathLootTable: 'minecraft:empty', \
+	}
+	as @e[type=nautilus,tag=pspp.new,distance=..1,limit=1] {
+		attribute @s minecraft:bounciness base set 0
+		attribute @s minecraft:gravity base set 0.1
+		attribute @s minecraft:scale base set 3
+		attribute @s minecraft:friction_modifier base set 2
+		attribute @s minecraft:knockback_resistance base set 1
+		attribute @s minecraft:movement_speed base set -1
+		attribute @s minecraft:jump_strength base set 0
+	}
+}
+
+function setup {
+	positioned 21 1 1 rotated 90 0 run function ./summon
+}
+
+function teardown {
+	kill @e[tag=pspp.mouselift]
+}
+
+function tick minecraft:tick {
+	add #pspp.mouselift.move_timer v 1
+	if score #pspp.mouselift.move_timer v matches 3.. run function ./move
+}
+
+function move {
+	set #pspp.mouselift.move_timer v 0
+
+	as @e[type=nautilus,tag=pspp.mouselift.main] {
+		set #input.all v 0
+
+		on passengers {
+			at @s run function math:get_input_relative_look_vector2d
+
+			op #input.all v = #input.backward v
+			op #input.all v += #input.forward v
+			op #input.all v += #input.left v
+			op #input.all v += #input.right v
+		}
+
+		if score #input.all v matches 1.. {
+			# Loaded Speed
+			store result entity @s[tag=pspp.mouselift.loaded] Motion[0] double 0.00075 run get #output.vector.x i
+			store result entity @s[tag=pspp.mouselift.loaded] Motion[2] double 0.00075 run get #output.vector.z i
+			# Empty Speed
+			store result entity @s[tag=!pspp.mouselift.loaded] Motion[0] double 0.001 run get #output.vector.x i
+			store result entity @s[tag=!pspp.mouselift.loaded] Motion[2] double 0.001 run get #output.vector.z i
+		}
+
+		execute \
+			at @s \
+			anchored eyes \
+				on passengers \
+				rotated as @s \
+				rotated ~ 0 \
+				on vehicle \
+			positioned ^ ^ ^0.7 \
+			rotated as @s \
+			positioned ^ ^ ^1 \
+			facing entity @s eyes \
+			facing ^ ^ ^-1 \
+			positioned as @s \
+		run rotate @s ~ 0
+	}
+}

@@ -1,4 +1,6 @@
 import ./math.mcbt
+import ./execute.mcbt
+import ./score.mcbt
 
 function load minecraft:load {
 	scoreboard players set 100 i 100
@@ -17,6 +19,55 @@ function get_look_vector2d {
 			kill @s
 		}
 	}
+}
+
+function get_input_relative_look_vector2d {
+	# Must be run as and at the player
+	# Outputs: #output.vector.x, #output.vector.z
+	set #input.forward v 0
+	set #input.backward v 0
+	set #input.left v 0
+	set #input.right v 0
+
+	if predicate input:key_forward_exclusive run set #input.forward v 1
+	if predicate input:key_backward_exclusive run set #input.backward v 1
+	if predicate input:key_left_exclusive run set #input.left v 1
+	if predicate input:key_right_exclusive run set #input.right v 1
+
+	if score #input.forward v matches 1 \
+		if score #input.left v matches 1 \
+		rotated ~-45 ~ \
+		run return run function math:get_look_vector2d
+
+	if score #input.forward v matches 1 \
+		if score #input.right v matches 1 \
+		rotated ~45 ~ \
+		run return run function math:get_look_vector2d
+
+	if score #input.backward v matches 1 \
+		if score #input.left v matches 1 \
+		rotated ~-135 ~ \
+		run return run function math:get_look_vector2d
+
+	if score #input.backward v matches 1 \
+		if score #input.right v matches 1 \
+		rotated ~135 ~ \
+		run return run function math:get_look_vector2d
+
+	if score #input.forward v matches 1 \
+		run return run function math:get_look_vector2d
+
+	if score #input.backward v matches 1 \
+		rotated ~180 ~ \
+		run return run function math:get_look_vector2d
+
+	if score #input.left v matches 1 \
+		rotated ~-90 ~ \
+		run return run function math:get_look_vector2d
+
+	if score #input.right v matches 1 \
+		rotated ~90 ~ \
+		run return run function math:get_look_vector2d
 }
 
 function get_look_vector3d {

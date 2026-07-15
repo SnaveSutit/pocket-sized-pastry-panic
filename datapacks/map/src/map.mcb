@@ -20,8 +20,6 @@ function load minecraft:load {
 }
 
 function setup {
-	function gameplay:tray_drop_point/setup
-
 	## Fade Effects
 	# Rat Holes
 	summon minecraft:item_display 23.0 3.0 -13.0 {Tags:['pspp.fade'], view_range: 4, width: 1f, height: 20f, item: {components: {"minecraft:item_model": "pspp:fade"}, id: "minecraft:diamond"}, transformation: {left_rotation: [0.0f, 0.0f, -0.7071068f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [3.9499993f, 3.9499993f, 3.9499996f], translation: [0.0f, 0.0f, 0.0f]}}
@@ -59,12 +57,17 @@ function setup {
 	## Fireplace Fire
 	summon minecraft:item_display 1.0 2.0 -32.8125 {Tags:['pspp.fireplace_fire'], view_range: 4, width: 10f, height: 10f, item: {components: {"minecraft:item_model": "pspp:flame"}, id: "minecraft:diamond"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [16.0f, 16.0f, 16.0f], translation: [0.0f, 8.0f, 0.0f]}}
 
+	## External Setup
+	function gameplay:tray_drop_point/setup
+	function gameplay:mouselift/setup
+
 	# Run last
 	set #map.is_setup v 1
 }
 
 function teardown {
 	function gameplay:tray_drop_point/teardown
+	function gameplay:mouselift/teardown
 
 	kill @e[type=item_display,tag=pspp.fade]
 	kill @e[type=item_display,tag=pspp.fireplace_fire]
