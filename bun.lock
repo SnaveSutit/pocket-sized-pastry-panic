@@ -7,6 +7,7 @@
       "dependencies": {
         "chalk": "^5.6.2",
         "fluent-ffmpeg": "^2.1.3",
+        "mc-build": "^4.2.0",
         "terminal-kit": "^3.1.3",
         "ts-node": "^10.9.2",
         "typescript": "^5.9.3",
@@ -83,6 +84,8 @@
     "lazyness": ["lazyness@1.2.0", "", {}, "sha512-KenL6EFbwxBwRxG93t0gcUyi0Nw0Ub31FJKN1laA4UscdkL1K1AxUd0gYZdcLU3v+x+wcFi4uQKS5hL+fk500g=="],
 
     "make-error": ["make-error@1.3.6", "", {}, "sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw=="],
+
+    "mc-build": ["mc-build@4.2.0", "", { "bin": { "mcb3": "dist/mcb.js", "mc-build": "dist/mcb.js", "mcb": "dist/mcb.js" } }, "sha512-jjL/ELxelxcab+AAe2vJTKZyDgSPynPDuAWc6FQqagiP3Ti6PBeBbKrv3RFjkErsk13VbLFWG2arQpaP+ePaRg=="],
 
     "mcb": ["mcb@0.2.0", "", {}, "sha512-AYspKVuGaxdDE6hSy5IcjBTffOL5I+dZ49gUNEWXVS68JWAXHoGFXpL6twAE6Vn0ts3XXurOZJDESecPULBMGg=="],
 
