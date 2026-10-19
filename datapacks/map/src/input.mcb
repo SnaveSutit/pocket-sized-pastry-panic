@@ -1,5 +1,5 @@
 predicate key_forward {
-	"condition": "minecraft:entity_properties",
+	"type": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
 		"minecraft:type_specific/player": {
@@ -11,7 +11,7 @@ predicate key_forward {
 }
 
 predicate key_forward_exclusive {
-	"condition": "minecraft:entity_properties",
+	"type": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
 		"minecraft:type_specific/player": {
@@ -24,7 +24,7 @@ predicate key_forward_exclusive {
 }
 
 predicate key_backward {
-	"condition": "minecraft:entity_properties",
+	"type": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
 		"minecraft:type_specific/player": {
@@ -36,7 +36,7 @@ predicate key_backward {
 }
 
 predicate key_backward_exclusive {
-	"condition": "minecraft:entity_properties",
+	"type": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
 		"minecraft:type_specific/player": {
@@ -49,7 +49,7 @@ predicate key_backward_exclusive {
 }
 
 predicate key_left {
-	"condition": "minecraft:entity_properties",
+	"type": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
 		"minecraft:type_specific/player": {
@@ -61,7 +61,7 @@ predicate key_left {
 }
 
 predicate key_left_exclusive {
-	"condition": "minecraft:entity_properties",
+	"type": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
 		"minecraft:type_specific/player": {
@@ -74,7 +74,7 @@ predicate key_left_exclusive {
 }
 
 predicate key_right {
-	"condition": "minecraft:entity_properties",
+	"type": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
 		"minecraft:type_specific/player": {
@@ -86,7 +86,7 @@ predicate key_right {
 }
 
 predicate key_right_exclusive {
-	"condition": "minecraft:entity_properties",
+	"type": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
 		"minecraft:type_specific/player": {
@@ -99,7 +99,7 @@ predicate key_right_exclusive {
 }
 
 predicate key_sneak {
-	"condition": "minecraft:entity_properties",
+	"type": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
 		"minecraft:type_specific/player": {

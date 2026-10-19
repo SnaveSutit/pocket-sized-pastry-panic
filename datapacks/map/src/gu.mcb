@@ -9,7 +9,7 @@ function load minecraft:load {
 }
 
 item_modifier entity_uuid {
-	"function": "minecraft:set_name",
+	"type": "minecraft:set_name",
 	"entity": "this",
 	"target": "item_name",
 	"name": {"selector": "@s"}

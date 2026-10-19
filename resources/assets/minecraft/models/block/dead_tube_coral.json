@@ -8,7 +8,7 @@
 		{
 			"from": [6.5, 0, 6.5],
 			"to": [9.75, 16, 9.75],
-			"shade": false,
+			"shade_direction_override": "up",
 			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
 			"light_emission": 1,
 			"faces": {
@@ -21,7 +21,7 @@
 		{
 			"from": [6.25, 0, 6.25],
 			"to": [10, 16, 10],
-			"shade": false,
+			"shade_direction_override": "up",
 			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
 			"light_emission": 1,
 			"faces": {

@@ -10,7 +10,7 @@
 		{
 			"from": [-12.28806, -12.5, -12.26903],
 			"to": [28.21194, 14.25, 28.23097],
-			"shade": false,
+			"shade_direction_override": "up",
 			"light_emission": 2,
 			"rotation": {"angle": 22.5, "axis": "y", "origin": [8.02881, 1.5, 7.89481]},
 			"faces": {
@@ -25,7 +25,7 @@
 		{
 			"from": [-12.78806, -13.25, -12.76903],
 			"to": [28.71194, 14.75, 28.73097],
-			"shade": false,
+			"shade_direction_override": "up",
 			"light_emission": 2,
 			"rotation": {"angle": 22.5, "axis": "y", "origin": [8.02881, 1.5, 7.89481]},
 			"faces": {
@@ -40,7 +40,7 @@
 		{
 			"from": [29.46194, -13.75, -13.51903],
 			"to": [-13.53806, 18.25, 29.48097],
-			"shade": false,
+			"shade_direction_override": "up",
 			"light_emission": 2,
 			"rotation": {"angle": 22.5, "axis": "y", "origin": [8.02881, 1.5, 7.89481]},
 			"faces": {
@@ -55,7 +55,7 @@
 		{
 			"from": [-15.40433, -15.75, -15.69134],
 			"to": [31.59567, 20.25, 31.30866],
-			"shade": false,
+			"shade_direction_override": "up",
 			"light_emission": 2,
 			"rotation": {"angle": 22.5, "axis": "y", "origin": [8.02881, 1.5, 7.89481]},
 			"faces": {
@@ -70,7 +70,7 @@
 		{
 			"from": [-6, 20, -6],
 			"to": [22, 26, 22],
-			"shade": false,
+			"shade_direction_override": "up",
 			"light_emission": 2,
 			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 15.125, 8]},
 			"faces": {
@@ -83,7 +83,7 @@
 		{
 			"from": [-16, -8.75, -16],
 			"to": [32, 11.25, 32],
-			"shade": false,
+			"shade_direction_override": "up",
 			"light_emission": 2,
 			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 10.25, 8]},
 			"faces": {
@@ -96,7 +96,7 @@
 		{
 			"from": [-10, 26, -10],
 			"to": [26, 30, 26],
-			"shade": false,
+			"shade_direction_override": "up",
 			"light_emission": 2,
 			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 15.125, 8]},
 			"faces": {

@@ -15,7 +15,11 @@ REPEAT (['right', 'left']) as direction {
 					"trigger": "<%direction === 'right' ? 'minecraft:player_interacted_with_entity' : 'minecraft:player_hurt_entity'%>",
 					"conditions": {
 						"entity": {
-							"entity_type": "minecraft:interaction"
+							"type": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"minecraft:entity_type": "minecraft:interaction"
+							}
 						}
 					}
 				}
