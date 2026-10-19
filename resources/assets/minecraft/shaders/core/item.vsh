@@ -36,9 +36,9 @@ layout(location = 6) out vec2 texCoordGlint;
 #endif
 
 bool shouldShade(vec4 color) {
-    return abs(color.r * 255.0 - 1) < 0.5 &&
-        abs(color.g * 255.0 - 1) < 0.5 &&
-        abs(color.b * 255.0 - 254) < 0.5;
+    return abs(color.r * 255.0 - 192) < 0.5 &&
+           abs(color.g * 255.0 - 192) < 0.5 &&
+           abs(color.b * 255.0 - 196) < 0.5;
 }
 
 void main() {
@@ -48,11 +48,13 @@ void main() {
     sphericalVertexDistance = fog_spherical_distance(Position);
     cylindricalVertexDistance = fog_cylindrical_distance(Position);
     #endif
-    if(!shouldShade(Color)) {
+
+    if (!shouldShade(Color)) {
         vertexColor = minecraft_mix_light(Light0_Direction, Light1_Direction, Normal, Color);
     } else {
         vertexColor = vec4(1.0);
     }
+
     #ifndef OIT_ALPHA_ONLY
     lightMapColor = sample_lightmap(Sampler2, UV2);
     overlayColor = texelFetch(Sampler1, UV1, 0);
