@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"format": "animated-java:format/blueprint",
-		"format_version": "1.10.2",
+		"format_version": "1.11.0",
 		"uuid": "f97aac4a-4ffb-b322-9af5-bacf5bf34423",
 		"save_location": "/var/mnt/ssd2/repos/snavesutit/pocket-sized-pastry-panic/blueprints/pastries/loaf.ajblueprint",
 		"last_used_blueprint_id": "aj:loaf"
@@ -11,9 +11,9 @@
 		"height": 128
 	},
 	"blueprint_settings": {
-		"blueprint_id": "aj:loaf",
+		"blueprint_id": "pspp:pastries/loaf",
 		"render_box": [48, 48],
-		"target_minecraft_version": "26.2",
+		"target_minecraft_version": "26.3",
 		"resource_pack": "../../resources",
 		"data_pack": "../../datapacks/animated_java"
 	},
@@ -395,6 +395,7 @@
 			"locked": false,
 			"scope": 0,
 			"selected": false,
+			"visibility": true,
 			"_static": {
 				"properties": {},
 				"temp_data": {}
@@ -419,7 +420,6 @@
 			"reset": false,
 			"shade": true,
 			"mirror_uv": false,
-			"visibility": true,
 			"autouv": 0,
 			"isOpen": true,
 			"primary_selected": false
@@ -431,6 +431,7 @@
 			"locked": false,
 			"scope": 0,
 			"selected": false,
+			"visibility": true,
 			"_static": {
 				"properties": {},
 				"temp_data": {}
@@ -455,9 +456,8 @@
 			"reset": false,
 			"shade": true,
 			"mirror_uv": false,
-			"visibility": true,
 			"autouv": 0,
-			"isOpen": false,
+			"isOpen": true,
 			"primary_selected": false
 		}
 	],
@@ -468,7 +468,7 @@
 			"children": [
 				{
 					"uuid": "5702707a-8e50-80e4-aaf0-31c31096e7a6",
-					"isOpen": false,
+					"isOpen": true,
 					"children": [
 						"4e71d969-56dd-31b5-0f52-e6c018d985df",
 						"a150e2a7-af6b-86c3-9634-cf69306c63fe",
@@ -483,6 +483,7 @@
 			]
 		}
 	],
+	"texture_groups": [],
 	"textures": [
 		{
 			"name": "cooked_temp.png",
@@ -506,10 +507,13 @@
 			"wrap_mode": "limited",
 			"pbr_channel": "color",
 			"fps": 7,
+			"force_translucent": false,
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
+			"is_texture_slot": false,
+			"slot_textures": [],
 			"visible": true,
 			"internal": true,
 			"saved": false,
@@ -522,7 +526,7 @@
 			"name": "default",
 			"display_name": "Default",
 			"uuid": "b0e29c77-abaa-6303-4160-c03f7b229ddb",
-			"texture_map": {},
+			"slot_textures": {},
 			"excluded_nodes": [],
 			"is_default": true
 		},

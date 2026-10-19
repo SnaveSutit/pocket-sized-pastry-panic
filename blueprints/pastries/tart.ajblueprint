@@ -1,9 +1,9 @@
 {
 	"meta": {
 		"format": "animated-java:format/blueprint",
-		"format_version": "1.10.2",
+		"format_version": "1.11.0",
 		"uuid": "1d68917c-0f17-c759-58a1-8df4c0aa8fbd",
-		"save_location": "C:\\Users\\User\\Desktop\\projects\\github\\pocket-sized-pastry-panic\\blueprints\\pastries\\tart.ajblueprint",
+		"save_location": "/var/mnt/ssd2/repos/snavesutit/pocket-sized-pastry-panic/blueprints/pastries/tart.ajblueprint",
 		"last_used_blueprint_id": ""
 	},
 	"resolution": {
@@ -11,8 +11,8 @@
 		"height": 64
 	},
 	"blueprint_settings": {
-		"blueprint_id": "aj:tart",
-		"target_minecraft_version": "26.2",
+		"blueprint_id": "pspp:pastries/tart",
+		"target_minecraft_version": "26.3",
 		"resource_pack": "../../resources",
 		"data_pack": "../../datapacks/animated_java"
 	},
@@ -209,6 +209,7 @@
 		"cc340dc3-df69-cb73-6dc0-18b54ffd1a05",
 		"7bb0a3e2-f5c6-2d20-a16d-736d49263962"
 	],
+	"texture_groups": [],
 	"textures": [
 		{
 			"name": "tart",
@@ -232,10 +233,13 @@
 			"wrap_mode": "limited",
 			"pbr_channel": "color",
 			"fps": 7,
+			"force_translucent": false,
 			"frame_time": 1,
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
+			"is_texture_slot": false,
+			"slot_textures": [],
 			"visible": true,
 			"internal": true,
 			"saved": false,
@@ -248,7 +252,7 @@
 			"name": "default",
 			"display_name": "Default",
 			"uuid": "a376e3af-0397-0599-1a15-1130d05c49bc",
-			"texture_map": {},
+			"slot_textures": {},
 			"excluded_nodes": [],
 			"is_default": true
 		},
