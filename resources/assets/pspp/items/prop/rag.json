@@ -1,0 +1,7 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "pspp:item/prop/rag",
+    "tints": [{ "type": "minecraft:constant", "value": 12632260 }]
+  }
+}

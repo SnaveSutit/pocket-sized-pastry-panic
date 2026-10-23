@@ -3,32 +3,29 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/plank/0/main_a"
+                    "model": "pspp:block/tile/plank/base/1a"
                 },
                 {
-                    "model": "pspp:block/tiles/plank/0/main_b"
+                    "model": "pspp:block/tile/plank/base/1b"
                 },
                 {
-                    "model": "pspp:block/tiles/plank/0/main_c"
+                    "model": "pspp:block/tile/plank/base/1c"
                 }
             ]
         },
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_a",
-                    "x": 0,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1a",
+                    "x": 0
                 },
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_b",
-                    "x": 0,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1b",
+                    "x": 0
                 },
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_c",
-                    "x": 0,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1c",
+                    "x": 0
                 }
             ],
             "when": {
@@ -38,19 +35,16 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_a",
-                    "x": 180,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1a",
+                    "x": 180
                 },
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_b",
-                    "x": 180,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1b",
+                    "x": 180
                 },
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_c",
-                    "x": 180,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1c",
+                    "x": 180
                 }
             ],
             "when": {
@@ -60,19 +54,16 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_a",
-                    "x": 90,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1a",
+                    "x": 90
                 },
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_b",
-                    "x": 90,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1b",
+                    "x": 90
                 },
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_c",
-                    "x": 90,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1c",
+                    "x": 90
                 }
             ],
             "when": {
@@ -82,19 +73,16 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_a",
-                    "x": -90,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1a",
+                    "x": 270
                 },
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_b",
-                    "x": -90,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1b",
+                    "x": 270
                 },
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_c",
-                    "x": -90,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1c",
+                    "x": 270
                 }
             ],
             "when": {
@@ -104,19 +92,16 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_a",
-                    "z": 90,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1a",
+                    "z": 90
                 },
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_b",
-                    "z": 90,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1b",
+                    "z": 90
                 },
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_c",
-                    "z": 90,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1c",
+                    "z": 90
                 }
             ],
             "when": {
@@ -126,19 +111,16 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_a",
-                    "z": -90,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1a",
+                    "z": 270
                 },
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_b",
-                    "z": -90,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1b",
+                    "z": 270
                 },
                 {
-                    "model": "pspp:block/tiles/plank/0/edge_c",
-                    "z": -90,
-                    "uvlock": true
+                    "model": "pspp:block/tile/plank/edge/1c",
+                    "z": 270
                 }
             ],
             "when": {

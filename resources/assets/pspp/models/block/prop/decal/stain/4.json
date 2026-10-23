@@ -1,0 +1,8 @@
+{
+	"format_version": "26.3",
+	"parent": "pspp:block/prop/decal/base",
+	"textures": {
+		"0": "pspp:block/prop/decal/stain/4",
+		"particle": "pspp:block/decal/stain/4"
+	}
+}

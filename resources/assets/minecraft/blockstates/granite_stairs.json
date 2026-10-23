@@ -3,35 +3,32 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/main_a"
+                    "model": "pspp:block/tile/sett/base/1a"
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/main_b"
+                    "model": "pspp:block/tile/sett/base/1b"
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/main_c"
+                    "model": "pspp:block/tile/sett/base/1c"
                 }
             ]
         },
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": 0,
-                    "uvlock": true
+                    "y": 0
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": 0,
-                    "uvlock": true
+                    "y": 0
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": 0,
-                    "uvlock": true
+                    "y": 0
                 }
             ],
             "when": {
@@ -42,22 +39,19 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": -90,
-                    "uvlock": true
+                    "y": 270
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": -90,
-                    "uvlock": true
+                    "y": 270
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": -90,
-                    "uvlock": true
+                    "y": 270
                 }
             ],
             "when": {
@@ -68,22 +62,19 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": 0,
-                    "uvlock": true
+                    "y": 0
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": 0,
-                    "uvlock": true
+                    "y": 0
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": 0,
-                    "uvlock": true
+                    "y": 0
                 }
             ],
             "when": {
@@ -94,22 +85,19 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": -90,
-                    "uvlock": true
+                    "y": 270
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": -90,
-                    "uvlock": true
+                    "y": 270
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": -90,
-                    "uvlock": true
+                    "y": 270
                 }
             ],
             "when": {
@@ -120,22 +108,19 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": 180,
-                    "uvlock": true
+                    "y": 180
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": 180,
-                    "uvlock": true
+                    "y": 180
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": 180,
-                    "uvlock": true
+                    "y": 180
                 }
             ],
             "when": {
@@ -146,22 +131,19 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": 90,
-                    "uvlock": true
+                    "y": 90
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": 90,
-                    "uvlock": true
+                    "y": 90
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": 90,
-                    "uvlock": true
+                    "y": 90
                 }
             ],
             "when": {
@@ -172,22 +154,19 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": 180,
-                    "uvlock": true
+                    "y": 180
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": 180,
-                    "uvlock": true
+                    "y": 180
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": 180,
-                    "uvlock": true
+                    "y": 180
                 }
             ],
             "when": {
@@ -198,22 +177,19 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": 90,
-                    "uvlock": true
+                    "y": 90
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": 90,
-                    "uvlock": true
+                    "y": 90
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": 90,
-                    "uvlock": true
+                    "y": 90
                 }
             ],
             "when": {
@@ -224,22 +200,19 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": 90,
-                    "uvlock": true
+                    "y": 90
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": 90,
-                    "uvlock": true
+                    "y": 90
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": 90,
-                    "uvlock": true
+                    "y": 90
                 }
             ],
             "when": {
@@ -250,22 +223,19 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": 0,
-                    "uvlock": true
+                    "y": 0
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": 0,
-                    "uvlock": true
+                    "y": 0
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": 0,
-                    "uvlock": true
+                    "y": 0
                 }
             ],
             "when": {
@@ -276,22 +246,19 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": 90,
-                    "uvlock": true
+                    "y": 90
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": 90,
-                    "uvlock": true
+                    "y": 90
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": 90,
-                    "uvlock": true
+                    "y": 90
                 }
             ],
             "when": {
@@ -302,22 +269,19 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": 0,
-                    "uvlock": true
+                    "y": 0
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": 0,
-                    "uvlock": true
+                    "y": 0
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": 0,
-                    "uvlock": true
+                    "y": 0
                 }
             ],
             "when": {
@@ -328,22 +292,19 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": 270,
-                    "uvlock": true
+                    "y": 270
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": 270,
-                    "uvlock": true
+                    "y": 270
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": 270,
-                    "uvlock": true
+                    "y": 270
                 }
             ],
             "when": {
@@ -354,22 +315,19 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": 180,
-                    "uvlock": true
+                    "y": 180
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": 180,
-                    "uvlock": true
+                    "y": 180
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": 180,
-                    "uvlock": true
+                    "y": 180
                 }
             ],
             "when": {
@@ -380,22 +338,19 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": 270,
-                    "uvlock": true
+                    "y": 270
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": 270,
-                    "uvlock": true
+                    "y": 270
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": 270,
-                    "uvlock": true
+                    "y": 270
                 }
             ],
             "when": {
@@ -406,22 +361,19 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_a",
+                    "model": "pspp:block/tile/sett/edge/1a",
                     "x": 90,
-                    "y": 180,
-                    "uvlock": true
+                    "y": 180
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_b",
+                    "model": "pspp:block/tile/sett/edge/1b",
                     "x": 90,
-                    "y": 180,
-                    "uvlock": true
+                    "y": 180
                 },
                 {
-                    "model": "pspp:block/tiles/floor/2/edge_c",
+                    "model": "pspp:block/tile/sett/edge/1c",
                     "x": 90,
-                    "y": 180,
-                    "uvlock": true
+                    "y": 180
                 }
             ],
             "when": {

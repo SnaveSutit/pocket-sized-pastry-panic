@@ -1,0 +1,80 @@
+{
+	"format_version": "1.21.11",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "pspp:block/prop/candle/base",
+		"1": "pspp:block/prop/candle/flame",
+		"particle": "pspp:block/prop/candle/base"
+	},
+	"elements": [
+		{
+			"from": [2, -8, 2],
+			"to": [14, 4, 14],
+			"shade_direction_override": "up",
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [7.95642, 6.75, 8]},
+			"faces": {
+				"north": {"uv": [5, 1.5, 0, 7.5], "texture": "#0"},
+				"east": {"uv": [0, 1.5, 5, 7.5], "texture": "#0"},
+				"south": {"uv": [5, 1.5, 0, 7.5], "texture": "#0"},
+				"west": {"uv": [0, 1.5, 5, 7.5], "texture": "#0"},
+				"up": {"uv": [11, 0, 16, 5], "texture": "#0"},
+				"down": {"uv": [0, 13.5, 5, 14], "texture": "#0"}
+			}
+		},
+		{
+			"from": [1.07645, -3.99098, 0.83705],
+			"to": [15.07645, 6.00902, 14.83705],
+			"shade_direction_override": "up",
+			"rotation": {"x": -1.46236, "y": -22.36837, "z": -2.70613, "origin": [7.95642, 4.75, 8]},
+			"faces": {
+				"north": {"uv": [5, 6, 11, 11], "texture": "#0"},
+				"east": {"uv": [11, 6, 5, 11], "texture": "#0"},
+				"south": {"uv": [5, 6, 11, 11], "texture": "#0"},
+				"west": {"uv": [11, 6, 5, 11], "texture": "#0"},
+				"up": {"uv": [5, 0, 11, 6], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5.95642, 6, 8.04358],
+			"to": [9.95642, 10, 8.04358],
+			"shade_direction_override": "up",
+			"rotation": {"x": 0, "y": 67.5, "z": 0, "origin": [7.95642, 4.75, 8]},
+			"faces": {
+				"north": {"uv": [11, 5, 13, 7], "texture": "#0"},
+				"south": {"uv": [13, 5, 11, 7], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6, 6, 8],
+			"to": [10, 10, 8],
+			"shade_direction_override": "up",
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [7.95642, 4.75, 8]},
+			"faces": {
+				"north": {"uv": [11, 5, 13, 7], "texture": "#0"},
+				"south": {"uv": [13, 5, 11, 7], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.98724, 7, 2.96919],
+			"to": [7.98724, 18, 12.96919],
+			"shade_direction_override": "up",
+			"light_emission": 15,
+			"rotation": {"x": 0, "y": -67.5, "z": 0, "origin": [7.95642, 4.75, 8]},
+			"faces": {
+				"east": {"uv": [0, 0, 10, 11], "texture": "#1"},
+				"west": {"uv": [0, 0, 10, 11], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.92561, 7, 2.96919],
+			"to": [7.92561, 18, 12.96919],
+			"shade_direction_override": "up",
+			"light_emission": 15,
+			"rotation": {"x": 180, "y": -22.5, "z": 180, "origin": [7.95642, 4.75, 8]},
+			"faces": {
+				"east": {"uv": [0, 0, 10, 11], "texture": "#1"},
+				"west": {"uv": [0, 0, 10, 11], "texture": "#1"}
+			}
+		}
+	]
+}

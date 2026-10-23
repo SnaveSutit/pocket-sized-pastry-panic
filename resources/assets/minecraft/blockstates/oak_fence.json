@@ -1,30 +1,22 @@
 {
     "variants": {
         "north=false,south=false,east=false,west=false": {
-            "model": "pspp:block/beams/0/up"
+            "model": "pspp:block/prop/beam/up"
         },
         "north=true,south=false,east=false,west=false": {
-            "model": "pspp:block/beams/0/tilt",
+            "model": "pspp:block/prop/beam/tilt",
             "y": 0
         },
         "north=false,south=false,east=false,west=true": {
-            "model": "pspp:block/beams/0/tilt",
-            "y": -90
+            "model": "pspp:block/prop/beam/tilt",
+            "y": 270
         },
         "north=false,south=true,east=false,west=false": {
-            "model": "pspp:block/beams/0/tilt",
-            "y": -180
+            "model": "pspp:block/prop/beam/tilt",
+            "y": 180
         },
         "north=false,south=false,east=true,west=false": {
-            "model": "pspp:block/beams/0/tilt",
-            "y": -270
-        },
-        "north=true,south=true,east=false,west=false": {
-            "model": "pspp:block/beams/0/side",
-            "y": 0
-        },
-        "north=false,south=false,east=true,west=true": {
-            "model": "pspp:block/beams/0/side",
+            "model": "pspp:block/prop/beam/tilt",
             "y": 90
         }
     }

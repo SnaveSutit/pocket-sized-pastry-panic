@@ -1,35 +1,35 @@
 {
     "variants": {
         "north=false,south=true,east=true,west=false": {
-            "model": "pspp:block/trims/corner",
+            "model": "pspp:block/prop/platform/corner",
             "y": 0
         },
         "north=false,south=true,east=false,west=true": {
-            "model": "pspp:block/trims/corner",
+            "model": "pspp:block/prop/platform/corner",
             "y": 90
         },
         "north=true,south=false,east=false,west=true": {
-            "model": "pspp:block/trims/corner",
+            "model": "pspp:block/prop/platform/corner",
             "y": 180
         },
         "north=true,south=false,east=true,west=false": {
-            "model": "pspp:block/trims/corner",
+            "model": "pspp:block/prop/platform/corner",
             "y": 270
         },
         "north=false,south=true,east=true,west=true": {
-            "model": "pspp:block/trims/side",
+            "model": "pspp:block/prop/platform/side",
             "y": 0
         },
         "north=true,south=true,east=false,west=true": {
-            "model": "pspp:block/trims/side",
+            "model": "pspp:block/prop/platform/side",
             "y": 90
         },
         "north=true,south=false,east=true,west=true": {
-            "model": "pspp:block/trims/side",
+            "model": "pspp:block/prop/platform/side",
             "y": 180
         },
         "north=true,south=true,east=true,west=false": {
-            "model": "pspp:block/trims/side",
+            "model": "pspp:block/prop/platform/side",
             "y": 270
         }
     }

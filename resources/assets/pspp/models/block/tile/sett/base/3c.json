@@ -1,0 +1,8 @@
+{
+	"format_version": "26.3",
+	"parent": "pspp:block/tile/base",
+	"textures": {
+		"0": "pspp:block/tile/sett/3c",
+		"particle": "pspp:block/tile/sett/3c"
+	}
+}

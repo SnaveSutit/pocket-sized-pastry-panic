@@ -1,0 +1,22 @@
+{
+	"format_version": "26.3",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "pspp:block/tile/plank/1a",
+		"particle": "pspp:block/tile/plank/1a"
+	},
+	"elements": [
+		{
+			"from": [2, 0, 2],
+			"to": [14, 16, 14],
+			"light_emission": 1,
+			"rotation": {"angle": 0, "axis": "x", "origin": [6, 0, 2]},
+			"faces": {
+				"north": {"uv": [1, 8, 7, 16], "texture": "#0"},
+				"east": {"uv": [1, 8, 7, 16], "texture": "#0"},
+				"south": {"uv": [1, 8, 7, 16], "texture": "#0"},
+				"west": {"uv": [1, 8, 7, 16], "texture": "#0"}
+			}
+		}
+	]
+}

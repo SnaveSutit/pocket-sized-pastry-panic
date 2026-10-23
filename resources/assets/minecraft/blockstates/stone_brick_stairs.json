@@ -3,28 +3,28 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/main_a"
+                    "model": "pspp:block/tile/brick/base/2a"
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/main_b"
+                    "model": "pspp:block/tile/brick/base/2b"
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/main_c"
+                    "model": "pspp:block/tile/brick/base/2c"
                 }
             ]
         },
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "model": "pspp:block/tile/brick/edge/2a",
                     "x": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "model": "pspp:block/tile/brick/edge/2b",
                     "x": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "model": "pspp:block/tile/brick/edge/2c",
                     "x": 0
                 }
                 
@@ -38,16 +38,16 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
-                    "z": -90
+                    "model": "pspp:block/tile/brick/edge/2a",
+                    "z": 270
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
-                    "z": -90
+                    "model": "pspp:block/tile/brick/edge/2b",
+                    "z": 270
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
-                    "z": -90
+                    "model": "pspp:block/tile/brick/edge/2c",
+                    "z": 270
                 }
                 
             ],
@@ -60,15 +60,15 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "model": "pspp:block/tile/brick/edge/2a",
                     "x": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "model": "pspp:block/tile/brick/edge/2b",
                     "x": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "model": "pspp:block/tile/brick/edge/2c",
                     "x": 0
                 }
                 
@@ -82,16 +82,16 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
-                    "z": -90
+                    "model": "pspp:block/tile/brick/edge/2a",
+                    "z": 270
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
-                    "z": -90
+                    "model": "pspp:block/tile/brick/edge/2b",
+                    "z": 270
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
-                    "z": -90
+                    "model": "pspp:block/tile/brick/edge/2c",
+                    "z": 270
                 }
                 
             ],
@@ -104,15 +104,15 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "model": "pspp:block/tile/brick/edge/2a",
                     "x": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "model": "pspp:block/tile/brick/edge/2b",
                     "x": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "model": "pspp:block/tile/brick/edge/2c",
                     "x": 0
                 }
                 
@@ -126,15 +126,15 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "model": "pspp:block/tile/brick/edge/2a",
                     "x": 90
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "model": "pspp:block/tile/brick/edge/2b",
                     "x": 90
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "model": "pspp:block/tile/brick/edge/2c",
                     "x": 90
                 }
                 
@@ -148,15 +148,15 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "model": "pspp:block/tile/brick/edge/2a",
                     "x": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "model": "pspp:block/tile/brick/edge/2b",
                     "x": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "model": "pspp:block/tile/brick/edge/2c",
                     "x": 0
                 }
                 
@@ -170,15 +170,15 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "model": "pspp:block/tile/brick/edge/2a",
                     "x": 90
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "model": "pspp:block/tile/brick/edge/2b",
                     "x": 90
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "model": "pspp:block/tile/brick/edge/2c",
                     "x": 90
                 }
                 
@@ -192,15 +192,15 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "model": "pspp:block/tile/brick/edge/2a",
                     "z": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "model": "pspp:block/tile/brick/edge/2b",
                     "z": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "model": "pspp:block/tile/brick/edge/2c",
                     "z": 0
                 }
                 
@@ -214,15 +214,15 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "model": "pspp:block/tile/brick/edge/2a",
                     "z": 90
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "model": "pspp:block/tile/brick/edge/2b",
                     "z": 90
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "model": "pspp:block/tile/brick/edge/2c",
                     "z": 90
                 }
                 
@@ -236,15 +236,15 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "model": "pspp:block/tile/brick/edge/2a",
                     "z": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "model": "pspp:block/tile/brick/edge/2b",
                     "z": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "model": "pspp:block/tile/brick/edge/2c",
                     "z": 0
                 }
                 
@@ -258,15 +258,15 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "model": "pspp:block/tile/brick/edge/2a",
                     "z": 90
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "model": "pspp:block/tile/brick/edge/2b",
                     "z": 90
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "model": "pspp:block/tile/brick/edge/2c",
                     "z": 90
                 }
                 
@@ -280,15 +280,15 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "model": "pspp:block/tile/brick/edge/2a",
                     "x": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "model": "pspp:block/tile/brick/edge/2b",
                     "x": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "model": "pspp:block/tile/brick/edge/2c",
                     "x": 0
                 }
                 
@@ -302,16 +302,16 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
-                    "x": -90
+                    "model": "pspp:block/tile/brick/edge/2a",
+                    "x": 270
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
-                    "x": -90
+                    "model": "pspp:block/tile/brick/edge/2b",
+                    "x": 270
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
-                    "x": -90
+                    "model": "pspp:block/tile/brick/edge/2c",
+                    "x": 270
                 }
                 
             ],
@@ -324,15 +324,15 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
+                    "model": "pspp:block/tile/brick/edge/2a",
                     "x": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
+                    "model": "pspp:block/tile/brick/edge/2b",
                     "x": 0
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
+                    "model": "pspp:block/tile/brick/edge/2c",
                     "x": 0
                 }
                 
@@ -346,16 +346,16 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_a",
-                    "x": -90
+                    "model": "pspp:block/tile/brick/edge/2a",
+                    "x": 270
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_b",
-                    "x": -90
+                    "model": "pspp:block/tile/brick/edge/2b",
+                    "x": 270
                 },
                 {
-                    "model": "pspp:block/tiles/brick/0/edge_c",
-                    "x": -90
+                    "model": "pspp:block/tile/brick/edge/2c",
+                    "x": 270
                 }
                 
             ],

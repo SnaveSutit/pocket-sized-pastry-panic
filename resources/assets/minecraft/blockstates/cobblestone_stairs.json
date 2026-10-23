@@ -3,8 +3,8 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/trims/brick/0/22_5_a",
-                    "x": -90
+                    "model": "pspp:block/tile/brick/trim/22_5/line",
+                    "x": 270
                 }
             ],
             "when": {
@@ -16,9 +16,9 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/trims/brick/0/22_5_a",
+                    "model": "pspp:block/tile/brick/trim/22_5/line",
                     "y": 180,
-                    "x": -90
+                    "x": 270
                 }
             ],
             "when": {
@@ -30,8 +30,8 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/trims/brick/0/22_5_b",
-                    "x": -90
+                    "model": "pspp:block/tile/brick/trim/22_5/no_line",
+                    "x": 270
                 }
             ],
             "when": {
@@ -43,9 +43,9 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/trims/brick/0/22_5_b",
+                    "model": "pspp:block/tile/brick/trim/22_5/no_line",
                     "y": 180,
-                    "x": -90
+                    "x": 270
                 }
             ],
             "when": {
@@ -57,7 +57,7 @@
         {
             "apply": [
                 {
-                    "model": "pspp:block/trims/brick/0/22_5_b",
+                    "model": "pspp:block/tile/brick/trim/22_5/no_line",
                     "y": 90,
                     "x": 90
                 }

@@ -1,0 +1,8 @@
+{
+	"format_version": "26.3",
+	"parent": "pspp:block/tile/edge",
+	"textures": {
+		"0": "pspp:block/tile/plank/3b",
+		"particle": "pspp:block/tile/plank/3b"
+	}
+}
