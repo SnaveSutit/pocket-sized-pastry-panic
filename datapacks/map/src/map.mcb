@@ -10,10 +10,11 @@ function load minecraft:load {
 	create i
 	create v
 	create mcb.i
+	create state
 
 	setworldspawn 0 27 -75 41 90
 
-	schedule 1t replace {
+	schedule 5t replace {
 		unless function map:is_world_loaded run return run schedule function ^0 1t replace
 
 		# Auto teardown if map is setup and auto_teardown_on_reload is enabled
@@ -82,6 +83,7 @@ function setup {
 	## External Setup
 	function gameplay:tray_drop_point/setup
 	function gameplay:mouselift/setup
+	function gameplay:cutting_board/setup
 
 	# Run last
 	set #map.is_setup v 1
@@ -93,6 +95,7 @@ function setup {
 function teardown {
 	function gameplay:tray_drop_point/teardown
 	function gameplay:mouselift/teardown
+	function gameplay:cutting_board/teardown
 
 	kill @e[type=item_display,tag=pspp.fade]
 	kill @e[type=item_display,tag=pspp.fireplace_fire]

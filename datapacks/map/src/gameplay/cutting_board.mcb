@@ -1,0 +1,36 @@
+import ../score.mcbt
+import ../execute.mcbt
+
+
+function setup {
+	positioned 29.0 9 7.0 rotated -90 0 run function pspp:station/cutting_board/summon {args:{}}
+	positioned 29.0 9 14.0 rotated -90 0 run function pspp:station/cutting_board/summon {args:{}}
+}
+
+
+function teardown {
+	function pspp:station/cutting_board/remove/entities
+}
+
+
+function on_interact {
+	function pspp:station/cutting_board/as_root {command:'function gameplay:cutting_board/chop'}
+}
+
+
+function on_attack {
+	function pspp:station/cutting_board/as_root {command:'function gameplay:cutting_board/chop'}
+}
+
+
+function chop {
+	if score @s state matches 1 run return 0
+
+	set @s state 1
+	function pspp:station/cutting_board/animations/chop/play
+}
+
+
+function on_chop_complete {
+	set @s state 0
+}

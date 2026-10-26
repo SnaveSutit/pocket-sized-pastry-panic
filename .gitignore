@@ -145,3 +145,4 @@ dist
 .yarn/install-state.gz
 .pnp.*
 world/datapacks
+.directory
