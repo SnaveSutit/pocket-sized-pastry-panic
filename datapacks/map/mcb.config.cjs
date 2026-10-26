@@ -46,7 +46,7 @@ module.exports = {
 
 			this.driven = readJsonData()
 
-			this.dev = process.argv.includes('--dev')
+			this.dev = !process.argv.includes('--prod')
 		})
 	},
 }
