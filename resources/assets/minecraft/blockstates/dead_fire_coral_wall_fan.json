@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "pspp:block/prop/broken_wood/up",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "pspp:block/prop/broken_wood/side"
+    },
+    "facing=south": {
+      "model": "pspp:block/prop/broken_wood/side",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pspp:block/prop/broken_wood/up",
+      "y": 270
+    }
+  }
+}
