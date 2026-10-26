@@ -1,5 +1,7 @@
 {
 	"format_version": "1.21.11",
-	"texture": "pspp:block/---"
+	"textures": {
+		"0": "pspp:block/---",
+		"particle": "pspp:block/---"
 	}
 }

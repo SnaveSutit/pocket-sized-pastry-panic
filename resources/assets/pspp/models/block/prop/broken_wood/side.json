@@ -1,0 +1,20 @@
+{
+	"format_version": "26.3",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "pspp:block/prop/broken_wood",
+		"particle": "pspp:block/prop/broken_wood"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 5],
+			"to": [16, 32, 16],
+			"light_emission": 1,
+			"rotation": {"angle": 0, "axis": "x", "origin": [16, 0, 12]},
+			"faces": {
+				"east": {"uv": [0, 10.5, 16, 16], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [0, 16, 16, 10.5], "rotation": 90, "texture": "#0"}
+			}
+		}
+	]
+}
