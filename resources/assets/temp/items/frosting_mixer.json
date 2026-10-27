@@ -1,0 +1,7 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "temp:item/frosting_mixer",
+    "tints": [{ "type": "minecraft:constant", "value": 12632260 }]
+  }
+}
