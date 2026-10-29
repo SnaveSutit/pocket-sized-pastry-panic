@@ -1,0 +1,38 @@
+{
+	"format_version": "1.21.11",
+	"texture_size": [32, 16],
+	"textures": {
+		"0": "pspp:block/prop/platform",
+		"particle": "pspp:block/prop/platform"
+	},
+	"elements": [
+		{
+			"from": [-2, 9, 6],
+			"to": [16, 16, 16],
+			"light_emission": 1,
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 16]},
+			"faces": {
+				"north": {"uv": [8, 0, 16, 7], "texture": "#0", "cullface": "north"},
+				"east": {"uv": [8, 0, 16, 7], "texture": "#0", "cullface": "east"},
+				"south": {"uv": [8, 0, 16, 7], "texture": "#0", "cullface": "south"},
+				"west": {"uv": [8, 0, 16, 7], "texture": "#0", "cullface": "west"},
+				"up": {"uv": [16, 16, 8, 7], "texture": "#0"},
+				"down": {"uv": [16, 16, 8, 7], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6, 9, -4],
+			"to": [16, 16, 6],
+			"light_emission": 1,
+			"rotation": {"x": 0, "y": 89.99994, "z": -0.00005, "origin": [11, 12.5, 1]},
+			"faces": {
+				"north": {"uv": [11.5, 0, 16, 7], "texture": "#0", "cullface": "north"},
+				"east": {"uv": [11.5, 0, 16, 7], "texture": "#0", "cullface": "east"},
+				"south": {"uv": [11.5, 0, 16, 7], "texture": "#0", "cullface": "south"},
+				"west": {"uv": [11.5, 0, 16, 7], "texture": "#0", "cullface": "west"},
+				"up": {"uv": [16, 16, 11.5, 7], "texture": "#0"},
+				"down": {"uv": [16, 16, 11.5, 7], "texture": "#0"}
+			}
+		}
+	]
+}
