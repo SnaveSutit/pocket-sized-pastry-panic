@@ -7,31 +7,31 @@
 	},
 	"elements": [
 		{
-			"from": [-2, 9, 6],
+			"from": [0, 9, 6],
 			"to": [16, 16, 16],
 			"light_emission": 1,
 			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 16]},
 			"faces": {
-				"north": {"uv": [8, 0, 16, 7], "texture": "#0", "cullface": "north"},
-				"east": {"uv": [8, 0, 16, 7], "texture": "#0", "cullface": "east"},
-				"south": {"uv": [8, 0, 16, 7], "texture": "#0", "cullface": "south"},
-				"west": {"uv": [8, 0, 16, 7], "texture": "#0", "cullface": "west"},
-				"up": {"uv": [16, 16, 8, 7], "texture": "#0"},
-				"down": {"uv": [16, 16, 8, 7], "texture": "#0"}
+				"north": {"uv": [9, 0, 16, 7], "texture": "#0", "cullface": "north"},
+				"east": {"uv": [9, 0, 16, 7], "texture": "#0", "cullface": "east"},
+				"south": {"uv": [9, 0, 16, 7], "texture": "#0", "cullface": "south"},
+				"west": {"uv": [9, 0, 16, 7], "texture": "#0", "cullface": "west"},
+				"up": {"uv": [16, 16, 9, 7], "texture": "#0"},
+				"down": {"uv": [16, 16, 9, 7], "texture": "#0"}
 			}
 		},
 		{
 			"from": [6, 9, -4],
-			"to": [16, 16, 6],
+			"to": [12, 16, 6],
 			"light_emission": 1,
 			"rotation": {"x": 0, "y": 89.99994, "z": -0.00005, "origin": [11, 12.5, 1]},
 			"faces": {
-				"north": {"uv": [11.5, 0, 16, 7], "texture": "#0", "cullface": "north"},
-				"east": {"uv": [11.5, 0, 16, 7], "texture": "#0", "cullface": "east"},
-				"south": {"uv": [11.5, 0, 16, 7], "texture": "#0", "cullface": "south"},
-				"west": {"uv": [11.5, 0, 16, 7], "texture": "#0", "cullface": "west"},
-				"up": {"uv": [16, 16, 11.5, 7], "texture": "#0"},
-				"down": {"uv": [16, 16, 11.5, 7], "texture": "#0"}
+				"north": {"uv": [13, 0, 16, 7], "texture": "#0", "cullface": "north"},
+				"east": {"uv": [13, 0, 16, 7], "texture": "#0", "cullface": "east"},
+				"south": {"uv": [13, 0, 16, 7], "texture": "#0", "cullface": "south"},
+				"west": {"uv": [13, 0, 16, 7], "texture": "#0", "cullface": "west"},
+				"up": {"uv": [16, 16, 13, 7], "texture": "#0"},
+				"down": {"uv": [16, 16, 13, 7], "texture": "#0"}
 			}
 		}
 	]
