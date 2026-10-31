@@ -1,0 +1,38 @@
+{
+	"format_version": "26.3",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "temp:item/sugar",
+		"particle": "temp:item/sugar"
+	},
+	"elements": [
+		{
+			"from": [-7.25, 0.75, -7.25],
+			"to": [23.25, 31.25, 23.25],
+			"light_emission": 8,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 16, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 8], "texture": "#0", "tintindex": 0},
+				"east": {"uv": [8, 0, 16, 8], "texture": "#0", "tintindex": 0},
+				"south": {"uv": [0, 0, 8, 8], "texture": "#0", "tintindex": 0},
+				"west": {"uv": [8, 0, 16, 8], "texture": "#0", "tintindex": 0},
+				"up": {"uv": [8, 8, 16, 16], "texture": "#0", "tintindex": 0},
+				"down": {"uv": [8, 0, 16, 8], "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [-7.5, 0.5, -7.5],
+			"to": [23.5, 31.5, 23.5],
+			"light_emission": 8,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 16, 8]},
+			"faces": {
+				"north": {"uv": [0, 8, 8, 16], "texture": "#0", "tintindex": 0},
+				"east": {"uv": [0, 8, 8, 16], "texture": "#0", "tintindex": 0},
+				"south": {"uv": [0, 8, 8, 16], "texture": "#0", "tintindex": 0},
+				"west": {"uv": [0, 8, 8, 16], "texture": "#0", "tintindex": 0},
+				"up": {"uv": [0, 8, 8, 16], "texture": "#0", "tintindex": 0},
+				"down": {"uv": [0, 8, 8, 16], "texture": "#0", "tintindex": 0}
+			}
+		}
+	]
+}
