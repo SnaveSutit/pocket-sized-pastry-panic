@@ -23,29 +23,29 @@
 	{
 		"id": "fireplace_0",
 		"group": "fireplace",
-		"position": "11.50 2.0 -27.5",
+		"position": "12.50 2.0 -27.5",
 		"rotation": "0",
 		"uuid": "191d1b6e-8f69-41c9-bda9-7a4654b0220a"
 	},
 
 	{
-		"id": "cutting_board_0",
-		"group": "cutting_board",
-		"position": "-6.00 2.0 23.0",
+		"id": "frosting_station_0",
+		"group": "frosting_station",
+		"position": "-7.0 2.0 23.0",
 		"rotation": "180",
 		"uuid": "0bff5386-1fb1-48d7-806b-ead6af36581a"
 	},
 	{
-		"id": "cutting_board_1",
-		"group": "cutting_board",
-		"position": "1.00 2.0 23.0",
+		"id": "frosting_station_1",
+		"group": "frosting_station",
+		"position": "1.0 2.0 23.0",
 		"rotation": "180",
 		"uuid": "e263fd08-76b2-48b2-8120-c175d4e03852"
 	},
 	{
-		"id": "cutting_board_2",
-		"group": "cutting_board",
-		"position": "8.00 2.0 23.0",
+		"id": "frosting_station_2",
+		"group": "frosting_station",
+		"position": "9.00 2.0 23.0",
 		"rotation": "180",
 		"uuid": "8bc85f73-25f3-43e9-978c-21a0b56cd80a"
 	},
