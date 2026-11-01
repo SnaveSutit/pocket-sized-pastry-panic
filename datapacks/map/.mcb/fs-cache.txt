@@ -59,8 +59,8 @@ data/interactions/function/left_click/do.mcfunction:730312877102ab93e67d49fd644e
 data/map/function/zzz/0.mcfunction:539a9001a06dce505712206781a451b1555dea4e
 data/map/function/load.mcfunction:be0148c1bfdd7ff93860a9524aabb0301ec8a290
 data/map/function/is_world_loaded.mcfunction:bd7a467a3927f82cafb452555b0d579c33484a9b
-data/map/function/setup.mcfunction:fc343c97c89ec472d1ffd20d5473f58f845d88f0
-data/map/function/teardown.mcfunction:6a920316e885dd9f90be4cb488121760e1db707d
+data/map/function/setup.mcfunction:e511edaff5fdfa9bb821175f31e2a4404fa5cd32
+data/map/function/teardown.mcfunction:60628e826859465e05f129002fc1583f4f6836b6
 data/map/function/reset.mcfunction:bb7f1a7b9eb7a96efaa9a818524b6ced3e9b3f93
 data/map/function/tick.mcfunction:31220178bb5146e3608ba658ce6ee4b3a88d686b
 data/map/function/second.mcfunction:b804a04a1043fa2325a00c76d35f90916ca40277

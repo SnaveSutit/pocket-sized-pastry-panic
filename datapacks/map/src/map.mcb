@@ -80,12 +80,12 @@ function setup {
 	summon minecraft:item_display 1.0 0.0 11.0 {Tags:['pspp.fade'], view_range: 4, width: 5f, height: 5f, item: {components: {"minecraft:custom_data": {model_browser_data: 1b}, "minecraft:equippable": {slot: "head"}, "minecraft:item_model": "pspp:prop/fade", "minecraft:item_name": "Fade"}, count: 1, id: "minecraft:iron_nugget"}, transformation: {left_rotation: [1.0f, 0.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [5.9f, 1.0f, 5.9f], translation: [0.0f, 0.0f, 0.0f]}}
 
 	## Fireplace Fire
-	summon minecraft:item_display 1.0 2.0 -32.8125 {Tags:['pspp.fireplace_fire'], view_range: 4, width: 10f, height: 10f, item: {components: {"minecraft:item_model": "pspp:prop/flame"}, id: "minecraft:diamond"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [16.0f, 16.0f, 16.0f], translation: [0.0f, 8.0f, 0.0f]}}
+	summon minecraft:item_display 1.0 2.0 -35.5 {Tags:['pspp.fireplace_fire'], view_range: 4, width: 10f, height: 10f, item: {components: {"minecraft:item_model": "pspp:prop/flame"}, id: "minecraft:diamond"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [16.0f, 16.0f, 16.0f], translation: [0.0f, 8.0f, 0.0f]}}
 
 	## External Setup
 	function gameplay:tray_drop_point/setup
 	function gameplay:mouselift/setup
-	function gameplay:stations/cutting_board/setup
+	function gameplay:station/cutting_board/setup
 
 	# Run last
 	set #map.is_setup v 1
@@ -99,7 +99,7 @@ function teardown {
 
 	function gameplay:tray_drop_point/teardown
 	function gameplay:mouselift/teardown
-	function gameplay:stations/cutting_board/teardown
+	function gameplay:station/cutting_board/teardown
 
 	kill @e[type=item_display,tag=pspp.fade]
 	kill @e[type=item_display,tag=pspp.fireplace_fire]
