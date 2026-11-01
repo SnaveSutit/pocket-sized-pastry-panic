@@ -82,9 +82,14 @@ function setup {
 	## Fireplace Fire
 	summon minecraft:item_display 1.0 2.0 -35.5 {Tags:['pspp.fireplace_fire'], view_range: 4, width: 10f, height: 10f, item: {components: {"minecraft:item_model": "pspp:prop/flame"}, id: "minecraft:diamond"}, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [16.0f, 16.0f, 16.0f], translation: [0.0f, 8.0f, 0.0f]}}
 
+	## Baking Racks
+	summon minecraft:item_display 20.0 1.0 -21.0 {Tags:['pspp.fireplace_fire'], view_range: 4, width: 10f, height: 10f, item: {components: {"minecraft:custom_data": {model_browser_data: 1b}, "minecraft:equippable": {slot: "head"}, "minecraft:item_model": "pspp:gameplay/baking_rack", "minecraft:item_name": "Baking Rack"}, count: 1, id: "minecraft:iron_nugget"}, transformation: {left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [9.999998f, 9.999999f, 9.999998f], translation: [0.0f, 0.0f, 0.0f]}}
+	summon minecraft:item_display -18.0 1.0 -21.0 {Tags:['pspp.fireplace_fire'], view_range: 4, width: 10f, height: 10f,item: {components: {"minecraft:custom_data": {model_browser_data: 1b}, "minecraft:equippable": {slot: "head"}, "minecraft:item_model": "pspp:gameplay/baking_rack", "minecraft:item_name": "Baking Rack"}, count: 1, id: "minecraft:iron_nugget"}, transformation: {left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [9.999998f, 9.999999f, 9.999998f], translation: [0.0f, 0.0f, 0.0f]}}
+
 	## External Setup
 	function gameplay:tray_drop_point/setup
 	function gameplay:mouselift/setup
+
 	## Stations
 	function gameplay:station/cutting_board/setup
 	function gameplay:station/dough_mixer/setup
