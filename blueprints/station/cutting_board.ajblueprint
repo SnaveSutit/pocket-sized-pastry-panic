@@ -1677,7 +1677,12 @@
 				"variants": {}
 			},
 			"itemModelProperties": {
-				"tints": []
+				"tints": [
+					{
+						"type": "minecraft:constant",
+						"value": 12632260
+					}
+				]
 			},
 			"children": [],
 			"reset": false,
@@ -1708,7 +1713,12 @@
 				"variants": {}
 			},
 			"itemModelProperties": {
-				"tints": []
+				"tints": [
+					{
+						"type": "minecraft:constant",
+						"value": 12632260
+					}
+				]
 			},
 			"children": [],
 			"reset": false,
@@ -1739,7 +1749,12 @@
 				"variants": {}
 			},
 			"itemModelProperties": {
-				"tints": []
+				"tints": [
+					{
+						"type": "minecraft:constant",
+						"value": 12632260
+					}
+				]
 			},
 			"children": [],
 			"reset": false,
@@ -1770,7 +1785,12 @@
 				"variants": {}
 			},
 			"itemModelProperties": {
-				"tints": []
+				"tints": [
+					{
+						"type": "minecraft:constant",
+						"value": 12632260
+					}
+				]
 			},
 			"children": [],
 			"reset": false,
@@ -1801,7 +1821,12 @@
 				"variants": {}
 			},
 			"itemModelProperties": {
-				"tints": []
+				"tints": [
+					{
+						"type": "minecraft:constant",
+						"value": 12632260
+					}
+				]
 			},
 			"children": [],
 			"reset": false,
@@ -1832,7 +1857,12 @@
 				"variants": {}
 			},
 			"itemModelProperties": {
-				"tints": []
+				"tints": [
+					{
+						"type": "minecraft:constant",
+						"value": 12632260
+					}
+				]
 			},
 			"children": [],
 			"reset": false,
@@ -2033,7 +2063,7 @@
 			"override": false,
 			"length": 0.4,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"saved": true,
 			"path": "",
 			"scope": 0,
