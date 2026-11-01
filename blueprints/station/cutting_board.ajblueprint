@@ -2033,7 +2033,7 @@
 			"override": false,
 			"length": 0.4,
 			"snapping": 20,
-			"selected": false,
+			"selected": true,
 			"saved": true,
 			"path": "",
 			"scope": 0,
@@ -2428,7 +2428,7 @@
 							"channel": "function",
 							"data_points": [
 								{
-									"function": "function gameplay:stations/cutting_board/on_chop_complete",
+									"function": "function gameplay:station/cutting_board/on_chop_complete",
 									"execute_condition": "",
 									"repeat": false,
 									"repeat_frequency": 1
