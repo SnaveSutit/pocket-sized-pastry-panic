@@ -1,0 +1,31 @@
+import ../../score.mcbt
+import ../../execute.mcbt
+
+# States
+# -1 = waiting for animation to finish
+# 0 = waiting for ingredients
+# 1 = mixing frosting
+# 2 = frosting ready, waiting for pour event
+# 3 = pouring frosting
+
+
+function setup {
+	positioned 28.0 9 -12.0 rotated -90 0 run function pspp:station/frosting_mixer/summon {args:{}}
+	positioned 28.0 9 -5.0 rotated -90 0 run function pspp:station/frosting_mixer/summon {args:{}}
+}
+
+
+function teardown {
+	function pspp:station/frosting_mixer/remove/entities
+}
+
+
+function tick_root {
+	if score @s state matches 0 run return 1
+
+	if score @s state matches 1 run return 1
+
+	if score @s state matches 2 run return 1
+
+	if score @s state matches 3 run return 1
+}
