@@ -7,23 +7,23 @@
 		"uuid": "d7fbd207-001a-4f20-b9ad-d48924406df5"
 	},
 	{
-		"id": "fireplace_0",
+		"id": "fireplace_1",
 		"group": "fireplace",
 		"position": "-2.50 2.0 -27.5",
 		"rotation": "0",
 		"uuid": "0a418544-3c14-4a61-9f9a-1fcdf8ac734a"
 	},
 	{
-		"id": "fireplace_0",
+		"id": "fireplace_2",
 		"group": "fireplace",
 		"position": "4.50 2.0 -27.5",
 		"rotation": "0",
 		"uuid": "8d5f6e1a-b389-48b8-9af8-cc77a27614c0"
 	},
 	{
-		"id": "fireplace_0",
+		"id": "fireplace_3",
 		"group": "fireplace",
-		"position": "12.50 2.0 -27.5",
+		"position": "11.5 2.0 -27.5",
 		"rotation": "0",
 		"uuid": "191d1b6e-8f69-41c9-bda9-7a4654b0220a"
 	},
