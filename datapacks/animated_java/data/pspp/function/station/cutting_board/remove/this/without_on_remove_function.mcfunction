@@ -7,6 +7,6 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp entry.data.locators.ingredient_mount
 data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.interaction
 function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
-execute unless data storage animated_java:temp {entry:{data:{rig_hash: '87403f6bd40ee7d073d2d6cfa0129a0834f82c742e6a855ed32353e430e3beaf'}}} run function animated_java:global/remove/outdated_rig
+execute unless data storage animated_java:temp {entry:{data:{rig_hash: '7b61d6c3c9cdce1067233bf679a49fc94ce78ebdb57beb38797cc09cd3167a68'}}} run function animated_java:global/remove/outdated_rig
 function pspp:station/cutting_board/remove/this/zzz/0 with storage animated_java:temp entry.data.uuids_by_name
 function animated_java:global/remove/entity_stack

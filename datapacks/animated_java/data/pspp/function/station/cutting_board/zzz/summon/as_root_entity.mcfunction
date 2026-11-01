@@ -13,7 +13,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "pspp:station/cutting_board"
-data modify storage animated_java:temp entry.data.rig_hash set value "87403f6bd40ee7d073d2d6cfa0129a0834f82c742e6a855ed32353e430e3beaf"
+data modify storage animated_java:temp entry.data.rig_hash set value "7b61d6c3c9cdce1067233bf679a49fc94ce78ebdb57beb38797cc09cd3167a68"
 tp @s ~ ~ ~ ~ ~
 summon minecraft:interaction ^0 ^0 ^-5.1875 { Tags:["aj.global.entity","aj.global.interaction","aj.global.node","aj.global.node.interaction","aj.global.root.child","aj.global.root.child.interaction","aj.new","pspp.station.cutting_board.entity","pspp.station.cutting_board.interaction","pspp.station.cutting_board.interaction.interaction","pspp.station.cutting_board.node","pspp.station.cutting_board.node.interaction"], response: true, width: 4.25f, height: 4.25f, }
 execute as @n[ type=minecraft:interaction, tag=pspp.station.cutting_board.interaction.interaction, tag=aj.new, distance=..6 ] run function pspp:station/cutting_board/zzz/summon/as_interaction/interaction

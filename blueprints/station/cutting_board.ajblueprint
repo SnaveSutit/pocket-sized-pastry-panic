@@ -1644,8 +1644,8 @@
 			"onSummonFunction": "",
 			"config": {
 				"response": true,
-				"on_interact_function": "function gameplay:stations/cutting_board/on_interact",
-				"on_attack_function": "function gameplay:stations/cutting_board/on_attack",
+				"on_interact_function": "function gameplay:station/cutting_board/on_interact",
+				"on_attack_function": "function gameplay:station/cutting_board/on_attack",
 				"on_summon_function": "data remove entity @s CustomName",
 				"on_remove_function": "",
 				"on_tick_function": ""
@@ -2033,7 +2033,7 @@
 			"override": false,
 			"length": 0.4,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"saved": true,
 			"path": "",
 			"scope": 0,

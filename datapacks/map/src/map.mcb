@@ -138,11 +138,11 @@ IF (config.dev) {
 		dir auto_teardown_on_reload {
 			function enable {
 				set #map.auto_teardown_on_reload v 1
-				tellraw @a [{text: 'Auto teardown on reload ', color: yellow},{text:'Enabled', color: green}]
+				debug message [{text: 'Auto teardown on reload ', color: yellow},{text:'Enabled', color: green}]
 			}
 			function disable {
 				set #map.auto_teardown_on_reload v 0
-				tellraw @a [{text: 'Auto teardown on reload ', color: yellow},{text:'Disabled', color: red}]
+				debug message [{text: 'Auto teardown on reload ', color: yellow},{text:'Disabled', color: red}]
 			}
 		}
 	}

@@ -14,12 +14,12 @@ function teardown {
 
 
 function on_interact {
-	function pspp:station/cutting_board/as_root {command:'function gameplay:stations/cutting_board/chop'}
+	function pspp:station/cutting_board/as_root {command:'function gameplay:station/cutting_board/chop'}
 }
 
 
 function on_attack {
-	function pspp:station/cutting_board/as_root {command:'function gameplay:stations/cutting_board/chop'}
+	function pspp:station/cutting_board/as_root {command:'function gameplay:station/cutting_board/chop'}
 }
 
 
