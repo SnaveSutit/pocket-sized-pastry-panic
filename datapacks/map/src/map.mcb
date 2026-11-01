@@ -85,7 +85,9 @@ function setup {
 	## External Setup
 	function gameplay:tray_drop_point/setup
 	function gameplay:mouselift/setup
+	## Stations
 	function gameplay:station/cutting_board/setup
+	function gameplay:station/dough_mixer/setup
 
 	# Run last
 	set #map.is_setup v 1
@@ -97,9 +99,12 @@ function setup {
 function teardown {
 	kill @e[type=minecraft:text_display,tag=aj.outdated_rig_text_display]
 
+	## Misc
 	function gameplay:tray_drop_point/teardown
 	function gameplay:mouselift/teardown
+	## Stations
 	function gameplay:station/cutting_board/teardown
+	function gameplay:station/dough_mixer/teardown
 
 	kill @e[type=item_display,tag=pspp.fade]
 	kill @e[type=item_display,tag=pspp.fireplace_fire]

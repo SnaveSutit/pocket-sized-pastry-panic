@@ -1,0 +1,67 @@
+import ../../score.mcbt
+import ../../execute.mcbt
+
+# States
+# -1 = waiting for animation to finish
+# 0 = waiting for ingredients
+# 1 = mixing dough
+# 2 = dough ready, waiting for pour event
+# 3 = pouring dough
+
+
+function setup {
+	positioned -21.0 9 8.0 rotated 90 0 run function pspp:station/dough_mixer/summon \
+		{args:{variant: 'anti_clockwise', animation: 'stow_handle_anti_clockwise', start_animation: true}}
+	positioned -21.0 9 1.0 rotated 90 0 run function pspp:station/dough_mixer/summon \
+		{args:{variant: 'clockwise', animation: 'stow_handle_clockwise', start_animation: true}}
+	positioned -21.0 9 -6.0 rotated 90 0 run function pspp:station/dough_mixer/summon \
+		{args:{variant: 'anti_clockwise', animation: 'stow_handle_anti_clockwise', start_animation: true}}
+}
+
+
+function teardown {
+	function pspp:station/dough_mixer/remove/entities
+}
+
+
+function tick_root {
+	if score @s state matches 0 run return 1
+
+	if score @s state matches 1 run return run {
+		set #check v 0
+		function pspp:station/dough_mixer/at_locator {name: 'push_area', \
+			command: 'execute positioned ~ ~-0.5 ~ if entity @a[gamemode=!spectator,distance=..1.5] run scoreboard players set #check v 1'}
+		if score #check v matches 1 run return run \
+			function gameplay:station/dough_mixer/push
+		function pspp:station/dough_mixer/animations/pause_all
+	}
+
+	if score @s state matches 2 run return 1
+
+	if score @s state matches 3 run return 1
+}
+
+
+# Handles pushing the handle, expects to be run at the 'push_area' locator.
+function push {
+	if entity @s[tag=anti_clockwise] run return run \
+		function pspp:station/dough_mixer/animations/mix_anti_clockwise/resume
+	if entity @s[tag=clockwise] run return run \
+		function pspp:station/dough_mixer/animations/mix_clockwise/resume
+}
+
+
+function complete_rotation {
+}
+
+
+# Enter the mixing state, sets state to -1 and runs the handle deployment animations, which transition to the mixing state (1) once complete.
+# Expects to be run as the root entity.
+function start_mixing {
+	set @s state -1
+
+	if entity @s[tag=anti_clockwise] run return run \
+		function pspp:station/dough_mixer/animations/deploy_handle_anti_clockwise/play_exclusive
+	if entity @s[tag=clockwise] run return run \
+		function pspp:station/dough_mixer/animations/deploy_handle_clockwise/play_exclusive
+}
