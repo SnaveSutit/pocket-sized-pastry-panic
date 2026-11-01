@@ -4,7 +4,7 @@ execute unless entity @s[type=minecraft:item_display,tag=pspp.station.dough_mixe
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function animated_java:global/data_manager/read with storage animated_java:temp args
-execute if score @s pspp.station.dough_mixer.mix_clockwise.frame matches 81.. run scoreboard players set @s pspp.station.dough_mixer.mix_clockwise.frame 1
+execute if score @s pspp.station.dough_mixer.mix_clockwise.frame matches 41.. run scoreboard players set @s pspp.station.dough_mixer.mix_clockwise.frame 1
 data remove storage animated_java:temp args
 execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s pspp.station.dough_mixer.mix_clockwise.frame
 execute at @s run function pspp:station/dough_mixer/animations/mix_clockwise/zzz/apply_frame with storage animated_java:temp args

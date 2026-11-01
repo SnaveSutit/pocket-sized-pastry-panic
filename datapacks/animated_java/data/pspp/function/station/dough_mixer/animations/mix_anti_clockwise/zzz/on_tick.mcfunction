@@ -6,5 +6,5 @@ execute if score @s aj.tween_duration matches ..0 if entity @s[tag=aj.pause_afte
 execute if score @s pspp.station.dough_mixer.mix_anti_clockwise.frame matches -1 run function pspp:station/dough_mixer/animations/mix_anti_clockwise/zzz/function_keyframe_loop_patch
 execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s pspp.station.dough_mixer.mix_anti_clockwise.frame
 function pspp:station/dough_mixer/animations/mix_anti_clockwise/zzz/apply_frame with storage animated_java:temp args
-execute if score @s pspp.station.dough_mixer.mix_anti_clockwise.frame matches 79.. run return run scoreboard players set @s pspp.station.dough_mixer.mix_anti_clockwise.frame -1
+execute if score @s pspp.station.dough_mixer.mix_anti_clockwise.frame matches 39.. run return run scoreboard players set @s pspp.station.dough_mixer.mix_anti_clockwise.frame -1
 scoreboard players add @s pspp.station.dough_mixer.mix_anti_clockwise.frame 1

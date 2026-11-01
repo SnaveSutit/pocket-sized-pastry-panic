@@ -3,9 +3,10 @@ $execute as $(handle) run function pspp:station/dough_mixer/animations/mix_clock
 $execute as $(anti_clockwise_knob) run function pspp:station/dough_mixer/animations/mix_clockwise/zzz/frames/40_bones
 $execute as $(clockwise_knob) run function pspp:station/dough_mixer/animations/mix_clockwise/zzz/frames/40_bones
 $execute as $(kneader) run function pspp:station/dough_mixer/animations/mix_clockwise/zzz/frames/40_bones
-data modify storage animated_java:temp entry.data merge value {"locators":{"push_area":{"px":0,"py":9.1875,"pz":-3.4375,"ry":0,"rx":0}}}
+data modify storage animated_java:temp entry.data merge value {"locators":{"push_area":{"px":0,"py":9.1875,"pz":3.4375,"ry":180,"rx":0}}}
 # Data Manager: Prepare for Read / Write
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Write
 function animated_java:global/data_manager/write with storage animated_java:temp args
 function pspp:station/dough_mixer/root/on_tick/transform_floating_entities
+execute unless entity @s[tag=aj.transforms_only] run function pspp:station/dough_mixer/animations/mix_clockwise/zzz/frame_effects/40
