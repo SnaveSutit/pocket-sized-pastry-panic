@@ -85,7 +85,7 @@ function setup {
 	## External Setup
 	function gameplay:tray_drop_point/setup
 	function gameplay:mouselift/setup
-	function gameplay:cutting_board/setup
+	function gameplay:stations/cutting_board/setup
 
 	# Run last
 	set #map.is_setup v 1
@@ -95,9 +95,11 @@ function setup {
 
 
 function teardown {
+	kill @e[type=minecraft:text_display,tag=aj.outdated_rig_text_display]
+
 	function gameplay:tray_drop_point/teardown
 	function gameplay:mouselift/teardown
-	function gameplay:cutting_board/teardown
+	function gameplay:stations/cutting_board/teardown
 
 	kill @e[type=item_display,tag=pspp.fade]
 	kill @e[type=item_display,tag=pspp.fireplace_fire]
@@ -119,7 +121,7 @@ function reset {
 
 
 function tick minecraft:tick {
-	scoreboard players add #map.tick v 1
+	add #map.tick v 1
 	if score #map.tick v matches 20.. run function ./second
 }
 
