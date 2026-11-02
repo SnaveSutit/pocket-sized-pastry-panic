@@ -95,6 +95,9 @@ function setup {
 	function gameplay:station/dough_mixer/setup
 	function gameplay:station/frosting_mixer/setup
 
+	## Ingredients
+	function gameplay:ingredient/setup
+
 	# Run last
 	set #map.is_setup v 1
 
@@ -112,6 +115,8 @@ function teardown {
 	function gameplay:station/cutting_board/teardown
 	function gameplay:station/dough_mixer/teardown
 	function gameplay:station/frosting_mixer/teardown
+	## Ingredients
+	function gameplay:ingredient/teardown
 
 	kill @e[type=item_display,tag=pspp.fade]
 	kill @e[type=item_display,tag=pspp.fireplace_fire]

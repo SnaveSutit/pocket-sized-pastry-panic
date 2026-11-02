@@ -1,0 +1,220 @@
+{
+	"meta": {
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.11.0",
+		"uuid": "51e5ed3e-c814-7875-20f8-8a3c87db1527",
+		"save_location": "/var/mnt/ssd2/repos/snavesutit/pocket-sized-pastry-panic/blueprints/ingredient/sugar.ajblueprint",
+		"last_used_blueprint_id": "pspp:ingredient/sugar"
+	},
+	"resolution": {
+		"width": 64,
+		"height": 64
+	},
+	"blueprint_settings": {
+		"blueprint_id": "pspp:ingredient/sugar",
+		"target_minecraft_version": "26.3",
+		"resource_pack": "../../resources",
+		"data_pack": "../../datapacks/animated_java",
+		"on_summon_function": "function gameplay:ingredient/summon/sugar.as_root",
+		"auto_update_rig_orientation": false
+	},
+	"elements": [
+		{
+			"name": "cube",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 8,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-15.25, 0.75, -15.25],
+			"to": [15.25, 31.25, 15.25],
+			"autouv": 0,
+			"color": 8,
+			"origin": [0, 16, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 32, 32],
+					"texture": "dd31628d-e409-21f7-ea21-abcd6453d21b",
+					"tint": 0
+				},
+				"east": {
+					"uv": [32, 0, 64, 32],
+					"texture": "dd31628d-e409-21f7-ea21-abcd6453d21b",
+					"tint": 0
+				},
+				"south": {
+					"uv": [0, 0, 32, 32],
+					"texture": "dd31628d-e409-21f7-ea21-abcd6453d21b",
+					"tint": 0
+				},
+				"west": {
+					"uv": [32, 0, 64, 32],
+					"texture": "dd31628d-e409-21f7-ea21-abcd6453d21b",
+					"tint": 0
+				},
+				"up": {
+					"uv": [32, 32, 64, 64],
+					"texture": "dd31628d-e409-21f7-ea21-abcd6453d21b",
+					"tint": 0
+				},
+				"down": {
+					"uv": [32, 0, 64, 32],
+					"texture": "dd31628d-e409-21f7-ea21-abcd6453d21b",
+					"tint": 0
+				}
+			},
+			"type": "cube",
+			"uuid": "19b415af-7368-0475-8b09-0a39921b6c64"
+		},
+		{
+			"name": "cube",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 8,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-15.5, 0.5, -15.5],
+			"to": [15.5, 31.5, 15.5],
+			"autouv": 0,
+			"color": 5,
+			"origin": [0, 16, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 32, 32, 64],
+					"texture": "dd31628d-e409-21f7-ea21-abcd6453d21b",
+					"tint": 0
+				},
+				"east": {
+					"uv": [0, 32, 32, 64],
+					"texture": "dd31628d-e409-21f7-ea21-abcd6453d21b",
+					"tint": 0
+				},
+				"south": {
+					"uv": [0, 32, 32, 64],
+					"texture": "dd31628d-e409-21f7-ea21-abcd6453d21b",
+					"tint": 0
+				},
+				"west": {
+					"uv": [0, 32, 32, 64],
+					"texture": "dd31628d-e409-21f7-ea21-abcd6453d21b",
+					"tint": 0
+				},
+				"up": {
+					"uv": [0, 32, 32, 64],
+					"texture": "dd31628d-e409-21f7-ea21-abcd6453d21b",
+					"tint": 0
+				},
+				"down": {
+					"uv": [0, 32, 32, 64],
+					"texture": "dd31628d-e409-21f7-ea21-abcd6453d21b",
+					"tint": 0
+				}
+			},
+			"type": "cube",
+			"uuid": "3342af42-3a2b-b9b1-1392-b44d505844b2"
+		}
+	],
+	"groups": [
+		{
+			"name": "root",
+			"uuid": "4d4c80bf-88fd-2f87-fbd0-a7e95ad0a988",
+			"export": true,
+			"locked": false,
+			"scope": 0,
+			"selected": false,
+			"visibility": true,
+			"_static": {
+				"properties": {},
+				"temp_data": {}
+			},
+			"origin": [-8, 0, -8],
+			"rotation": [0, 0, 0],
+			"color": 0,
+			"onSummonFunction": "",
+			"configs": {
+				"default": {},
+				"variants": {}
+			},
+			"itemModelProperties": {
+				"tints": [
+					{
+						"type": "minecraft:constant",
+						"value": 12632260
+					}
+				]
+			},
+			"children": [],
+			"reset": false,
+			"shade": true,
+			"mirror_uv": false,
+			"autouv": 0,
+			"isOpen": true,
+			"primary_selected": true
+		}
+	],
+	"outliner": [
+		{
+			"uuid": "4d4c80bf-88fd-2f87-fbd0-a7e95ad0a988",
+			"isOpen": true,
+			"children": ["19b415af-7368-0475-8b09-0a39921b6c64", "3342af42-3a2b-b9b1-1392-b44d505844b2"]
+		}
+	],
+	"texture_groups": [],
+	"textures": [
+		{
+			"name": "sugar.png",
+			"path": "/var/mnt/ssd2/repos/snavesutit/pocket-sized-pastry-panic/resources/assets/temp/textures/item/sugar.png",
+			"relative_path": "../../resources/assets/temp/textures/item/sugar.png",
+			"folder": "item",
+			"namespace": "temp",
+			"id": "0",
+			"group": "",
+			"scope": 0,
+			"width": 32,
+			"height": 32,
+			"uv_width": 64,
+			"uv_height": 64,
+			"particle": true,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"file_format": "png",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"wrap_mode": "limited",
+			"pbr_channel": "color",
+			"fps": 7,
+			"force_translucent": false,
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"is_texture_slot": false,
+			"slot_textures": [],
+			"visible": true,
+			"internal": true,
+			"saved": true,
+			"uuid": "dd31628d-e409-21f7-ea21-abcd6453d21b",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACuUlEQVR4AazWQW/UQAyG4Wm0KqClSICQOHHthQMXfja/hCsXrr0XIaoVolptyZOss046CW0o6ovtzx7bO8lWbQ6HX3eZ/e23uym3N1/vMrk+/J9XX+71oUWv7DsjZpty/LfffS84hiPTPHtREKI6RMy+fH9ZDvurgdDY/c2P8nz7rrBQp15uWECAw5/fBfwpeYmc0zDH2Tcwx3wa+I1PAkHGEjVyTfY1rJFrav69G6gVLWnx6TcXbwqWaqc5Z/97gWnTaWypOdQuLuCZ13AQ00fnEdAfw+ICc40slXMGI2sP9VctoPl0CdoaGo2w5vBTnFm8AV/DuSFLuXzGo5lDXaMRBIEbgViuhhyazQdmNYs3YAnMdd9sL7tU/pp1QuW/uZrFBaLP0hJRE9ag8MPWNDm39yQvoUYaPgTvg7pYargBnzJQsISrR66xBGiaZ2iQP3/9qYDfa+cfzzYtBITPIrTzi89nhqJpXp11h4+WHzSbt2WOUnZtGVpz/DndQNus1jg0fzw4EzF/jMYYqzk67K9Lz1Ur97XDAgagzYx+QjMYkeRHjtY3jgHXpHu4mRDV87s/yTjQlM2NQ6Mjcmyf27WfyieSPWFAjVNF7zV9k1JYTcl8NghdHDk263Jr6G4gGmmqScRh6XzIB/Tw19ruHYhGMSBiTbNW09XM4ZnXONXv2ptv3/4QYkBtKA25NsehP8RaKuq6RxBBNLQIH5FjQ+dDzK4hlugegQaGTRuK6fL8bOnotPaXD7uG0bdAg6Hp8dHE4JzjZ11cw9ewptMi191ADJWIxjTQwM852hC3v+HEgeuF2KAacujeAY0MIAQ0iGu5mk7LWAJZC7/Xt6W7gRDzoOxbBOqmOu1f9MPqVaN3IIYozX5tKA1d7SNeQsvAOQw3EM2IfPCDHIefl9Q0iDNsMM5tWxml/AUAAP//i5SSHgAAAAZJREFUAwCfsVIblTX4gQAAAABJRU5ErkJggg=="
+		}
+	],
+	"variants": {
+		"default": {
+			"name": "default",
+			"display_name": "Default",
+			"uuid": "8b34254b-d1d8-fda7-b8c7-1d1f1d2496de",
+			"slot_textures": {},
+			"excluded_nodes": [],
+			"is_default": true
+		},
+		"list": []
+	}
+}

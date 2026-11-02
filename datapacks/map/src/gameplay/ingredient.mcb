@@ -1,1 +1,52 @@
+import /score.mcbt
+import /execute.mcbt
+import /debug.mcbt
+
 # Ingredients will ride any nearby entity tagged with `pspp.ingredient_mount` when not being carried.
+
+function load minecraft:load {
+	# If link_id is 0, then the ingredient is either not being carried, or is on top of another ingredient in a stack.
+	create pspp.ingredient.link_id
+}
+
+
+function setup {
+	set #pspp.ingredient.max_stack v 3
+}
+
+
+function teardown {
+	REPEAT(config.driven.ingredients) as ingredient {
+		function pspp:ingredient/<%ingredient.id%>/remove/entities
+	}
+}
+
+
+dir summon {
+	REPEAT(config.driven.ingredients) as ingredient {
+		function <%ingredient.id%> {
+			rotated 0 0 run function pspp:ingredient/<%ingredient.id%>/summon {args:{}}
+		}
+
+		function <%ingredient.id%>.as_root {
+			tag @s add pspp.ingredient.<%ingredient.id%>
+			set @s pspp.ingredient.link_id 0
+		}
+	}
+}
+
+
+#> Stacks an ingredient on the player if they have the capacity to carry it.
+#
+# Expects to be run as the root entity of the ingredient. Use `target` or `attacker` to reference the player.
+function grab {
+	on target run op @s pspp.
+}
+
+
+function on_interact {
+}
+
+
+function on_attack {
+}
