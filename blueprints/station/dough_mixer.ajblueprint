@@ -1819,7 +1819,7 @@
 		{
 			"name": "push_area",
 			"position": [0, 147, 55],
-			"rotation": [0, 0, 0],
+			"rotation": [0, 90, 0],
 			"ignore_inherited_scale": false,
 			"visibility": true,
 			"locked": false,
@@ -2531,8 +2531,8 @@
 			"id": "2",
 			"group": "",
 			"scope": 0,
-			"width": 16,
-			"height": 16,
+			"width": 80,
+			"height": 80,
 			"uv_width": 160,
 			"uv_height": 160,
 			"particle": false,
@@ -2564,8 +2564,8 @@
 			"id": "3",
 			"group": "",
 			"scope": 0,
-			"width": 80,
-			"height": 80,
+			"width": 16,
+			"height": 16,
 			"uv_width": 160,
 			"uv_height": 160,
 			"particle": false,
@@ -3011,7 +3011,8 @@
 							"time": 0.7,
 							"color": -1,
 							"interpolation": "linear",
-							"easing": "easeInOutQuad"
+							"easing": "easeInOutQuad",
+							"easingArgs": []
 						}
 					]
 				},
@@ -3097,7 +3098,8 @@
 							"time": 1,
 							"color": -1,
 							"interpolation": "linear",
-							"easing": "easeInOutQuad"
+							"easing": "easeInOutQuad",
+							"easingArgs": []
 						}
 					]
 				},
@@ -3160,7 +3162,8 @@
 							"time": 1,
 							"color": -1,
 							"interpolation": "linear",
-							"easing": "easeInOutQuad"
+							"easing": "easeInOutQuad",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -3408,7 +3411,7 @@
 			"override": false,
 			"length": 2,
 			"snapping": 20,
-			"selected": true,
+			"selected": false,
 			"saved": true,
 			"path": "",
 			"scope": 0,
@@ -3705,7 +3708,8 @@
 							"time": 1.5,
 							"color": -1,
 							"interpolation": "linear",
-							"easing": "easeInQuart"
+							"easing": "easeInQuart",
+							"easingArgs": []
 						},
 						{
 							"channel": "rotation",
@@ -3736,7 +3740,8 @@
 							"time": 2.1,
 							"color": -1,
 							"interpolation": "linear",
-							"easing": "easeOutQuad"
+							"easing": "easeOutQuad",
+							"easingArgs": []
 						}
 					]
 				},

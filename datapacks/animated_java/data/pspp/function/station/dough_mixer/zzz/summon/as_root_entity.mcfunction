@@ -13,7 +13,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "pspp:station/dough_mixer"
-data modify storage animated_java:temp entry.data.rig_hash set value "51002d0eb7b2eb6d6a9947a89e9ba67a2f0c90c3d991407d9a169e1fbac08c37"
+data modify storage animated_java:temp entry.data.rig_hash set value "0682b41bc4f65d8cee4f227d6adad96d55d7e91c7a14170d740f18a932f7269b"
 tp @s ~ ~ ~ ~ ~
 execute on passengers if entity @s[tag=pspp.station.dough_mixer.node.bowl] run function pspp:station/dough_mixer/zzz/summon/as_node/bowl
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out

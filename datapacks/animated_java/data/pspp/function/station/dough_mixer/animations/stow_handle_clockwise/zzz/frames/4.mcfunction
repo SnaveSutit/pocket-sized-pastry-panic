@@ -3,7 +3,7 @@ $execute as $(handle_hinge) run function pspp:station/dough_mixer/animations/sto
 $execute as $(handle) run function pspp:station/dough_mixer/animations/stow_handle_clockwise/zzz/frames/4_bones
 $execute as $(anti_clockwise_knob) run function pspp:station/dough_mixer/animations/stow_handle_clockwise/zzz/frames/4_bones
 $execute as $(clockwise_knob) run function pspp:station/dough_mixer/animations/stow_handle_clockwise/zzz/frames/4_bones
-data modify storage animated_java:temp entry.data merge value {"locators":{"push_area":{"px":-1.6868,"py":9.2255,"pz":2.9732,"ry":209.3901,"rx":0.6931}}}
+data modify storage animated_java:temp entry.data merge value {"locators":{"push_area":{"px":-1.6868,"py":9.2255,"pz":2.9732,"ry":119.3854,"rx":0.3903}}}
 # Data Manager: Prepare for Read / Write
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Write

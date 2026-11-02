@@ -29,10 +29,18 @@ function tick_root {
 
 	if score @s state matches 1 run return run {
 		set #check v 0
-		function pspp:station/dough_mixer/at_locator {name: 'push_area', \
-			command: 'execute positioned ~ ~-0.5 ~ if entity @a[gamemode=!spectator,distance=..1.5] run scoreboard players set #check v 1'}
+
+		if entity @s[tag=anti_clockwise] run \
+			function pspp:station/dough_mixer/at_locator {name: 'push_area', \
+			command: 'execute positioned ^ ^-0.5 ^0.5 if entity @a[gamemode=!spectator,distance=..1.5] run scoreboard players set #check v 1'}
+
+		if entity @s[tag=clockwise] run \
+			function pspp:station/dough_mixer/at_locator {name: 'push_area', \
+			command: 'execute positioned ^ ^-0.5 ^-0.5 if entity @a[gamemode=!spectator,distance=..1.5] run scoreboard players set #check v 1'}
+
 		if score #check v matches 1 run return run \
 			function gameplay:station/dough_mixer/push
+
 		function pspp:station/dough_mixer/animations/pause_all
 	}
 
