@@ -4,3 +4,5 @@ execute unless score @s aj.is_rig_loaded matches 1 run function animated_java:gl
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function animated_java:global/data_manager/read with storage animated_java:temp args
+function pspp:ingredient/butter/root/on_tick/transform_floating_entities
+execute on passengers run rotate @s ~ ~

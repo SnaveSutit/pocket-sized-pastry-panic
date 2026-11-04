@@ -13,9 +13,9 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "pspp:ingredient/butter"
-data modify storage animated_java:temp entry.data.rig_hash set value "680fd2c60124ebfd1b245592a699fec283a6781c9fd36ff6e1ea224bfae0792e"
+data modify storage animated_java:temp entry.data.rig_hash set value "6ac7b5fd90d906bb9c5383ef4f7064e7de5aa95a04dde578a07c3ded40351f88"
 tp @s ~ ~ ~ ~ ~
-summon minecraft:interaction ^0 ^0.0156 ^0 { Tags:["aj.global.entity","aj.global.interaction","aj.global.node","aj.global.node.hitbox","aj.global.root.child","aj.global.root.child.interaction","aj.new","pspp.ingredient.butter.entity","pspp.ingredient.butter.interaction","pspp.ingredient.butter.interaction.hitbox","pspp.ingredient.butter.node","pspp.ingredient.butter.node.hitbox"], response: true, width: 2.0625f, height: 1.375f, }
+summon minecraft:interaction ^0 ^0.0156 ^0 { Tags:["aj.global.entity","aj.global.interaction","aj.global.node","aj.global.node.hitbox","aj.global.root.child","aj.global.root.child.interaction","aj.new","pspp.ingredient.butter.entity","pspp.ingredient.butter.interaction","pspp.ingredient.butter.interaction.hitbox","pspp.ingredient.butter.node","pspp.ingredient.butter.node.hitbox"], response: true, width: 2f, height: 1.375f, }
 execute as @n[ type=minecraft:interaction, tag=pspp.ingredient.butter.interaction.hitbox, tag=aj.new, distance=..1 ] run function pspp:ingredient/butter/zzz/summon/as_interaction/hitbox
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.hitbox set from storage animated_java:gu out

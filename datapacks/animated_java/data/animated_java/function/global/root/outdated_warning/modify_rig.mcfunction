@@ -6,7 +6,7 @@ execute store result storage animated_java:temp args.x double 1 run data get ent
 execute store result storage animated_java:temp args.y double 1 run data get entity @s Pos[1] 1
 execute store result storage animated_java:temp args.z double 1 run data get entity @s Pos[2] 1
 data modify storage animated_java:temp args.blueprint_id set from storage animated_java:temp entry.data.blueprint_id
-data modify storage animated_java:temp entry.data.rig_hash set value '680fd2c60124ebfd1b245592a699fec283a6781c9fd36ff6e1ea224bfae0792e'
+data modify storage animated_java:temp entry.data.rig_hash set value '6ac7b5fd90d906bb9c5383ef4f7064e7de5aa95a04dde578a07c3ded40351f88'
 # Data Manager: Write
 function animated_java:global/data_manager/write with storage animated_java:temp args
 function animated_java:global/root/outdated_warning/run_print with storage animated_java:temp entry.data

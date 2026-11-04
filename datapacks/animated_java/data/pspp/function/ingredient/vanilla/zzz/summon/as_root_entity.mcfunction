@@ -13,7 +13,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "pspp:ingredient/vanilla"
-data modify storage animated_java:temp entry.data.rig_hash set value "807cfae130764a9b2246cb3c79528d38b00bf8f059b27027ce07fa2e8191f5c7"
+data modify storage animated_java:temp entry.data.rig_hash set value "a6a1c3a7e76dbde53f07bbf9949a5f13c1ce4eb0ec2cc7eaeb5423f6e7207508"
 tp @s ~ ~ ~ ~ ~
 execute on passengers if entity @s[tag=pspp.ingredient.vanilla.node.root] run function pspp:ingredient/vanilla/zzz/summon/as_node/root
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out

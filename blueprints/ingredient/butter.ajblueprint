@@ -17,8 +17,7 @@
 		"resource_pack": "../../resources",
 		"preview_resource_packs": [],
 		"data_pack": "../../datapacks/animated_java",
-		"on_summon_function": "function gameplay:ingredient/summon/butter.as_root",
-		"auto_update_rig_orientation": false
+		"on_summon_function": "function gameplay:ingredient/summon/butter.as_root"
 	},
 	"elements": [
 		{
@@ -520,7 +519,7 @@
 			"position": [0, 0.25, 0],
 			"rotation": [0, 0, 0],
 			"pivotOffset": [0, 0, 0],
-			"scale": [33, 22, 33],
+			"scale": [32, 22, 32],
 			"color": 5,
 			"visibility": true,
 			"locked": false,
@@ -528,8 +527,8 @@
 			"onSummonFunction": "",
 			"config": {
 				"response": true,
-				"on_interact_function": "",
-				"on_attack_function": "",
+				"on_interact_function": "function gameplay:ingredient/on_interact",
+				"on_attack_function": "function gameplay:ingredient/on_attack",
 				"on_summon_function": "data remove entity @s CustomName",
 				"on_remove_function": "",
 				"on_tick_function": ""

@@ -3,3 +3,5 @@ tag @s remove aj.new
 data modify entity @s CustomName set value ""
 function animated_java:global/gu/get_entity_uuid_string
 scoreboard players operation @s aj.id = aj.last_id aj.id
+data modify entity @s data.animated_java.on_interact_function set value "function pspp:ingredient/butter/interactions/hitbox_on_interact"
+data modify entity @s data.animated_java.on_attack_function set value "function pspp:ingredient/butter/interactions/hitbox_on_attack"

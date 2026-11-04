@@ -140,6 +140,8 @@ function reset {
 function tick minecraft:tick {
 	add #map.tick v 1
 	if score #map.tick v matches 20.. run function ./second
+
+	function gameplay:ingredient/tick
 }
 
 

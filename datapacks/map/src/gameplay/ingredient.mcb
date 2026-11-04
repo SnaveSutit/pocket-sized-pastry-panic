@@ -7,6 +7,8 @@ import /debug.mcbt
 function load minecraft:load {
 	# If link_id is 0, then the ingredient is either not being carried, or is on top of another ingredient in a stack.
 	create pspp.ingredient.link_id
+
+	add #pspp.ingredient.last_link_id v 0
 }
 
 
@@ -30,23 +32,98 @@ dir summon {
 
 		function <%ingredient.id%>.as_root {
 			tag @s add pspp.ingredient.<%ingredient.id%>
+			tag @s add pspp.ingredient.root
 			set @s pspp.ingredient.link_id 0
 		}
 	}
 }
 
 
+function tick {
+	as @a[gamemode=!spectator] if score @s pspp.ingredient.link_id matches 1.. at @s run {
+		tag @s add this.player
+		op #link_id v = @s pspp.ingredient.link_id
+
+		set #check v 0
+		rotated ~ 0 as @e[type=item_display,tag=pspp.ingredient.root] if score @s pspp.ingredient.link_id = #link_id v run {
+			tp @s ^ ^2.5 ^ ~ ~
+			set #check v 1
+		}
+		if score #check v matches 0 run {
+			debug message [{text: 'Failed to find root ingredient'}]
+			set @s pspp.ingredient.link_id 0
+		}
+
+		tag @s remove this.player
+	}
+}
+
+
 #> Stacks an ingredient on the player if they have the capacity to carry it.
 #
-# Expects to be run as the root entity of the ingredient. Use `target` or `attacker` to reference the player.
+# Expects to be run as the interaction hitbox of the ingredient. Use `target` or `attacker` to reference the player.
 function grab {
-	on target run op @s pspp.
+	set #link_id v -1
+	on target run op #link_id v = @s pspp.ingredient.link_id
+	on attacker run op #link_id v = @s pspp.ingredient.link_id
+	debug message [{text: 'link_id = '},{score:{name:'#link_id', objective: 'v'}}]
+
+	if score #link_id v matches -1 run return run {
+		debug message [{text: 'Failed to get player link_id'}]
+	}
+
+	if score #link_id v matches 0 run return run {
+		debug message [{text: 'Player is not holding an ingredient'}]
+
+		# Set ingredient link ID on root
+		function animated_java:global/as_root {command: \
+			'execute store result score @s pspp.ingredient.link_id run scoreboard players add #pspp.ingredient.last_link_id v 1'}
+		# Set player link ID
+		on target run op @s pspp.ingredient.link_id = #pspp.ingredient.last_link_id v
+		on attacker run op @s pspp.ingredient.link_id = #pspp.ingredient.last_link_id v
+	}
+
+	if score #link_id v matches 1.. run return run {
+		debug message [{text: 'Player is holding an ingredient'}]
+		# Get current link ID for the ingredient
+		set #current_link_id v -1
+		function animated_java:global/as_root {command: \
+			'scoreboard players operation #current_link_id v = @s pspp.ingredient.link_id'}
+
+		if score #current_link_id v = #link_id v run {
+			debug message [{text: 'Ingredient link ID matches player link ID, dropping ingredient'}]
+
+			tag @s add this.hitbox
+
+			on target rotated ~ 0 positioned ^ ^ ^2.5 run {
+				as @e[type=interaction,tag=this.hitbox,limit=1] run function animated_java:global/as_root {command:'function gameplay:ingredient/drop'}
+			}
+			on attacker positioned ^ ^ ^2.5 run {
+				as @e[type=interaction,tag=this.hitbox,limit=1] run function animated_java:global/as_root {command:'function gameplay:ingredient/throw'}
+			}
+
+			tag @s remove this.hitbox
+		}
+	}
+}
+
+
+function drop {
+	set @s pspp.ingredient.link_id 0
+	tp @s ^ ^ ^
+}
+
+
+function throw {
+	set @s pspp.ingredient.link_id 0
 }
 
 
 function on_interact {
+	function ./grab
 }
 
 
 function on_attack {
+	function ./grab
 }
