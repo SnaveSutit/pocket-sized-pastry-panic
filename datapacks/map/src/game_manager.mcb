@@ -1,12 +1,14 @@
-import ./score.mcbt
-import ./execute.mcbt
+import /score.mcbt
+import /execute.mcbt
+import /debug.mcbt
 
 function load minecraft:load {
 	create game_manager.leave_game minecraft.custom:minecraft.leave_game
 	create game_manager.game_id
 
-	add #game_manager.active_game_id v 0
-	add #game_manager.last_game_id v 0
+	# Make sure the scores are initialized correctly
+	unless score #game_manager.active_game_id v matches ..-<%2**31-1%> run set #game_manager.active_game_id v -1
+	unless score #game_manager.last_game_id v matches ..-<%2**31-1%> run set #game_manager.last_game_id v -1
 }
 
 function reset {
@@ -20,17 +22,17 @@ function tick minecraft:tick {
 
 function add_player_to_queue {
 	tag @s add game_manager.queued
-	say @s joined the queue.
+	debug message ['',{selector:'@s'}, " joined the queue."]
 }
 
 function remove_player_from_queue {
 	tag @s remove game_manager.queued
-	say @s left the queue.
+	debug message ['',{selector:'@s'}, " left the queue."]
 }
 
 function spectate_game {
 	gamemode spectator @s
-	say @s is now spectating.
+	debug message ['',{selector:'@s'}, " is now spectating."]
 }
 
 function start_game {
@@ -39,40 +41,46 @@ function start_game {
 
 	tag @a remove game_manager.queued
 
-	say The game has started!
+	debug message "The game has started."
 }
 
 function end_game {
 	set #game_manager.active_game_id v -1
-	say The game has ended!
+	debug message "The game has ended."
 }
 
 function reset_player {
 	gamemode adventure @s
 	tag @s remove game_manager.queued
 	reset @s game_manager.game_id
-	# TODO: teleport to spawn point
-	say @s has been reset.
+	tp @s 1.0 20 38.0 180 0
+	function player:remove_movement_attributes
+	function player:apply_movement_attributes
+	debug message ['',{selector:'@s'}, " has been reset."]
 }
 
 function on_join_game {
 	set @s game_manager.leave_game 0
 
-	say @s joined the game!
+	debug message ['',{selector:'@s'}, " joined the game."]
 
-	# If no game is active,
+	# If no game is active, reset the player
 	if score #game_manager.active_game_id v matches -1 run return run {
-		if score @s game_manager.game_id matches 0.. \
-			run function ./reset_player
+		debug message "No active game, resetting player."
+		function ./reset_player
 	}
 
-	if score #game_manager.active_game_id v = @s game_manager.game_id \
-		run return run function ./rejoin_game
+	# If a game is active, check if the player is part of it. If they are, rejoin the game
+	if score #game_manager.active_game_id v = @s game_manager.game_id run return run {
+		debug message "Player is part of the active game, rejoining."
+		function ./rejoin_game
+	}
 
 	# Force the player to spectate the game if they are not part of the current game
+	debug message "Player is not part of the active game, spectating."
 	function ./spectate_game
 }
 
 function rejoin_game {
-	say @s rejoined the game!
+	debug message ['',{selector:'@s'}, " rejoined the game."]
 }
