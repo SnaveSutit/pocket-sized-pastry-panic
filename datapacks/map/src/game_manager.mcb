@@ -7,13 +7,15 @@ function load minecraft:load {
 	create game_manager.game_id
 
 	# Make sure the scores are initialized correctly
-	unless score #game_manager.active_game_id v matches ..-<%2**31-1%> run set #game_manager.active_game_id v -1
-	unless score #game_manager.last_game_id v matches ..-<%2**31-1%> run set #game_manager.last_game_id v -1
+	unless score #game_manager.active_game_id v matches -<%2**31-1%>.. run set #game_manager.active_game_id v -1
+	unless score #game_manager.last_game_id v matches -<%2**31-1%>.. run set #game_manager.last_game_id v -1
 }
 
 function reset {
 	set #game_manager.active_game_id v -1
 	set #game_manager.last_game_id v -1
+
+	as @a run function ./reset_player
 }
 
 function tick minecraft:tick {
@@ -46,6 +48,9 @@ function start_game {
 
 function end_game {
 	set #game_manager.active_game_id v -1
+
+	as @a run function ./reset_player
+
 	debug message "The game has ended."
 }
 
