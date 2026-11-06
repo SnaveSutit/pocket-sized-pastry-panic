@@ -13,8 +13,13 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "pspp:ingredient/chocolate"
-data modify storage animated_java:temp entry.data.rig_hash set value "de9c4b43fee98a595758edfb0843531e45891e52bb057b71067b0ae66ab4a17e"
+data modify storage animated_java:temp entry.data.rig_hash set value "a466566e0ae8af465de9a9adf684e45938ba6b1aa417661c7720fab34b6b3618"
 tp @s ~ ~ ~ ~ ~
+summon minecraft:interaction ^0 ^0.0156 ^0 { Tags:["aj.global.entity","aj.global.interaction","aj.global.node","aj.global.node.hitbox","aj.global.root.child","aj.global.root.child.interaction","aj.new","pspp.ingredient.chocolate.entity","pspp.ingredient.chocolate.interaction","pspp.ingredient.chocolate.interaction.hitbox","pspp.ingredient.chocolate.node","pspp.ingredient.chocolate.node.hitbox"], response: true, width: 2.0625f, height: 2f, }
+execute as @n[ type=minecraft:interaction, tag=pspp.ingredient.chocolate.interaction.hitbox, tag=aj.new, distance=..1 ] run function pspp:ingredient/chocolate/zzz/summon/as_interaction/hitbox
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.hitbox set from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.interactions.hitbox.uuid set from storage animated_java:gu out
 execute on passengers if entity @s[tag=pspp.ingredient.chocolate.node.root] run function pspp:ingredient/chocolate/zzz/summon/as_node/root
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.root set from storage animated_java:gu out
@@ -26,6 +31,7 @@ execute if score #success aj.i matches 0 run return fail
 execute on passengers run rotate @s ~ ~
 data modify entity @s teleport_duration set value 1
 execute on passengers run data modify entity @s teleport_duration set value 1
+function pspp:ingredient/chocolate/zzz/summon/zzz/0 with storage animated_java:temp entry.data.interactions
 execute at @s run function pspp:ingredient/chocolate/zzz/summon/on_summon/rig
 tag @s remove aj.new
 execute on passengers run tag @s remove aj.new

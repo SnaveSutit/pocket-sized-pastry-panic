@@ -9,11 +9,30 @@ function load minecraft:load {
 	create pspp.ingredient.link_id
 
 	add #pspp.ingredient.last_link_id v 0
+
+	team add ingredient
+	team modify ingredient collisionRule never
 }
 
 
 function setup {
 	set #pspp.ingredient.max_stack v 3
+
+	IF (config.dev) {
+		positioned 1.0 9 1.0 run function ./summon/butter
+	}
+
+	positioned -27.0 22 -9.0 rotated -90 0 run function ./summon/carrot
+	positioned -27.0 22 -5.0 rotated -90 0 run function ./summon/lemon
+	positioned -27.0 22 0.0 rotated -90 0 run function ./summon/vanilla
+	positioned -27.0 22 5.0 rotated -90 0 run function ./summon/chocolate
+	positioned -27.0 22 10.0 rotated -90 0 run function ./summon/strawberry
+
+	positioned 28 22 14.0 rotated 90 0 run function ./summon/egg
+	positioned 28 22 5.0 rotated 90 0 run function ./summon/butter
+	positioned 28 22 -1.0 rotated 90 0 run function ./summon/sugar
+	positioned 28 22 -7.0 rotated 90 0 run function ./summon/flour
+	positioned 28 22 -13.0 rotated 90 0 run function ./summon/milk
 }
 
 
@@ -21,19 +40,21 @@ function teardown {
 	REPEAT(config.driven.ingredients) as ingredient {
 		function pspp:ingredient/<%ingredient.id%>/remove/entities
 	}
+	kill @e[tag=pspp.ingredient]
 }
 
 
 dir summon {
 	REPEAT(config.driven.ingredients) as ingredient {
 		function <%ingredient.id%> {
-			rotated 0 0 run function pspp:ingredient/<%ingredient.id%>/summon {args:{}}
+			rotated ~ 0 run function pspp:ingredient/<%ingredient.id%>/summon {args:{}}
 		}
 
 		function <%ingredient.id%>.as_root {
 			tag @s add pspp.ingredient.<%ingredient.id%>
 			tag @s add pspp.ingredient.root
 			set @s pspp.ingredient.link_id 0
+			at @s run function ../mount_physics
 		}
 	}
 }
@@ -46,15 +67,79 @@ function tick {
 
 		set #check v 0
 		rotated ~ 0 as @e[type=item_display,tag=pspp.ingredient.root] if score @s pspp.ingredient.link_id = #link_id v run {
-			tp @s ^ ^2.5 ^ ~ ~
+			tp @s ^ ^2.5 ^1 ~ ~
 			set #check v 1
 		}
 		if score #check v matches 0 run {
-			debug message [{text: 'Failed to find root ingredient'}]
+			debug message [{text: 'Failed to find base ingredient'}]
 			set @s pspp.ingredient.link_id 0
 		}
 
 		tag @s remove this.player
+	}
+}
+
+#> Mounts the physics entities associated with the ingredient.
+#
+# Expects to be run as the root entity of the ingredient.
+function mount_physics {
+	REPEAT(config.driven.ingredients) as ingredient {
+		if entity @s[tag=pspp.ingredient.<%ingredient.id%>] run return run {
+			summon interaction ~ ~ ~ { \
+				Tags:['pspp.ingredient', 'pspp.ingredient.physics_height_adjust', 'pspp.new'], \
+				width: 0f, height: <%ingredient.height_offset%>f, \
+			}
+			ride @s mount @e[type=interaction,tag=pspp.new,distance=..1,limit=1]
+			on vehicle {
+				tag @s remove pspp.new
+
+				summon pig ~ ~ ~ { \
+					Tags: ['pspp.ingredient', 'pspp.ingredient.physics', 'pspp.new'], \
+					Invulnerable: true, \
+					PersistenceRequired: true, \
+					Silent: true, \
+					DeathLootTable: 'minecraft:empty', \
+					active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:0b}], \
+				}
+				ride @s mount @e[type=pig,tag=pspp.new,distance=..1,limit=1]
+				on vehicle {
+					tag @s remove pspp.new
+					team join ingredient @s
+					# IF (config.dev) {
+					# 	effect clear @s invisibility
+					# }
+
+					attribute @s minecraft:bounciness base set <%ingredient.bounciness%>
+					attribute @s minecraft:gravity base set 0.1
+					attribute @s minecraft:scale base set <%ingredient.scale%>
+					attribute @s minecraft:friction_modifier base set <%ingredient.friction_modifier%>
+					attribute @s minecraft:air_drag_modifier base set 0.5
+					attribute @s minecraft:knockback_resistance base set 1
+					attribute @s minecraft:movement_speed base set -1
+					attribute @s minecraft:jump_strength base set 0
+				}
+			}
+		}
+	}
+}
+
+
+#> Dismounts the physics entities associated with the ingredient.
+#
+# Expects to be run as the root entity of the ingredient.
+function dismount_physics {
+	# Height adjustment interaction
+	on vehicle run {
+		# Dismount root before killing or teleporting.
+		on passengers run ride @s dismount
+		# Physics Pig
+		on vehicle {
+			# Pig makes particles if not telepoted far away
+			tp @s ~ ~-1000 ~
+			kill @s
+		}
+
+		kill @s
 	}
 }
 
@@ -75,9 +160,9 @@ function grab {
 	if score #link_id v matches 0 run return run {
 		debug message [{text: 'Player is not holding an ingredient'}]
 
-		# Set ingredient link ID on root
+		# Set ingredient link ID on base
 		function animated_java:global/as_root {command: \
-			'execute store result score @s pspp.ingredient.link_id run scoreboard players add #pspp.ingredient.last_link_id v 1'}
+			'function gameplay:ingredient/link'}
 		# Set player link ID
 		on target run op @s pspp.ingredient.link_id = #pspp.ingredient.last_link_id v
 		on attacker run op @s pspp.ingredient.link_id = #pspp.ingredient.last_link_id v
@@ -95,11 +180,14 @@ function grab {
 
 			tag @s add this.hitbox
 
-			on target rotated ~ 0 positioned ^ ^ ^2.5 run {
-				as @e[type=interaction,tag=this.hitbox,limit=1] run function animated_java:global/as_root {command:'function gameplay:ingredient/drop'}
+			on target positioned ^ ^ ^2.5 run {
+				as @e[type=interaction,tag=this.hitbox,limit=1] run function animated_java:global/as_root {command: \
+					'function gameplay:ingredient/drop'}
 			}
 			on attacker positioned ^ ^ ^2.5 run {
-				as @e[type=interaction,tag=this.hitbox,limit=1] run function animated_java:global/as_root {command:'function gameplay:ingredient/throw'}
+				function player:get_motion
+				as @e[type=interaction,tag=this.hitbox,limit=1] run function animated_java:global/as_root {command: \
+					'function gameplay:ingredient/throw'}
 			}
 
 			tag @s remove this.hitbox
@@ -108,14 +196,65 @@ function grab {
 }
 
 
+function link {
+	store result score @s pspp.ingredient.link_id run add #pspp.ingredient.last_link_id v 1
+
+	at @s run function ./dismount_physics
+}
+
+
 function drop {
 	set @s pspp.ingredient.link_id 0
-	tp @s ^ ^ ^
+
+	at @s run function ./mount_physics
+
+	function math:get_look_vector3d
+
+	op #output.vector.x i /= #5 i
+	op #output.vector.y i /= #5 i
+	op #output.vector.z i /= #5 i
+
+	debug message [{"text":"Ingredient dropped with motion vector: ","color":"gray"},{"score":{"name":"#output.vector.x","objective":"i"},"color":"red"},{"text":", ","color":"gray"},{"score":{"name":"#output.vector.y","objective":"i"},"color":"green"},{"text":", ","color":"gray"},{"score":{"name":"#output.vector.z","objective":"i"},"color":"blue"}]
+
+	on vehicle on vehicle {
+		data modify storage pspp:temp vector set value [0d,0d,0d]
+		store result storage pspp:temp vector[0] double 0.001 run get #output.vector.x i
+		store result storage pspp:temp vector[1] double 0.001 run get #output.vector.y i
+		store result storage pspp:temp vector[2] double 0.001 run get #output.vector.z i
+		data modify entity @s Motion set from storage pspp:temp vector
+	}
 }
 
 
 function throw {
 	set @s pspp.ingredient.link_id 0
+
+	at @s run function ./mount_physics
+
+	# From the player:get_motion call in ./grab
+	op #temp.vector.x v = #output.vector.x i
+	op #temp.vector.y v = #output.vector.y i
+	op #temp.vector.z v = #output.vector.z i
+
+	op #temp.vector.x v /= #40 i
+	op #temp.vector.y v /= #40 i
+	op #temp.vector.z v /= #40 i
+
+	function math:get_look_vector3d
+
+	op #output.vector.x i += #temp.vector.x v
+	op #output.vector.y i += #temp.vector.y v
+	op #output.vector.z i += #temp.vector.z v
+
+	debug message [{"text":"Ingredient thrown with motion vector: ","color":"gray"},{"score":{"name":"#output.vector.x","objective":"i"},"color":"red"},{"text":", ","color":"gray"},{"score":{"name":"#output.vector.y","objective":"i"},"color":"green"},{"text":", ","color":"gray"},{"score":{"name":"#output.vector.z","objective":"i"},"color":"blue"}]
+
+	on vehicle on vehicle {
+		data modify storage pspp:temp vector set value [0d,0d,0d]
+		store result storage pspp:temp vector[0] double 0.001 run get #output.vector.x i
+		store result storage pspp:temp vector[1] double 0.001 run get #output.vector.y i
+		store result storage pspp:temp vector[2] double 0.001 run get #output.vector.z i
+		data modify entity @s Motion set from storage pspp:temp vector
+	}
 }
 
 

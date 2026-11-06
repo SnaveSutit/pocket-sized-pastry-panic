@@ -4,6 +4,8 @@ execute unless entity @s[type=minecraft:item_display,tag=pspp.ingredient.flour.r
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function animated_java:global/data_manager/read with storage animated_java:temp args
-execute unless data storage animated_java:temp {entry:{data:{rig_hash: 'd9c3e00dd86b68ddd5d732047c315b57ff03cb8177ae53fcc650dfac47ca4ca8'}}} run function animated_java:global/remove/outdated_rig
+data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.hitbox
+function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
+execute unless data storage animated_java:temp {entry:{data:{rig_hash: 'f477aeaef99947a27ad93b34406f6d944938750796c7ed2eeea64558b91f61af'}}} run function animated_java:global/remove/outdated_rig
 function pspp:ingredient/flour/remove/this/zzz/0 with storage animated_java:temp entry.data.uuids_by_name
 function animated_java:global/remove/entity_stack

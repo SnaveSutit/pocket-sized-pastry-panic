@@ -15,8 +15,7 @@
 		"target_minecraft_version": "26.3",
 		"resource_pack": "../../resources",
 		"data_pack": "../../datapacks/animated_java",
-		"on_summon_function": "function gameplay:ingredient/summon/sugar.as_root",
-		"auto_update_rig_orientation": false
+		"on_summon_function": "function gameplay:ingredient/summon/sugar.as_root"
 	},
 	"elements": [
 		{
@@ -120,6 +119,29 @@
 			},
 			"type": "cube",
 			"uuid": "3342af42-3a2b-b9b1-1392-b44d505844b2"
+		},
+		{
+			"name": "hitbox",
+			"position": [0, 0.25, 0],
+			"rotation": [0, 0, 0],
+			"pivotOffset": [0, 0, 0],
+			"scale": [32, 32, 32],
+			"color": 5,
+			"visibility": true,
+			"locked": false,
+			"export": true,
+			"onSummonFunction": "",
+			"config": {
+				"response": true,
+				"on_interact_function": "function gameplay:ingredient/on_interact",
+				"on_attack_function": "function gameplay:ingredient/on_attack",
+				"on_summon_function": "data remove entity @s CustomName",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"scope": 0,
+			"uuid": "759759a6-9acd-ef62-694c-fce380154000",
+			"type": "animated_java:interaction"
 		}
 	],
 	"groups": [
@@ -157,7 +179,7 @@
 			"mirror_uv": false,
 			"autouv": 0,
 			"isOpen": true,
-			"primary_selected": true
+			"primary_selected": false
 		}
 	],
 	"outliner": [
@@ -165,7 +187,8 @@
 			"uuid": "4d4c80bf-88fd-2f87-fbd0-a7e95ad0a988",
 			"isOpen": true,
 			"children": ["19b415af-7368-0475-8b09-0a39921b6c64", "3342af42-3a2b-b9b1-1392-b44d505844b2"]
-		}
+		},
+		"759759a6-9acd-ef62-694c-fce380154000"
 	],
 	"texture_groups": [],
 	"textures": [

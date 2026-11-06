@@ -1,15 +1,19 @@
 import ./score.mcbt
 import ./execute.mcbt
+import ./math.mcbt
+
 
 function apply_movement_attributes {
 	attribute @s minecraft:movement_speed modifier add pspp:elf_speed 0.5 add_multiplied_base
 	attribute @s minecraft:jump_strength modifier add pspp:elf_jump 0.5 add_multiplied_base
 }
 
+
 function remove_movement_attributes {
 	attribute @s minecraft:movement_speed modifier remove pspp:elf_speed
 	attribute @s minecraft:jump_strength modifier remove pspp:elf_jump
 }
+
 
 function get_username {
 	summon item_display 0 0 0 {UUID: uuid('39484f6e-23ce-4ba8-9a41-c5e2acce4f03')}
@@ -17,6 +21,7 @@ function get_username {
 	data modify storage player:temp username set from entity 39484f6e-23ce-4ba8-9a41-c5e2acce4f03 item.components.minecraft:profile.name
 	kill 39484f6e-23ce-4ba8-9a41-c5e2acce4f03
 }
+
 
 loot_table fill_player_head {
 	"pools": [
@@ -32,3 +37,46 @@ loot_table fill_player_head {
 		}
 	]
 }
+
+
+#> Returns the entity's speed in blocks/second × 1000, floored to 50 and clamped to 0..20000.
+function get_speed {
+	movement_search speed 0 20000 50
+}
+
+
+#> Outputs the entity's motion in blocks/second × 1000, floored to 50 and clamped to -10000..10000.
+#> Outputs: #output.vector.x, #output.vector.y, #output.vector.z
+function get_motion {
+	REPEAT (['x', 'y', 'z']) as axis {
+		store result score #output.vector.<%axis%> i run {
+			movement_search <%axis%> -10000 10000 50
+		}
+	}
+}
+
+# function debug_load minecraft:load {
+# 	bossbar add pspp:debug_motion_x "Debug Motion X"
+# 	bossbar add pspp:debug_motion_y "Debug Motion Y"
+# 	bossbar add pspp:debug_motion_z "Debug Motion Z"
+# 	bossbar set pspp:debug_motion_x players @a
+# 	bossbar set pspp:debug_motion_y players @a
+# 	bossbar set pspp:debug_motion_z players @a
+# 	bossbar set pspp:debug_motion_x max 20000
+# 	bossbar set pspp:debug_motion_y max 20000
+# 	bossbar set pspp:debug_motion_z max 20000
+# }
+
+
+# function debug_tick minecraft:tick {
+# 	as @p at @s run function player:get_motion
+
+# 	# Make output value between 0 and 20000
+# 	add #output.vector.x i 10000
+# 	add #output.vector.y i 10000
+# 	add #output.vector.z i 10000
+
+# 	store result bossbar pspp:debug_motion_x value run get #output.vector.x i
+# 	store result bossbar pspp:debug_motion_y value run get #output.vector.y i
+# 	store result bossbar pspp:debug_motion_z value run get #output.vector.z i
+# }

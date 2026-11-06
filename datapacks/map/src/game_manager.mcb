@@ -2,7 +2,7 @@ import /score.mcbt
 import /execute.mcbt
 import /debug.mcbt
 
-function load minecraft:load {
+function load {
 	create game_manager.leave_game minecraft.custom:minecraft.leave_game
 	create game_manager.game_id
 
@@ -18,7 +18,8 @@ function reset {
 	as @a run function ./reset_player
 }
 
-function tick minecraft:tick {
+function tick {
+	as @a unless score @s game_manager.leave_game matches -<%2**31-1%>.. run set @s game_manager.leave_game 1
 	as @a[scores={game_manager.leave_game=1..}] run function ./on_join_game
 }
 
@@ -66,6 +67,7 @@ function reset_player {
 
 function on_join_game {
 	set @s game_manager.leave_game 0
+	unless score @s game_manager.game_id matches -<%2**31-1%>.. run set @s game_manager.game_id -1
 
 	debug message ['',{selector:'@s'}, " joined the game."]
 

@@ -15,8 +15,7 @@
 		"target_minecraft_version": "26.3",
 		"resource_pack": "../../resources",
 		"data_pack": "../../datapacks/animated_java",
-		"on_summon_function": "function gameplay:ingredient/summon/vanilla.as_root",
-		"auto_update_rig_orientation": false
+		"on_summon_function": "function gameplay:ingredient/summon/vanilla.as_root"
 	},
 	"elements": [
 		{
@@ -2134,6 +2133,29 @@
 			},
 			"type": "cube",
 			"uuid": "43e6f25d-dc7a-914d-aa5e-8f8ef1975998"
+		},
+		{
+			"name": "hitbox",
+			"position": [0, 0.25, 0],
+			"rotation": [0, 0, 0],
+			"pivotOffset": [0, 0, 0],
+			"scale": [28, 45, 28],
+			"color": 5,
+			"visibility": true,
+			"locked": false,
+			"export": true,
+			"onSummonFunction": "",
+			"config": {
+				"response": true,
+				"on_interact_function": "function gameplay:ingredient/on_interact",
+				"on_attack_function": "function gameplay:ingredient/on_attack",
+				"on_summon_function": "data remove entity @s CustomName",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"scope": 0,
+			"uuid": "ab5ca72e-f162-88a3-58b1-77c9e16fac6e",
+			"type": "animated_java:interaction"
 		}
 	],
 	"groups": [
@@ -2224,7 +2246,8 @@
 				"447d6f98-b94d-5558-6b99-5a86facddaf0",
 				"43e6f25d-dc7a-914d-aa5e-8f8ef1975998"
 			]
-		}
+		},
+		"ab5ca72e-f162-88a3-58b1-77c9e16fac6e"
 	],
 	"texture_groups": [],
 	"textures": [

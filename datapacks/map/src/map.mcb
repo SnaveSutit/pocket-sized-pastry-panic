@@ -17,6 +17,9 @@ function load minecraft:load {
 	schedule 5t replace {
 		unless function map:is_world_loaded run return run schedule function ^0 1t replace
 
+		# Load functions
+		function game_manager:load
+
 		# Auto teardown if map is setup and auto_teardown_on_reload is enabled
 		IF (config.dev) {
 			if score #map.auto_teardown_on_reload v matches 1 run debug message ['',{"text":"Auto teardown on reload is enabled.","color":"yellow"}]
@@ -24,6 +27,8 @@ function load minecraft:load {
 		if score #map.auto_teardown_on_reload v matches 1 run function ./teardown
 		# Setup if map is not setup yet
 		if score #map.is_setup v matches 0 run function ./setup
+
+		schedule function ./tick 1t replace
 	}
 
 	debug message ['',{"text":"Map reloaded!","color":"green"}]
@@ -137,10 +142,13 @@ function reset {
 }
 
 
-function tick minecraft:tick {
+function tick {
+	schedule function ^0 1t replace
+
 	add #map.tick v 1
 	if score #map.tick v matches 20.. run function ./second
 
+	function game_manager:tick
 	function gameplay:ingredient/tick
 }
 

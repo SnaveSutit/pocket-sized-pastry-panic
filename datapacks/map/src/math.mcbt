@@ -109,3 +109,30 @@ template vector2 {
 		scoreboard players operation <%store.v1.zName%> <%store.v1.zObjective%> = #nz <%config.internalScoreboardName%>
 	}
 }
+
+#> Binary searches the entity's `minecraft:movement` <field> (blocks/second × 1000) and returns it
+#> floored to <step>, clamped to <min>..<max>. Costs ~log2((max - min) / step) predicate checks.
+template movement_search {
+	with field:word min:int max:int step:int {
+		<%%
+			if (step <= 0 || max <= min || (max - min) % step !== 0) {
+				throw new Error(`[movement_search]: (max - min) must be a positive multiple of step, got ${min}..${max} step ${step}.`)
+			}
+
+			const value = (index) => min + index * step
+			const check = (index) =>
+				// prettier-ignore
+				`execute if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:movement":{${field}:{min:${value(index) / 1000}}}}}`
+
+			// Returns the highest value in low..high whose threshold the entity meets.
+			function search(low, high) {
+				if (low === high) return `return ${value(low)}\n`
+				const mid = Math.ceil((low + high) / 2)
+				const upper = mid === high ? `return ${value(high)}` : `return run {\n${search(mid, high)}}`
+				return `${check(mid)} run ${upper}\n${search(low, mid - 1)}`
+			}
+
+			emit.mcb(search(0, (max - min) / step))
+		%%>
+	}
+}

@@ -15,8 +15,7 @@
 		"target_minecraft_version": "26.3",
 		"resource_pack": "../../resources",
 		"data_pack": "../../datapacks/animated_java",
-		"on_summon_function": "function gameplay:ingredient/summon/milk.as_root",
-		"auto_update_rig_orientation": false
+		"on_summon_function": "function gameplay:ingredient/summon/milk.as_root"
 	},
 	"elements": [
 		{
@@ -322,6 +321,29 @@
 			},
 			"type": "cube",
 			"uuid": "3d48d3b2-e897-d603-40e0-f197fe2fc76b"
+		},
+		{
+			"name": "hitbox",
+			"position": [0, 0.25, 0],
+			"rotation": [0, 0, 0],
+			"pivotOffset": [0, 0, 0],
+			"scale": [24, 44, 24],
+			"color": 5,
+			"visibility": true,
+			"locked": false,
+			"export": true,
+			"onSummonFunction": "",
+			"config": {
+				"response": true,
+				"on_interact_function": "function gameplay:ingredient/on_interact",
+				"on_attack_function": "function gameplay:ingredient/on_attack",
+				"on_summon_function": "data remove entity @s CustomName",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"scope": 0,
+			"uuid": "dcff338e-5194-cbc9-645e-03d8047ef0dd",
+			"type": "animated_java:interaction"
 		}
 	],
 	"groups": [
@@ -359,7 +381,7 @@
 			"mirror_uv": false,
 			"autouv": 0,
 			"isOpen": false,
-			"primary_selected": true
+			"primary_selected": false
 		}
 	],
 	"outliner": [
@@ -374,7 +396,8 @@
 				"aa04af40-3a9b-9741-0d42-236a4712913b",
 				"3d48d3b2-e897-d603-40e0-f197fe2fc76b"
 			]
-		}
+		},
+		"dcff338e-5194-cbc9-645e-03d8047ef0dd"
 	],
 	"texture_groups": [],
 	"textures": [

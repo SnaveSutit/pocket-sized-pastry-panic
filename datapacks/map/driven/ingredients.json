@@ -1,5 +1,82 @@
 [
 	{
-		"id": "butter"
+		"id": "butter",
+		"scale": 2,
+		"height_offset": -1.75,
+		"bounciness": 0.4,
+		"air_drag_modifier": 0.4,
+		"friction_modifier": 0.3
+	},
+	{
+		"id": "sugar",
+		"scale": 2,
+		"height_offset": -1.75,
+		"bounciness": 0.4,
+		"air_drag_modifier": 0.5,
+		"friction_modifier": 0.5
+	},
+	{
+		"id": "vanilla",
+		"scale": 1.8,
+		"height_offset": -1.56,
+		"bounciness": 0.3,
+		"air_drag_modifier": 0.6,
+		"friction_modifier": 0.5
+	},
+	{
+		"id": "egg",
+		"scale": 2,
+		"height_offset": -1.75,
+		"bounciness": 0.1,
+		"air_drag_modifier": 0.4,
+		"friction_modifier": 0.5
+	},
+	{
+		"id": "lemon",
+		"scale": 2,
+		"height_offset": -1.75,
+		"bounciness": 0.4,
+		"air_drag_modifier": 0.4,
+		"friction_modifier": 0.5
+	},
+	{
+		"id": "strawberry",
+		"scale": 2,
+		"height_offset": -1.75,
+		"bounciness": 0.4,
+		"air_drag_modifier": 0.4,
+		"friction_modifier": 0.5
+	},
+	{
+		"id": "flour",
+		"scale": 2,
+		"height_offset": -1.75,
+		"bounciness": 0.2,
+		"air_drag_modifier": 0.4,
+		"friction_modifier": 0.5
+	},
+	{
+		"id": "chocolate",
+		"scale": 2,
+		"height_offset": -1.75,
+		"bounciness": 0.3,
+		"air_drag_modifier": 0.4,
+		"friction_modifier": 0.6
+	},
+	{
+		"id": "milk",
+		"scale": 1.6,
+		"height_offset": -1.38,
+		"bounciness": 0.1,
+		"air_drag_modifier": 0.5,
+		"friction_modifier": 0.6
+	},
+	{
+		"id": "carrot",
+		"scale": 1.6,
+		"height_offset": -1.38,
+		"bounciness": 0.1,
+		"air_drag_modifier": 0.3,
+		"friction_modifier": 0.8
 	}
 ]

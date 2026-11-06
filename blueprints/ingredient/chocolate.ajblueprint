@@ -17,8 +17,7 @@
 		"resource_pack": "../../resources",
 		"preview_resource_packs": [],
 		"data_pack": "../../datapacks/animated_java",
-		"on_summon_function": "function gameplay:ingredient/summon/chocolate.as_root",
-		"auto_update_rig_orientation": false
+		"on_summon_function": "function gameplay:ingredient/summon/chocolate.as_root"
 	},
 	"elements": [
 		{
@@ -280,6 +279,29 @@
 			},
 			"type": "cube",
 			"uuid": "19f06024-5628-814e-7f9f-0d743789fece"
+		},
+		{
+			"name": "hitbox",
+			"position": [0, 0.25, 0],
+			"rotation": [0, 0, 0],
+			"pivotOffset": [0, 0, 0],
+			"scale": [33, 32, 33],
+			"color": 5,
+			"visibility": true,
+			"locked": false,
+			"export": true,
+			"onSummonFunction": "",
+			"config": {
+				"response": true,
+				"on_interact_function": "function gameplay:ingredient/on_interact",
+				"on_attack_function": "function gameplay:ingredient/on_attack",
+				"on_summon_function": "data remove entity @s CustomName",
+				"on_remove_function": "",
+				"on_tick_function": ""
+			},
+			"scope": 0,
+			"uuid": "6c28d6d7-2daa-8a2a-58ab-e41091018031",
+			"type": "animated_java:interaction"
 		}
 	],
 	"groups": [
@@ -317,7 +339,7 @@
 			"mirror_uv": false,
 			"autouv": 0,
 			"isOpen": false,
-			"primary_selected": true
+			"primary_selected": false
 		}
 	],
 	"outliner": [
@@ -331,7 +353,8 @@
 				"7d5797a5-8cd9-d211-0cbb-fe9ec46807d9",
 				"19f06024-5628-814e-7f9f-0d743789fece"
 			]
-		}
+		},
+		"6c28d6d7-2daa-8a2a-58ab-e41091018031"
 	],
 	"texture_groups": [],
 	"textures": [
