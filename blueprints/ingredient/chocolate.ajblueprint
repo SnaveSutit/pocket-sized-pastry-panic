@@ -17,7 +17,8 @@
 		"resource_pack": "../../resources",
 		"preview_resource_packs": [],
 		"data_pack": "../../datapacks/animated_java",
-		"on_summon_function": "function gameplay:ingredient/summon/chocolate.as_root"
+		"on_summon_function": "function gameplay:ingredient/summon/chocolate.as_root",
+		"collection": "./ingredients.bpcollection"
 	},
 	"elements": [
 		{

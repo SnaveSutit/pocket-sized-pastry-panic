@@ -15,7 +15,8 @@
 		"target_minecraft_version": "26.3",
 		"resource_pack": "../../resources",
 		"data_pack": "../../datapacks/animated_java",
-		"on_summon_function": "function gameplay:ingredient/summon/sugar.as_root"
+		"on_summon_function": "function gameplay:ingredient/summon/sugar.as_root",
+		"collection": "./ingredients.bpcollection"
 	},
 	"elements": [
 		{

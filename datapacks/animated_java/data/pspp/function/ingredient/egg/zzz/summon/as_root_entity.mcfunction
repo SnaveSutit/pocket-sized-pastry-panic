@@ -13,7 +13,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "pspp:ingredient/egg"
-data modify storage animated_java:temp entry.data.rig_hash set value "9a8f6c774306d6e94f5f733056c1cb1379eb4e118c6e7ccd39b060405ccbca16"
+data modify storage animated_java:temp entry.data.rig_hash set value "a3a117000dd245b589a992788524c89fe061ac5fc5e35ff01c06f89264ca175d"
 tp @s ~ ~ ~ ~ ~
 summon minecraft:interaction ^0 ^0.0156 ^0 { Tags:["aj.global.entity","aj.global.interaction","aj.global.node","aj.global.node.hitbox","aj.global.root.child","aj.global.root.child.interaction","aj.new","pspp.ingredient.egg.entity","pspp.ingredient.egg.interaction","pspp.ingredient.egg.interaction.hitbox","pspp.ingredient.egg.node","pspp.ingredient.egg.node.hitbox"], response: true, width: 2.3125f, height: 2.5625f, }
 execute as @n[ type=minecraft:interaction, tag=pspp.ingredient.egg.interaction.hitbox, tag=aj.new, distance=..1 ] run function pspp:ingredient/egg/zzz/summon/as_interaction/hitbox

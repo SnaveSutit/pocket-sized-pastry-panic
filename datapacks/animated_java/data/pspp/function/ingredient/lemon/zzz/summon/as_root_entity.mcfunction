@@ -13,7 +13,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "pspp:ingredient/lemon"
-data modify storage animated_java:temp entry.data.rig_hash set value "bf8c8887fb422fc6597a576d090c9fdcdcb0de9f3107b982e75c14d5becc6df3"
+data modify storage animated_java:temp entry.data.rig_hash set value "f240789a93b42570afaa9571c748c95159c9abd426a72c14aa4033d9b8ac3074"
 tp @s ~ ~ ~ ~ ~
 summon minecraft:interaction ^0 ^0.0156 ^0 { Tags:["aj.global.entity","aj.global.interaction","aj.global.node","aj.global.node.hitbox","aj.global.root.child","aj.global.root.child.interaction","aj.new","pspp.ingredient.lemon.entity","pspp.ingredient.lemon.interaction","pspp.ingredient.lemon.interaction.hitbox","pspp.ingredient.lemon.node","pspp.ingredient.lemon.node.hitbox"], response: true, width: 2.3125f, height: 2.0625f, }
 execute as @n[ type=minecraft:interaction, tag=pspp.ingredient.lemon.interaction.hitbox, tag=aj.new, distance=..1 ] run function pspp:ingredient/lemon/zzz/summon/as_interaction/hitbox

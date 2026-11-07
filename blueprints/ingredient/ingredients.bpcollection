@@ -1,0 +1,23 @@
+{
+	"format_version": 1,
+	"uuid": "238325b8-97c4-1050-1828-b03242418be9",
+	"settings": {
+		"target_minecraft_version": "26.3",
+		"resource_pack_export_mode": "folder",
+		"data_pack_export_mode": "folder",
+		"resource_pack": "../../resources",
+		"data_pack": "../../datapacks/animated_java"
+	},
+	"blueprints": [
+		"./butter.ajblueprint",
+		"./milk.ajblueprint",
+		"./sugar.ajblueprint",
+		"./egg.ajblueprint",
+		"./flour.ajblueprint",
+		"./vanilla.ajblueprint",
+		"./chocolate.ajblueprint",
+		"./strawberry.ajblueprint",
+		"./lemon.ajblueprint",
+		"./carrot.ajblueprint"
+	]
+}

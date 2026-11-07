@@ -13,7 +13,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "pspp:ingredient/carrot"
-data modify storage animated_java:temp entry.data.rig_hash set value "8b8f5b45aa6f217c8dfb467065019dd4a22ef4d3f0294fabff5e78dada61c849"
+data modify storage animated_java:temp entry.data.rig_hash set value "f50bd041d0098cc97a7a5970c7e854ead577a0ff1f396224375a7ccdbddda64c"
 tp @s ~ ~ ~ ~ ~
 summon minecraft:interaction ^0 ^0.0156 ^0 { Tags:["aj.global.entity","aj.global.interaction","aj.global.node","aj.global.node.hitbox","aj.global.root.child","aj.global.root.child.interaction","aj.new","pspp.ingredient.carrot.entity","pspp.ingredient.carrot.interaction","pspp.ingredient.carrot.interaction.hitbox","pspp.ingredient.carrot.node","pspp.ingredient.carrot.node.hitbox"], response: true, width: 1.5625f, height: 3.0625f, }
 execute as @n[ type=minecraft:interaction, tag=pspp.ingredient.carrot.interaction.hitbox, tag=aj.new, distance=..1 ] run function pspp:ingredient/carrot/zzz/summon/as_interaction/hitbox

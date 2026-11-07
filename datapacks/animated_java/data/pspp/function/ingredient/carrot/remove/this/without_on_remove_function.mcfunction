@@ -6,6 +6,6 @@ execute store result storage animated_java:temp args.id int 1 run scoreboard pla
 function animated_java:global/data_manager/read with storage animated_java:temp args
 data modify storage animated_java:temp args.uuid set from storage animated_java:temp entry.data.uuids_by_name.hitbox
 function animated_java:global/remove/entity_stack_by_uuid with storage animated_java:temp args
-execute unless data storage animated_java:temp {entry:{data:{rig_hash: '8b8f5b45aa6f217c8dfb467065019dd4a22ef4d3f0294fabff5e78dada61c849'}}} run function animated_java:global/remove/outdated_rig
+execute unless data storage animated_java:temp {entry:{data:{rig_hash: 'f50bd041d0098cc97a7a5970c7e854ead577a0ff1f396224375a7ccdbddda64c'}}} run function animated_java:global/remove/outdated_rig
 function pspp:ingredient/carrot/remove/this/zzz/0 with storage animated_java:temp entry.data.uuids_by_name
 function animated_java:global/remove/entity_stack
