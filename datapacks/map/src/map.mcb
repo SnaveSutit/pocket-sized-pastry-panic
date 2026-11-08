@@ -1,7 +1,7 @@
-import ./score.mcbt
-import ./sequence.mcbt
-import ./execute.mcbt
-import ./debug.mcbt
+import /score.mcbt
+import /sequence.mcbt
+import /execute.mcbt
+import /debug.mcbt
 
 
 function load minecraft:load {

@@ -12,13 +12,13 @@
 	},
 	"blueprint_settings": {
 		"blueprint_id": "pspp:ingredient/butter",
+		"collection": "./ingredients.bpcollection",
 		"render_box": [48, 48],
 		"target_minecraft_version": "26.3",
 		"resource_pack": "../../resources",
 		"preview_resource_packs": [],
 		"data_pack": "../../datapacks/animated_java",
-		"on_summon_function": "function gameplay:ingredient/summon/butter.as_root",
-		"collection": "./ingredients.bpcollection"
+		"on_summon_function": "function gameplay:ingredient/summon/butter.as_root"
 	},
 	"elements": [
 		{
@@ -520,7 +520,7 @@
 			"position": [0, 0.25, 0],
 			"rotation": [0, 0, 0],
 			"pivotOffset": [0, 0, 0],
-			"scale": [32, 22, 32],
+			"scale": [32, 33, 32],
 			"color": 5,
 			"visibility": true,
 			"locked": false,
@@ -626,6 +626,7 @@
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
+			"palette_generated": {},
 			"is_texture_slot": false,
 			"slot_textures": [],
 			"visible": true,

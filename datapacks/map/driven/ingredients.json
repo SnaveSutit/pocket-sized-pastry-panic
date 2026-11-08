@@ -4,8 +4,8 @@
 		"scale": 2,
 		"height_offset": -1.75,
 		"bounciness": 0.4,
-		"air_drag_modifier": 0.4,
-		"friction_modifier": 0.3
+		"air_drag_modifier": 0.3,
+		"friction_modifier": 0.1
 	},
 	{
 		"id": "sugar",
@@ -67,7 +67,7 @@
 		"id": "milk",
 		"scale": 1.6,
 		"height_offset": -1.38,
-		"bounciness": 0.1,
+		"bounciness": 0,
 		"air_drag_modifier": 0.5,
 		"friction_modifier": 0.6
 	},

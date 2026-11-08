@@ -7,6 +7,7 @@ import /debug.mcbt
 function load minecraft:load {
 	# If link_id is 0, then the ingredient is either not being carried, or is on top of another ingredient in a stack.
 	create pspp.ingredient.link_id
+	create pspp.ingredient.was_on_ground
 
 	add #pspp.ingredient.last_link_id v 0
 
@@ -54,6 +55,7 @@ dir summon {
 			tag @s add pspp.ingredient.<%ingredient.id%>
 			tag @s add pspp.ingredient.root
 			set @s pspp.ingredient.link_id 0
+			set @s pspp.ingredient.was_on_ground 1
 			at @s run function ../mount_physics
 		}
 	}
@@ -70,12 +72,22 @@ function tick {
 			tp @s ^ ^2.5 ^1 ~ ~
 			set #check v 1
 		}
-		if score #check v matches 0 run {
-			debug message [{text: 'Failed to find base ingredient'}]
+		if score #check v matches 0 run \
 			set @s pspp.ingredient.link_id 0
-		}
 
 		tag @s remove this.player
+	}
+
+	as @e[type=item_display,tag=pspp.ingredient.root] run {
+		if score @s pspp.ingredient.was_on_ground matches 0 if predicate gameplay:ingredient/on_ground at @s run return run {
+			set @s pspp.ingredient.was_on_ground 1
+			if entity @s[tag=pspp.ingredient.butter] run return run \
+				playsound minecraft:block.honey_block.fall player @a[distance=..20] ~ ~ ~ 1 1
+			playsound minecraft:block.tuff.fall player @a[distance=..20] ~ ~ ~ 1 0.1
+		}
+		if score @s pspp.ingredient.was_on_ground matches 1 unless predicate gameplay:ingredient/on_ground run return run {
+			set @s pspp.ingredient.was_on_ground 0
+		}
 	}
 }
 
@@ -105,9 +117,9 @@ function mount_physics {
 				on vehicle {
 					tag @s remove pspp.new
 					team join ingredient @s
-					# IF (config.dev) {
-					# 	effect clear @s invisibility
-					# }
+					IF (config.dev) {
+						effect clear @s invisibility
+					}
 
 					attribute @s minecraft:bounciness base set <%ingredient.bounciness%>
 					attribute @s minecraft:gravity base set 0.1
@@ -151,14 +163,13 @@ function grab {
 	set #link_id v -1
 	on target run op #link_id v = @s pspp.ingredient.link_id
 	on attacker run op #link_id v = @s pspp.ingredient.link_id
-	debug message [{text: 'link_id = '},{score:{name:'#link_id', objective: 'v'}}]
+	# debug message [{text: 'link_id = '},{score:{name:'#link_id', objective: 'v'}}]
 
-	if score #link_id v matches -1 run return run {
-		debug message [{text: 'Failed to get player link_id'}]
-	}
+	# Failed to get player link ID
+	if score #link_id v matches -1 run return 0
 
 	if score #link_id v matches 0 run return run {
-		debug message [{text: 'Player is not holding an ingredient'}]
+		# debug message [{text: 'Player is not holding an ingredient'}]
 
 		# Set ingredient link ID on base
 		function animated_java:global/as_root {command: \
@@ -169,25 +180,26 @@ function grab {
 	}
 
 	if score #link_id v matches 1.. run return run {
-		debug message [{text: 'Player is holding an ingredient'}]
+		# debug message [{text: 'Player is holding an ingredient'}]
 		# Get current link ID for the ingredient
 		set #current_link_id v -1
 		function animated_java:global/as_root {command: \
 			'scoreboard players operation #current_link_id v = @s pspp.ingredient.link_id'}
 
 		if score #current_link_id v = #link_id v run {
-			debug message [{text: 'Ingredient link ID matches player link ID, dropping ingredient'}]
+			# debug message [{text: 'Ingredient link ID matches player link ID, dropping ingredient'}]
 
 			tag @s add this.hitbox
 
-			on target positioned ^ ^ ^2.5 run {
-				as @e[type=interaction,tag=this.hitbox,limit=1] run function animated_java:global/as_root {command: \
-					'function gameplay:ingredient/drop'}
-			}
+			on target \
+				positioned ^ ^ ^2.5 \
+				as @e[type=interaction,tag=this.hitbox,limit=1] \
+				run function animated_java:global/as_root {command:'function gameplay:ingredient/drop'}
+
 			on attacker positioned ^ ^ ^2.5 run {
 				function player:get_motion
-				as @e[type=interaction,tag=this.hitbox,limit=1] run function animated_java:global/as_root {command: \
-					'function gameplay:ingredient/throw'}
+				as @e[type=interaction,tag=this.hitbox,limit=1] \
+					run function animated_java:global/as_root {command:'function gameplay:ingredient/throw'}
 			}
 
 			tag @s remove this.hitbox
@@ -214,7 +226,7 @@ function drop {
 	op #output.vector.y i /= #5 i
 	op #output.vector.z i /= #5 i
 
-	debug message [{"text":"Ingredient dropped with motion vector: ","color":"gray"},{"score":{"name":"#output.vector.x","objective":"i"},"color":"red"},{"text":", ","color":"gray"},{"score":{"name":"#output.vector.y","objective":"i"},"color":"green"},{"text":", ","color":"gray"},{"score":{"name":"#output.vector.z","objective":"i"},"color":"blue"}]
+	# debug message [{"text":"Ingredient dropped with motion vector: ","color":"gray"},{"score":{"name":"#output.vector.x","objective":"i"},"color":"red"},{"text":", ","color":"gray"},{"score":{"name":"#output.vector.y","objective":"i"},"color":"green"},{"text":", ","color":"gray"},{"score":{"name":"#output.vector.z","objective":"i"},"color":"blue"}]
 
 	on vehicle on vehicle {
 		data modify storage pspp:temp vector set value [0d,0d,0d]
@@ -246,7 +258,7 @@ function throw {
 	op #output.vector.y i += #temp.vector.y v
 	op #output.vector.z i += #temp.vector.z v
 
-	debug message [{"text":"Ingredient thrown with motion vector: ","color":"gray"},{"score":{"name":"#output.vector.x","objective":"i"},"color":"red"},{"text":", ","color":"gray"},{"score":{"name":"#output.vector.y","objective":"i"},"color":"green"},{"text":", ","color":"gray"},{"score":{"name":"#output.vector.z","objective":"i"},"color":"blue"}]
+	# debug message [{"text":"Ingredient thrown with motion vector: ","color":"gray"},{"score":{"name":"#output.vector.x","objective":"i"},"color":"red"},{"text":", ","color":"gray"},{"score":{"name":"#output.vector.y","objective":"i"},"color":"green"},{"text":", ","color":"gray"},{"score":{"name":"#output.vector.z","objective":"i"},"color":"blue"}]
 
 	on vehicle on vehicle {
 		data modify storage pspp:temp vector set value [0d,0d,0d]
@@ -265,4 +277,19 @@ function on_interact {
 
 function on_attack {
 	function ./grab
+}
+
+
+predicate on_ground {
+	"type": "entity_properties",
+	"entity": "this",
+	"predicate": {
+		"minecraft:vehicle": {
+			"minecraft:vehicle": {
+				"minecraft:flags": {
+					"is_on_ground": true
+				}
+			}
+		}
+	}
 }
