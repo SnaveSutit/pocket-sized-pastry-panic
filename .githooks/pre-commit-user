@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+# Blocks commits that stage any changes under world/.
+# Installed via: bun run setup_hooks
+
+world_files=$(git diff --cached --name-only --diff-filter=ACMR -- world)
+
+if [ -n "$world_files" ]; then
+	echo "❌ Commit blocked: staged changes include files under world/:" >&2
+	echo "$world_files" | sed 's/^/   /' >&2
+	echo "" >&2
+	echo "   Unstage them with: git restore --staged -- world" >&2
+	exit 1
+fi
+
+exit 0
