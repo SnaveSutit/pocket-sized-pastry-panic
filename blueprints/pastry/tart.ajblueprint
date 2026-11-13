@@ -1,0 +1,1500 @@
+{
+	"meta": {
+		"format": "animated-java:format/blueprint",
+		"format_version": "1.11.0",
+		"uuid": "07399313-d39c-8232-0cbd-6c0fd2c6c766",
+		"save_location": "C:\\Users\\User\\Desktop\\projects\\github\\pocket-sized-pastry-panic\\blueprints\\pastry\\tart.ajblueprint",
+		"last_used_blueprint_id": ""
+	},
+	"resolution": {
+		"width": 64,
+		"height": 64
+	},
+	"blueprint_settings": {
+		"blueprint_id": "pspp:pastry/tart",
+		"target_minecraft_version": "26.3",
+		"resource_pack": "../../resources",
+		"data_pack": "../../datapacks/animated_java"
+	},
+	"elements": [
+		{
+			"name": "dough",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [0, 2.96195, 0],
+			"to": [35.12844, 6.96195, 35.12761],
+			"autouv": 0,
+			"color": 1,
+			"rotation": [2.49762, 0.10901, -2.49762],
+			"origin": [0, 7, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"east": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"south": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"west": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"up": {
+					"uv": [18, 18, 0, 0],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"down": {
+					"uv": [36, 18, 18, 36],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				}
+			},
+			"type": "cube",
+			"uuid": "b6f169e3-ffe1-7146-fd00-ea61cb87ec7d"
+		},
+		{
+			"name": "dough",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [0, 3, 32],
+			"to": [36, 27, 36],
+			"autouv": 0,
+			"color": 1,
+			"rotation": [2.49762, 0.10901, -2.49762],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [36, 40, 18, 52],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"east": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [18, 52, 36, 64],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"west": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [36, 60, 54, 62],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "acd89b4d-2602-7bc3-88b2-d6286f24d8f7"
+		},
+		{
+			"name": "dough",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-36, 3, 32],
+			"to": [0, 27, 36],
+			"autouv": 0,
+			"color": 1,
+			"rotation": [92.5, 87.5, 90],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [18, 52, 0, 64],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"east": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [0, 40, 18, 52],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"west": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [36, 62, 54, 64],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "ce66866c-edbb-5126-d153-0de0ba4c3275"
+		},
+		{
+			"name": "dough",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [0, 3, 32],
+			"to": [36, 27, 36],
+			"autouv": 0,
+			"color": 1,
+			"rotation": [92.5, -87.5, -90],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 52, 18, 64],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"east": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [18, 40, 0, 52],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"west": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [54, 62, 36, 64],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "6b0c3585-4616-7b8f-5666-6f3115694536"
+		},
+		{
+			"name": "dough",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-36, 3, 32],
+			"to": [0, 27, 36],
+			"autouv": 0,
+			"color": 1,
+			"rotation": [2.49762, -0.10901, 2.49762],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [18, 40, 36, 52],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"east": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [36, 52, 18, 64],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"west": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [54, 60, 36, 62],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "107a3c5a-f3c4-3b07-253f-9fdc451fb82d"
+		},
+		{
+			"name": "dough",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-35.12844, 2.96195, 0],
+			"to": [0, 6.96195, 35.12761],
+			"autouv": 0,
+			"color": 1,
+			"rotation": [2.49762, -0.10901, 2.49762],
+			"origin": [0, 7, 0],
+			"faces": {
+				"north": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"east": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"south": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"west": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"up": {
+					"uv": [0, 36, 18, 18],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"down": {
+					"uv": [18, 0, 36, 18],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				}
+			},
+			"type": "cube",
+			"uuid": "e57effd6-2fe8-ce48-1dd3-bc2b16af86b9"
+		},
+		{
+			"name": "dough",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-35.12844, 2.96195, -35.12761],
+			"to": [0, 6.96195, 0],
+			"autouv": 0,
+			"color": 1,
+			"rotation": [-2.49762, 0.10901, 2.49762],
+			"origin": [0, 7, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"east": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"south": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"west": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"up": {
+					"uv": [0, 0, 18, 18],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"down": {
+					"uv": [18, 36, 36, 18],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				}
+			},
+			"type": "cube",
+			"uuid": "daa0a4bb-9a9a-797c-9f25-7eb94780c881"
+		},
+		{
+			"name": "dough",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-36, 3, -36],
+			"to": [0, 27, -32],
+			"autouv": 0,
+			"color": 1,
+			"rotation": [-2.49762, 0.10901, 2.49762],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [18, 52, 36, 64],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"east": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [36, 40, 18, 52],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"west": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [54, 62, 36, 60],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "f4950f00-0495-11e7-120b-7edd51f3309b"
+		},
+		{
+			"name": "dough",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [0, 3, -36],
+			"to": [36, 27, -32],
+			"autouv": 0,
+			"color": 1,
+			"rotation": [-92.5, 87.5, -90],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 40, 18, 52],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"east": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [18, 52, 0, 64],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"west": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [54, 64, 36, 62],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "3c3b66ec-6bcb-a3c4-5c9a-93ce4267c5fc"
+		},
+		{
+			"name": "dough",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-36, 3, -36],
+			"to": [0, 27, -32],
+			"autouv": 0,
+			"color": 1,
+			"rotation": [-92.5, -87.5, 90],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [18, 40, 0, 52],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"east": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [0, 52, 18, 64],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"west": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [36, 64, 54, 62],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "10addc74-b97b-cf98-982a-080476fefa68"
+		},
+		{
+			"name": "dough",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [0, 3, -36],
+			"to": [36, 27, -32],
+			"autouv": 0,
+			"color": 1,
+			"rotation": [-2.49762, -0.10901, -2.49762],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [36, 52, 18, 64],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"east": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [18, 40, 36, 52],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"west": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [36, 62, 54, 60],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "0d942bff-108f-1b4f-f010-924b4a2b5a61"
+		},
+		{
+			"name": "dough",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [0, 2.96195, -35.12761],
+			"to": [35.12844, 6.96195, 0],
+			"autouv": 0,
+			"color": 1,
+			"rotation": [-2.49762, -0.10901, -2.49762],
+			"origin": [0, 7, 0],
+			"faces": {
+				"north": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"east": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"south": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"west": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"up": {
+					"uv": [18, 18, 0, 36],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				},
+				"down": {
+					"uv": [36, 18, 18, 0],
+					"texture": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c"
+				}
+			},
+			"type": "cube",
+			"uuid": "6b8c4862-2dc5-5089-09bc-5625dc1d7667"
+		},
+		{
+			"name": "filling",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-35.12844, 17.96195, -35.12761],
+			"to": [0, 21.96195, 0],
+			"autouv": 0,
+			"color": 0,
+			"rotation": [-2.49762, 0.10901, 2.49762],
+			"origin": [0, 22, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"east": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"south": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"west": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"up": {
+					"uv": [0, 0, 18, 18],
+					"texture": "cded3941-e79d-edba-ae0b-3f714be1dc05"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "b37e3343-0582-91ec-cb87-b74bb31d8fd4"
+		},
+		{
+			"name": "filling",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [0, 17.96195, -35.12761],
+			"to": [35.12844, 21.96195, 0],
+			"autouv": 0,
+			"color": 0,
+			"rotation": [-2.49762, -0.10901, -2.49762],
+			"origin": [0, 22, 0],
+			"faces": {
+				"north": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"east": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"south": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"west": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"up": {
+					"uv": [18, 0, 36, 18],
+					"texture": "cded3941-e79d-edba-ae0b-3f714be1dc05"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "bc9ee281-f384-c757-d17c-4936722832dc"
+		},
+		{
+			"name": "filling",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [0, 17.96195, 0],
+			"to": [35.12844, 21.96195, 35.12761],
+			"autouv": 0,
+			"color": 0,
+			"rotation": [2.49762, 0.10901, -2.49762],
+			"origin": [0, 22, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"east": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"south": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"west": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"up": {
+					"uv": [18, 18, 36, 36],
+					"texture": "cded3941-e79d-edba-ae0b-3f714be1dc05"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "ad455fcc-74e4-9a63-98b0-21ac3ccf9464"
+		},
+		{
+			"name": "filling",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-35.12844, 17.96195, 0],
+			"to": [0, 21.96195, 35.12761],
+			"autouv": 0,
+			"color": 0,
+			"rotation": [2.49762, -0.10901, 2.49762],
+			"origin": [0, 22, 0],
+			"faces": {
+				"north": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"east": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"south": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"west": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"up": {
+					"uv": [0, 18, 18, 36],
+					"texture": "cded3941-e79d-edba-ae0b-3f714be1dc05"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "0b200896-6acf-847d-e714-0af6a44a81ef"
+		},
+		{
+			"name": "coating",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-35.12844, 17.96195, 0],
+			"to": [0, 21.96195, 35.12761],
+			"autouv": 0,
+			"color": 6,
+			"rotation": [2.49762, -0.10901, 2.49762],
+			"origin": [0, 22, 0],
+			"faces": {
+				"north": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"east": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"south": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"west": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"up": {
+					"uv": [0, 18, 18, 36],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "8457143f-335a-ad91-329c-de1ece8d4bdf"
+		},
+		{
+			"name": "coating",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [0, 17.96195, 0],
+			"to": [35.12844, 21.96195, 35.12761],
+			"autouv": 0,
+			"color": 6,
+			"rotation": [2.49762, 0.10901, -2.49762],
+			"origin": [0, 22, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"east": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"south": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"west": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"up": {
+					"uv": [18, 18, 36, 36],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "123bcf58-468c-7273-21e1-8c888e5a62d9"
+		},
+		{
+			"name": "coating",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [0, 17.96195, -35.12761],
+			"to": [35.12844, 21.96195, 0],
+			"autouv": 0,
+			"color": 6,
+			"rotation": [-2.49762, -0.10901, -2.49762],
+			"origin": [0, 22, 0],
+			"faces": {
+				"north": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"east": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"south": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"west": {
+					"uv": [20, 0, 0, 2],
+					"texture": null
+				},
+				"up": {
+					"uv": [18, 0, 36, 18],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "28e5a681-50ed-fccc-a9de-128f82e3eb0c"
+		},
+		{
+			"name": "coating",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-35.12844, 17.96195, -35.12761],
+			"to": [0, 21.96195, 0],
+			"autouv": 0,
+			"color": 6,
+			"rotation": [-2.49762, 0.10901, 2.49762],
+			"origin": [0, 22, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"east": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"south": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"west": {
+					"uv": [0, 0, 20, 2],
+					"texture": null
+				},
+				"up": {
+					"uv": [0, 0, 18, 18],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "b5680ffb-9ea8-b929-38a5-eb904bbbbe63"
+		},
+		{
+			"name": "coating",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [0, 3, -36],
+			"to": [36, 27, -32],
+			"autouv": 0,
+			"color": 6,
+			"rotation": [-2.49762, -0.10901, -2.49762],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [36, 52, 18, 64],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"east": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [18, 40, 36, 52],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"west": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [36, 62, 54, 60],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "34c98f11-f8ff-b50b-de58-f999dc6534cd"
+		},
+		{
+			"name": "coating",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-36, 3, -36],
+			"to": [0, 27, -32],
+			"autouv": 0,
+			"color": 6,
+			"rotation": [-92.5, -87.5, 90],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [18, 40, 0, 52],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"east": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [0, 52, 18, 64],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"west": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [36, 64, 54, 62],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "b062e3f1-ab08-2d83-70d7-549abd3b1e60"
+		},
+		{
+			"name": "coating",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [0, 3, -36],
+			"to": [36, 27, -32],
+			"autouv": 0,
+			"color": 6,
+			"rotation": [-92.5, 87.5, -90],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 40, 18, 52],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"east": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [18, 52, 0, 64],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"west": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [54, 64, 36, 62],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "337122d9-69fb-2a12-5168-81d6b4d42d17"
+		},
+		{
+			"name": "coating",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-36, 3, -36],
+			"to": [0, 27, -32],
+			"autouv": 0,
+			"color": 6,
+			"rotation": [-2.49762, 0.10901, 2.49762],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [18, 52, 36, 64],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"east": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [36, 40, 18, 52],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"west": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [54, 62, 36, 60],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "a7548aa6-9e71-b8a4-85f4-607fff205047"
+		},
+		{
+			"name": "coating",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-36, 3, 32],
+			"to": [0, 27, 36],
+			"autouv": 0,
+			"color": 6,
+			"rotation": [2.49762, -0.10901, 2.49762],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [18, 40, 36, 52],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"east": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [36, 52, 18, 64],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"west": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [54, 60, 36, 62],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "00cb55f8-daa1-93ed-198b-c44d4b6845e7"
+		},
+		{
+			"name": "coating",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [0, 3, 32],
+			"to": [36, 27, 36],
+			"autouv": 0,
+			"color": 6,
+			"rotation": [92.5, -87.5, -90],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 52, 18, 64],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"east": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [18, 40, 0, 52],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"west": {
+					"uv": [2, 0, 0, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [54, 62, 36, 64],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "23b57a20-80c2-8f67-af06-71d5a929a8ed"
+		},
+		{
+			"name": "coating",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [-36, 3, 32],
+			"to": [0, 27, 36],
+			"autouv": 0,
+			"color": 6,
+			"rotation": [92.5, 87.5, 90],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [18, 52, 0, 64],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"east": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [0, 40, 18, 52],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"west": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [36, 62, 54, 64],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "29b458e4-5c7d-e811-2fdf-5f89eb62f8a1"
+		},
+		{
+			"name": "coating",
+			"box_uv": false,
+			"render_order": "default",
+			"rescale": false,
+			"locked": false,
+			"shade": true,
+			"light_emission": 0,
+			"export": true,
+			"scope": 0,
+			"allow_mirror_modeling": true,
+			"from": [0, 3, 32],
+			"to": [36, 27, 36],
+			"autouv": 0,
+			"color": 6,
+			"rotation": [2.49762, 0.10901, -2.49762],
+			"origin": [0, 27, 0],
+			"faces": {
+				"north": {
+					"uv": [36, 40, 18, 52],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"east": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"south": {
+					"uv": [18, 52, 36, 64],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"west": {
+					"uv": [0, 0, 2, 12],
+					"texture": null
+				},
+				"up": {
+					"uv": [36, 60, 54, 62],
+					"texture": "ef924b4d-2325-2e77-c7af-589c81a3b66b"
+				},
+				"down": {
+					"uv": [0, 0, 0, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "7169ce5e-e764-a693-28dd-dc4077295d6b"
+		}
+	],
+	"groups": [
+		{
+			"name": "tart",
+			"uuid": "a5f4436c-7403-4e91-0db1-eca37ccd99a4",
+			"export": true,
+			"locked": false,
+			"scope": 0,
+			"selected": false,
+			"visibility": true,
+			"_static": {
+				"properties": {},
+				"temp_data": {}
+			},
+			"origin": [0, 0, 0],
+			"rotation": [0, 0, 0],
+			"color": 0,
+			"onSummonFunction": "",
+			"configs": {
+				"default": {},
+				"variants": {}
+			},
+			"itemModelProperties": {
+				"tints": []
+			},
+			"children": [],
+			"reset": false,
+			"shade": true,
+			"mirror_uv": false,
+			"autouv": 0,
+			"isOpen": false,
+			"primary_selected": true
+		}
+	],
+	"outliner": [
+		{
+			"uuid": "a5f4436c-7403-4e91-0db1-eca37ccd99a4",
+			"isOpen": false,
+			"children": [
+				"b6f169e3-ffe1-7146-fd00-ea61cb87ec7d",
+				"e57effd6-2fe8-ce48-1dd3-bc2b16af86b9",
+				"daa0a4bb-9a9a-797c-9f25-7eb94780c881",
+				"6b8c4862-2dc5-5089-09bc-5625dc1d7667",
+				"acd89b4d-2602-7bc3-88b2-d6286f24d8f7",
+				"ce66866c-edbb-5126-d153-0de0ba4c3275",
+				"6b0c3585-4616-7b8f-5666-6f3115694536",
+				"107a3c5a-f3c4-3b07-253f-9fdc451fb82d",
+				"f4950f00-0495-11e7-120b-7edd51f3309b",
+				"3c3b66ec-6bcb-a3c4-5c9a-93ce4267c5fc",
+				"10addc74-b97b-cf98-982a-080476fefa68",
+				"0d942bff-108f-1b4f-f010-924b4a2b5a61",
+				"b37e3343-0582-91ec-cb87-b74bb31d8fd4",
+				"bc9ee281-f384-c757-d17c-4936722832dc",
+				"ad455fcc-74e4-9a63-98b0-21ac3ccf9464",
+				"0b200896-6acf-847d-e714-0af6a44a81ef",
+				"8457143f-335a-ad91-329c-de1ece8d4bdf",
+				"123bcf58-468c-7273-21e1-8c888e5a62d9",
+				"28e5a681-50ed-fccc-a9de-128f82e3eb0c",
+				"b5680ffb-9ea8-b929-38a5-eb904bbbbe63",
+				"34c98f11-f8ff-b50b-de58-f999dc6534cd",
+				"b062e3f1-ab08-2d83-70d7-549abd3b1e60",
+				"337122d9-69fb-2a12-5168-81d6b4d42d17",
+				"a7548aa6-9e71-b8a4-85f4-607fff205047",
+				"00cb55f8-daa1-93ed-198b-c44d4b6845e7",
+				"23b57a20-80c2-8f67-af06-71d5a929a8ed",
+				"29b458e4-5c7d-e811-2fdf-5f89eb62f8a1",
+				"7169ce5e-e764-a693-28dd-dc4077295d6b"
+			]
+		}
+	],
+	"texture_groups": [],
+	"textures": [
+		{
+			"name": "dough",
+			"path": "",
+			"folder": "block",
+			"namespace": "",
+			"id": "0",
+			"group": "",
+			"scope": 0,
+			"width": 64,
+			"height": 64,
+			"uv_width": 128,
+			"uv_height": 128,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"file_format": "png",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"wrap_mode": "limited",
+			"pbr_channel": "color",
+			"fps": 7,
+			"force_translucent": false,
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"palette_generated": {},
+			"is_texture_slot": false,
+			"slot_textures": [],
+			"visible": true,
+			"internal": true,
+			"saved": false,
+			"uuid": "c676ce0d-c057-0f57-3ee7-e2603e6dc93c",
+			"source": "data:image/png;base64,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"
+		},
+		{
+			"name": "filling",
+			"path": "",
+			"folder": "block",
+			"namespace": "",
+			"id": "1",
+			"group": "",
+			"scope": 0,
+			"width": 64,
+			"height": 64,
+			"uv_width": 64,
+			"uv_height": 64,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"file_format": "png",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"wrap_mode": "limited",
+			"pbr_channel": "color",
+			"fps": 7,
+			"force_translucent": false,
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"palette_generated": {},
+			"is_texture_slot": false,
+			"slot_textures": [],
+			"visible": true,
+			"internal": true,
+			"saved": false,
+			"uuid": "cded3941-e79d-edba-ae0b-3f714be1dc05",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEV0lEQVR4AezWsa4cRRAF0PVGmAQhQARAgGSRkPNP/AAfwQ/wT+QkyBIBECBAlhPbma3zpDuq7el9z2N7pndXY+m6qquqe+6907v7jr/99PXrFv/88t3rLdA+1/qw8b9j73n//fGiV+7WzJ5Dd8OFFbsG3Mfx8RePD8F9c3oxRh6kJqY2MnYN+Pzbj2eciP70yZPDR598NfXUerMG1L/54bMDmIPU9cB6NGYGVGJIEw2Ev3r+9wFC+uW/L+9Se1rYe9cs/6lBSvYwSExt6zgzIAQQJTrrnnAzQeYSY461cwJre8RLwIkBvTdB+LOnTw8EBa0A9Z6YKjp9NXk9Q+7ZoLclTgzIgxEK0VacXub0IGtRP2AcA9Urcra5Wh+RnxjgmxmpEGzJ6yFJNMgr8l1hP5g31zNCv+4dlZ8YgEQlhrwaECMugbOYYq+zWiP0l5y3xuzMgDwE2eQEJBetK4gEvfbWqBFqXs4IEXqz6lvirAEhEeJZExCkVoUQa11hTl0EPfESMDMAubz9nvhKuhphX3rEQta1p2ZfW1MfgZkByBEOlZB6Xdc8PaIC/daEnJloxl6Qj8CJAed+h3sEiahoyTNCrZpgbY/Ywi9QW9tiPRkQ8ecIVjJ1hkCofYYBE6D2kuuD9ZbiPa9iMqAW78vzbW+mCpeDegyKQLWgrVXxNc/82nEyIA9vCbbrc280RGNC1nV/zdMfHScDEGlNCGFvFMyogfw+mAcz5kGeWmI+enojcGJAj0CI6tXceultaPdnPdKEY314zQkMQXmQWt4oEyD9mufvifQuMU43IOIJhB5Zn2/QhzpDOKQWg7Luxczko9ebWbt2Z0DEtw8LwdQjkAmpJZqtSD2xNSz1keJxuDNAgiDIgZjEKriaoA7m6l7rirbnbGjrdc9W+WRAfSBRLTm1zDABsk7PHkhdbNeEq/t7IvusR6FrADKVXMSqVaTezhMd6AURn/UlxJkBBIYYEXLEq1g1yKxvezBXYSZQT+7tJx8dZwZUoQQiywgCiKz9tyVvb2adlfxdzsreDxVnBji4JdYaoR8wxZ4KIkGtird2lmi/3rlfIDNbYGYAUh6MoFiBvBthJqh9oiE1M8nF9Jzd9vRH4Oh3GCqh5IhWUtZQa8kjLmtnqAWMY2D6iZ6dfESc3YCQIEBOcGANRIkV5gP1OlOFO8ucmS3w0DMmA7yJP3/9/yBmE6KQdaKauRb6rXDiifZdAfaaA/vFkZgMqCQQC9SRBgaBnnoLdXOpR3itpWc2+cjYNcA3c1DJ9Wq1n5zgILVLjV0DHiIbI3rxob3p25t8ZDx+//Nfj1p8+ePvj7ZA+1zrrc14pxuwNck1n7cbsKa713D2fgOu4S2tyXG/AWu6ew1n7zfgGt7Smhz3G7CmuyPOXvrM/QYsdezW5vcbcGtvdKme/QYsdezW5vcbcGtvdKme/QYsdezW5vcbcGtvdKme/QYsdezW5vcbcO1v9H35vwEAAP//gVbfGgAAAAZJREFUAwDsrwmuGEO6FQAAAABJRU5ErkJggg=="
+		},
+		{
+			"name": "coating",
+			"path": "",
+			"folder": "block",
+			"namespace": "",
+			"id": "2",
+			"group": "",
+			"scope": 0,
+			"width": 64,
+			"height": 64,
+			"uv_width": 64,
+			"uv_height": 64,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"file_format": "png",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"wrap_mode": "limited",
+			"pbr_channel": "color",
+			"fps": 7,
+			"force_translucent": false,
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"palette_generated": {},
+			"is_texture_slot": false,
+			"slot_textures": [],
+			"visible": true,
+			"internal": true,
+			"saved": false,
+			"uuid": "ef924b4d-2325-2e77-c7af-589c81a3b66b",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAxUlEQVR4AezVMQ6EQAxDUbT3P/T2aaKICvvRjSYF/v6B31P+AFAuwMMABpQTsALlAvgIWgErUE7ACpQL4C9QtwLTeAAmkbYzA9oan3kZMIm0nRnQ1vjMy4BJpO3MgLbGZ14GTCJtZwakN77lY8BGKP2eAekNb/kYsBFKv2dAesNbPgZshNLvGZDe8JaPARuh9HsGpDV8zcOAK7G0eQakNXrNw4ArsbR5BqQ1es3DgCuxtHkGpDV6zcOAK7G0eQZ8vdG37/8HAAD//+byZ+UAAAAGSURBVAMAkXAAgX3QNkkAAAAASUVORK5CYII="
+		}
+	],
+	"variants": {
+		"default": {
+			"name": "default",
+			"display_name": "Default",
+			"uuid": "d71be334-38b5-bd50-c85a-17fe01b27c17",
+			"slot_textures": {},
+			"excluded_nodes": [],
+			"is_default": true
+		},
+		"list": []
+	}
+}
