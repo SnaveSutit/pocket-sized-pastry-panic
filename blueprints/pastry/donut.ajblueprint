@@ -2543,14 +2543,14 @@
 			"shade": true,
 			"mirror_uv": false,
 			"autouv": 0,
-			"isOpen": false,
-			"primary_selected": true
+			"isOpen": true,
+			"primary_selected": false
 		}
 	],
 	"outliner": [
 		{
 			"uuid": "9d5a6296-a015-afea-9174-13642be3c471",
-			"isOpen": false,
+			"isOpen": true,
 			"children": [
 				"7e19c1be-0ecd-f2c0-1ff3-cf3e3d70bbfd",
 				"9fd0b4e2-2f78-804c-b390-1c3e9855bb49",

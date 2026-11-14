@@ -604,14 +604,14 @@
 			"shade": true,
 			"mirror_uv": false,
 			"autouv": 0,
-			"isOpen": false,
-			"primary_selected": true
+			"isOpen": true,
+			"primary_selected": false
 		}
 	],
 	"outliner": [
 		{
 			"uuid": "2d799795-27dc-5d6e-1978-f5de3ff45ece",
-			"isOpen": false,
+			"isOpen": true,
 			"children": [
 				"d61497ed-d04f-033e-322e-831a169b4825",
 				"0bf91907-fa4b-359c-9e61-983cc38d6d6f",

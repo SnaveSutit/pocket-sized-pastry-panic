@@ -3,7 +3,7 @@
 		"format": "animated-java:format/blueprint",
 		"format_version": "1.11.0",
 		"uuid": "97fee4b9-6a58-403f-3a6f-c6b57d737b00",
-		"save_location": "/var/mnt/ssd2/repos/snavesutit/pocket-sized-pastry-panic/blueprints/ingredient/vanilla.ajblueprint",
+		"save_location": "C:\\Users\\User\\Desktop\\projects\\github\\pocket-sized-pastry-panic\\blueprints\\ingredient\\vanilla.ajblueprint",
 		"last_used_blueprint_id": "pspp:ingredient/vanilla"
 	},
 	"resolution": {
@@ -2142,7 +2142,7 @@
 			"pivotOffset": [0, 0, 0],
 			"scale": [28, 45, 28],
 			"color": 5,
-			"visibility": true,
+			"visibility": false,
 			"locked": false,
 			"export": true,
 			"onSummonFunction": "",
@@ -2172,7 +2172,7 @@
 				"properties": {},
 				"temp_data": {}
 			},
-			"origin": [-8, 14, -8],
+			"origin": [0, 0, 0],
 			"rotation": [0, 0, 0],
 			"color": 0,
 			"onSummonFunction": "",
@@ -2193,6 +2193,37 @@
 			"shade": true,
 			"mirror_uv": false,
 			"autouv": 0,
+			"isOpen": true,
+			"primary_selected": false
+		},
+		{
+			"name": "rotate",
+			"uuid": "f7329d9b-a2e8-cc2c-54f2-71d937e3db4e",
+			"export": true,
+			"locked": false,
+			"scope": 0,
+			"selected": false,
+			"visibility": true,
+			"_static": {
+				"properties": {},
+				"temp_data": {}
+			},
+			"origin": [0, 0, 0],
+			"rotation": [0, 0, 0],
+			"color": 0,
+			"onSummonFunction": "",
+			"configs": {
+				"default": {},
+				"variants": {}
+			},
+			"itemModelProperties": {
+				"tints": []
+			},
+			"children": [],
+			"reset": false,
+			"shade": true,
+			"mirror_uv": false,
+			"autouv": 0,
 			"isOpen": false,
 			"primary_selected": false
 		}
@@ -2200,52 +2231,58 @@
 	"outliner": [
 		{
 			"uuid": "1a02002d-cdfd-5f9a-56cb-b2ae2ef24e48",
-			"isOpen": false,
+			"isOpen": true,
 			"children": [
-				"a9cdc6dd-0044-4845-d8ad-bc11c96ed707",
-				"ef0c621e-0d67-b731-589f-980ee3bb6e45",
-				"303a7758-0a5e-7a5c-aa6f-9c21a8858df6",
-				"c258ff76-f55f-5297-40eb-de04176a8e70",
-				"ce4a11ca-b053-637a-9295-8a1720b1031b",
-				"75423700-40b5-6bf0-2f07-370d6b580216",
-				"ae45fc32-17ba-2d23-5ab4-be23f94a718f",
-				"95bb89cb-8e6a-ec3e-18b5-1556119b54d1",
-				"12d45364-4f74-721d-ae19-7de785ab4b5c",
-				"09b6f39c-80b5-97da-ef3f-614fe87eccf6",
-				"c3a5fb64-7907-d683-1d9c-21e8ecc981e8",
-				"79b9feb5-713e-e602-8b0e-4eb02f25206e",
-				"792cea7b-92b6-3ebe-78aa-5bae6c8385ed",
-				"8dcdb192-7636-e6a2-93da-7b5f85d33db3",
-				"71b3bce7-25e7-ea3e-6ead-6f64f1a5fc0f",
-				"943996f6-d26a-4e3e-6924-73e27bc80f16",
-				"c0c7ad4d-6630-b7b4-754d-b5ad64b1cff6",
-				"57d3c802-37fe-d822-a7a0-84c8bd81b88c",
-				"695445ad-8829-bbcf-24d0-27db068c3313",
-				"b942e0d4-8d55-f445-2cf1-18dbc0743b82",
-				"face05bb-957d-97f9-3d73-e64885c16799",
-				"da6a549e-c588-a9d8-1bab-edf464a56ead",
-				"6482a239-6af2-513d-4880-3f50b4fe7241",
-				"641f8651-dadc-9073-e06a-b55921d98c00",
-				"55c42b2a-f0b2-86f3-da42-a04820df4cdc",
-				"0753db50-01e4-cac9-5f3d-2ba16ff157eb",
-				"a60537b7-6e51-5acf-c02c-9e4c9b72c5df",
-				"cb5179d0-00fc-cbba-8fa2-14d353bc43cc",
-				"c2086ce5-9e12-8490-6c28-a5db62c805ef",
-				"7484875e-e1e2-47ab-c79d-9dceaaeffbda",
-				"7c01fbce-6e16-7f82-033d-d09650db6f97",
-				"3bd0053c-5d04-ee6a-2e33-a820ee36fef2",
-				"6aa5955a-45f9-45d2-6e06-4471796bf633",
-				"ce0b5c75-95d6-fbd5-de39-c700076cee33",
-				"b3c077a6-b3f6-6d55-eed1-3c1b6b52f681",
-				"085479e3-4de1-707b-2153-c8b63e6f1345",
-				"8872cdfe-53cd-24ac-7945-47456147e0f6",
-				"0f8e99d9-ab07-0c3b-6fc7-710145fd77b6",
-				"3e3476b7-d1b8-4bbe-1df5-734e128ea29a",
-				"d5563f20-795d-c285-e777-4e2c23ca432a",
-				"8368f399-13cf-bebc-e187-e7027cb4a1e8",
-				"41670528-1e6b-6c42-87f0-43728dd31e28",
-				"447d6f98-b94d-5558-6b99-5a86facddaf0",
-				"43e6f25d-dc7a-914d-aa5e-8f8ef1975998"
+				{
+					"uuid": "f7329d9b-a2e8-cc2c-54f2-71d937e3db4e",
+					"isOpen": false,
+					"children": [
+						"a9cdc6dd-0044-4845-d8ad-bc11c96ed707",
+						"ef0c621e-0d67-b731-589f-980ee3bb6e45",
+						"303a7758-0a5e-7a5c-aa6f-9c21a8858df6",
+						"c258ff76-f55f-5297-40eb-de04176a8e70",
+						"ce4a11ca-b053-637a-9295-8a1720b1031b",
+						"75423700-40b5-6bf0-2f07-370d6b580216",
+						"ae45fc32-17ba-2d23-5ab4-be23f94a718f",
+						"95bb89cb-8e6a-ec3e-18b5-1556119b54d1",
+						"12d45364-4f74-721d-ae19-7de785ab4b5c",
+						"09b6f39c-80b5-97da-ef3f-614fe87eccf6",
+						"c3a5fb64-7907-d683-1d9c-21e8ecc981e8",
+						"79b9feb5-713e-e602-8b0e-4eb02f25206e",
+						"792cea7b-92b6-3ebe-78aa-5bae6c8385ed",
+						"8dcdb192-7636-e6a2-93da-7b5f85d33db3",
+						"71b3bce7-25e7-ea3e-6ead-6f64f1a5fc0f",
+						"943996f6-d26a-4e3e-6924-73e27bc80f16",
+						"c0c7ad4d-6630-b7b4-754d-b5ad64b1cff6",
+						"57d3c802-37fe-d822-a7a0-84c8bd81b88c",
+						"695445ad-8829-bbcf-24d0-27db068c3313",
+						"b942e0d4-8d55-f445-2cf1-18dbc0743b82",
+						"face05bb-957d-97f9-3d73-e64885c16799",
+						"da6a549e-c588-a9d8-1bab-edf464a56ead",
+						"6482a239-6af2-513d-4880-3f50b4fe7241",
+						"641f8651-dadc-9073-e06a-b55921d98c00",
+						"55c42b2a-f0b2-86f3-da42-a04820df4cdc",
+						"0753db50-01e4-cac9-5f3d-2ba16ff157eb",
+						"a60537b7-6e51-5acf-c02c-9e4c9b72c5df",
+						"cb5179d0-00fc-cbba-8fa2-14d353bc43cc",
+						"c2086ce5-9e12-8490-6c28-a5db62c805ef",
+						"7484875e-e1e2-47ab-c79d-9dceaaeffbda",
+						"7c01fbce-6e16-7f82-033d-d09650db6f97",
+						"3bd0053c-5d04-ee6a-2e33-a820ee36fef2",
+						"6aa5955a-45f9-45d2-6e06-4471796bf633",
+						"ce0b5c75-95d6-fbd5-de39-c700076cee33",
+						"b3c077a6-b3f6-6d55-eed1-3c1b6b52f681",
+						"085479e3-4de1-707b-2153-c8b63e6f1345",
+						"8872cdfe-53cd-24ac-7945-47456147e0f6",
+						"0f8e99d9-ab07-0c3b-6fc7-710145fd77b6",
+						"3e3476b7-d1b8-4bbe-1df5-734e128ea29a",
+						"d5563f20-795d-c285-e777-4e2c23ca432a",
+						"8368f399-13cf-bebc-e187-e7027cb4a1e8",
+						"41670528-1e6b-6c42-87f0-43728dd31e28",
+						"447d6f98-b94d-5558-6b99-5a86facddaf0",
+						"43e6f25d-dc7a-914d-aa5e-8f8ef1975998"
+					]
+				}
 			]
 		},
 		"ab5ca72e-f162-88a3-58b1-77c9e16fac6e"
@@ -2255,7 +2292,7 @@
 		{
 			"name": "vanilla.png",
 			"path": "/var/mnt/ssd2/repos/snavesutit/pocket-sized-pastry-panic/resources/assets/temp/textures/item/vanilla.png",
-			"relative_path": "../../resources/assets/temp/textures/item/vanilla.png",
+			"relative_path": "../../../../../../../../var/mnt/ssd2/repos/snavesutit/pocket-sized-pastry-panic/resources/assets/temp/textures/item/vanilla.png",
 			"folder": "item",
 			"namespace": "temp",
 			"id": "0",
@@ -2280,11 +2317,12 @@
 			"frame_order_type": "loop",
 			"frame_order": "",
 			"frame_interpolate": false,
+			"palette_generated": {},
 			"is_texture_slot": false,
 			"slot_textures": [],
 			"visible": true,
 			"internal": true,
-			"saved": true,
+			"saved": false,
 			"uuid": "d2cafb82-cd77-6799-2372-13340d7bc8ee",
 			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACN0lEQVR4AeyUz0tUURTHz3sQlQ+ZsgItpUW0inYhYRBEtLBVywjcR/0H7fsDWhTthWhZm4yiZRKmbkRUhGHUQQXxxyhvdHTx9HPkjPfpm3kD8gaREb/3fM/3nnfP13Ofz5eDn/4716PHXe3RAU38/ft1IJrPf1HAKfr8ti+qB2rAvWc3or4X3Qo4QDeoAUssuoZo2NPbb1sCR0P4MDgmSVgrLrMtz9/cj27f7VTOkgsuEqSrN4gAScwAjREN5DS80N5jksDRqkINQnO2NhbXCVIKK4q1UllzFkz4NMldviRB26E7roKcAkBDYnlxSgDcNHgt/Pg04bF35eZVgvDXg45cm+YsSyOhF5tAWK6gKzBkeWnml2osLievB0zMzR5eB3VMgUhjAPdpElwL4LJR3tXoLntbC7JaLMj40E8FHM2tqccnf694w9+KCjhw62MTsA3X0MLIkMxNTNuWcrSqcEqSaMA989HLQe/V+/8xoFEz8OSWJIG9RuEz9nA1FK6i0Yes7sHTh3IcHd2dAqwmLSZOAENpD/K/Pvrnn+RnCgo4QAdpz9t+zMDmztHHkIm4uT1g8d33vAdefxz2ANyF1aXFqgGugmKL8GZADZS2d2K9yJtlRA3Eujc5OZsG7AUsVHb1e57lUHzedBpm2aTe2WfjCnjjmYQ5JTeedTwxAddI1s05Xw1YU146YDkFWcOnYVKTWnpS7Wk0nQDNgB3kctOyimogq8MbObdloDWB1gTO/wTSvgX7AAAA//+SoKKsAAAABklEQVQDAHgEOlBRIsRMAAAAAElFTkSuQmCC"
 		}
@@ -2299,5 +2337,300 @@
 			"is_default": true
 		},
 		"list": []
-	}
+	},
+	"animations": [
+		{
+			"uuid": "2396e259-a383-7a98-da87-805826994f14",
+			"name": "idle",
+			"loop": "loop",
+			"override": false,
+			"length": 1.2,
+			"snapping": 20,
+			"selected": false,
+			"saved": true,
+			"path": "",
+			"scope": 0,
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "0",
+			"excluded_nodes": [
+				{
+					"icon": "fa-computer-mouse",
+					"name": "hitbox",
+					"value": "759759a6-9acd-ef62-694c-fce380154000"
+				}
+			],
+			"preview_variants": [],
+			"preview_texture_slots": {},
+			"animators": {
+				"1a02002d-cdfd-5f9a-56cb-b2ae2ef24e48": {
+					"name": "root",
+					"type": "bone",
+					"rotation_global": false,
+					"quaternion_interpolation": false,
+					"keyframes": [
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "-10"
+								}
+							],
+							"uuid": "afa3b6ea-0c86-561b-3e5d-0714d24a603e",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "easeInOutSine",
+							"easingArgs": []
+						},
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "10"
+								}
+							],
+							"uuid": "7e78ea9f-dc9f-a419-6267-5f8cf3a54676",
+							"time": 0.6,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "easeInOutSine",
+							"easingArgs": []
+						},
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "-10"
+								}
+							],
+							"uuid": "1dcae6f5-f4a9-b6d1-ed40-dd2f83d00442",
+							"time": 1.2,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "easeInOutSine",
+							"easingArgs": []
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "1",
+									"y": "1",
+									"z": "1"
+								}
+							],
+							"uuid": "cd23ab33-3696-7171-c0e4-e157eae1f39f",
+							"time": 0.3,
+							"color": -1,
+							"uniform": true,
+							"interpolation": "linear",
+							"easing": "easeInQuad",
+							"easingArgs": []
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "0.88",
+									"y": "1.15",
+									"z": "0.85"
+								}
+							],
+							"uuid": "178a9890-a0e6-ec79-1a37-71ed61af71d5",
+							"time": 0.6,
+							"color": -1,
+							"uniform": false,
+							"interpolation": "linear",
+							"easing": "easeOutQuad",
+							"easingArgs": []
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "1",
+									"y": "1",
+									"z": "1"
+								}
+							],
+							"uuid": "a68bfadb-029f-38df-0915-ca51ead926da",
+							"time": 0.9,
+							"color": -1,
+							"uniform": true,
+							"interpolation": "linear",
+							"easing": "easeInQuad",
+							"easingArgs": []
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "0.85",
+									"y": "1.15",
+									"z": "0.85"
+								}
+							],
+							"uuid": "153ec8ae-8704-e54d-089d-73a2cbf05b08",
+							"time": 1.2,
+							"color": -1,
+							"uniform": false,
+							"interpolation": "linear",
+							"easing": "easeOutQuad",
+							"easingArgs": []
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "0.85",
+									"y": "1.15",
+									"z": "0.85"
+								}
+							],
+							"uuid": "a02fe538-3973-0d02-0fba-8638bf2eb76c",
+							"time": 0,
+							"color": -1,
+							"uniform": false,
+							"interpolation": "linear",
+							"easing": "easeOutQuad",
+							"easingArgs": []
+						}
+					]
+				},
+				"f7329d9b-a2e8-cc2c-54f2-71d937e3db4e": {
+					"name": "rotate",
+					"type": "bone",
+					"rotation_global": false,
+					"quaternion_interpolation": false,
+					"keyframes": [
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "-7.5"
+								}
+							],
+							"uuid": "301ee54a-d4f4-c53f-8ccb-8fd7b0922202",
+							"time": 0.6,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "easeInOutSine",
+							"easingArgs": []
+						},
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "7.5"
+								}
+							],
+							"uuid": "05d168fe-038a-a91c-e389-1b6eb11f4864",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "easeInOutSine",
+							"easingArgs": []
+						},
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "7.5"
+								}
+							],
+							"uuid": "1c9ce31b-eb8c-8005-f0ce-b32ccd9375c1",
+							"time": 1.2,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "easeInOutSine",
+							"easingArgs": []
+						}
+					]
+				},
+				"ab5ca72e-f162-88a3-58b1-77c9e16fac6e": {
+					"name": "hitbox",
+					"type": "animated_java:interaction",
+					"rotation_global": false,
+					"quaternion_interpolation": false
+				}
+			}
+		},
+		{
+			"uuid": "5b839f93-7bfc-82ed-97a9-16d45bbad5ff",
+			"name": "carry",
+			"loop": "loop",
+			"override": false,
+			"length": 0.6,
+			"snapping": 20,
+			"selected": true,
+			"saved": true,
+			"path": "",
+			"scope": 0,
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "0",
+			"excluded_nodes": [
+				{
+					"icon": "fa-computer-mouse",
+					"name": "hitbox",
+					"value": "759759a6-9acd-ef62-694c-fce380154000"
+				}
+			],
+			"preview_variants": [],
+			"preview_texture_slots": {},
+			"animators": {
+				"1a02002d-cdfd-5f9a-56cb-b2ae2ef24e48": {
+					"name": "root",
+					"type": "bone",
+					"rotation_global": false,
+					"quaternion_interpolation": false,
+					"keyframes": [
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "math.cos(query.life_time * 600 + 0) * 2.5",
+									"y": "0",
+									"z": "math.cos(query.life_time * 600 - 90) * 2.5"
+								}
+							],
+							"uuid": "6dfea1d9-57c9-3c88-89eb-e12dcc9d89b1",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						}
+					]
+				},
+				"f7329d9b-a2e8-cc2c-54f2-71d937e3db4e": {
+					"name": "rotate",
+					"type": "bone",
+					"rotation_global": false,
+					"quaternion_interpolation": false
+				},
+				"ab5ca72e-f162-88a3-58b1-77c9e16fac6e": {
+					"name": "hitbox",
+					"type": "animated_java:interaction",
+					"rotation_global": false,
+					"quaternion_interpolation": false
+				}
+			}
+		}
+	]
 }
